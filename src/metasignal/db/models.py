@@ -208,3 +208,23 @@ class DecisionLog(Base):
 
     experiment = relationship("Experiment")
     evaluation = relationship("ExperimentEvaluation")
+
+
+class ExperimentAssignment(Base):
+    __tablename__ = "experiment_assignments"
+
+    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    experiment_id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), ForeignKey("experiments.id"), nullable=False)
+    user_id: Mapped[str] = mapped_column(String(128), nullable=False)
+    variant: Mapped[str] = mapped_column(String(32), nullable=False)
+    assignment_hash: Mapped[str] = mapped_column(String(128), nullable=False)
+    assignment_bucket: Mapped[float] = mapped_column(Float, nullable=False)
+    assignment_method: Mapped[str] = mapped_column(String(64), nullable=False, default="deterministic_hash")
+    assigned_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=func.now())
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=func.now())
+
+    experiment = relationship("Experiment")
+
+    __table_args__ = (
+        UniqueConstraint("experiment_id", "user_id", name="uq_experiment_user_assignment"),
+    )
