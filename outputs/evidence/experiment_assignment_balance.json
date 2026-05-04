@@ -1,0 +1,16 @@
+{
+  "artifact": "experiment_assignment_balance",
+  "experiment_key": "EXP-CHECKOUT-FRICTION-001",
+  "assignment_method": "deterministic_hash",
+  "eligible_users_source": "data/interim/events_standardized.parquet",
+  "assigned_user_count": 20000,
+  "max_users_for_v0": 20000,
+  "expected_treatment_share": 0.5,
+  "treatment_count": 10094,
+  "control_count": 9906,
+  "treatment_share": 0.5047,
+  "control_share": 0.4953,
+  "absolute_treatment_share_imbalance": 0.0047000000000000375,
+  "balance_status": "pass",
+  "evidence_statement": "MetaSignal generated deterministic user-level experiment assignments and verified treatment/control balance."
+}
