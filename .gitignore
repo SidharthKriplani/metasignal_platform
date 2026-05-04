@@ -1,1 +1,11 @@
 
+
+# local / system junk
+.DS_Store
+**/.DS_Store
+.venv/
+__marimo__/
+
+# generated/local data
+data/interim/*.parquet
+data/raw/retailrocket/

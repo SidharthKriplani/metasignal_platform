@@ -1,1 +1,3 @@
 # MetaSignal_Decisioning
+
+MetaSignal is a metrics intelligence and experiment decision platform. It solves the problem that most analytics team face: metric definitions that mean different things to different teams, experiments evaluated inconsistently, and anomalies that nobody catches until a postmortem. The system computes versioned metrics over partitioned event data, runs statistical anomaly detection with seasonal correction, evaluates experimented with CUPED variance reduction and guardrail checks, and surfaces a structured ship/hold/investigate recommendation that a human reviewer logs a decision against. Every metric compute, evaluation, and decision is auditable by design.
