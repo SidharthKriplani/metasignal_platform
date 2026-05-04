@@ -1,0 +1,156 @@
+{
+  "artifact": "metric_results_summary",
+  "source": "metric_results table",
+  "total_metric_result_rows": 417,
+  "metric_count": 3,
+  "metrics": [
+    {
+      "metric_name": "purchase_conversion_rate_event",
+      "denominator_type": "event_count",
+      "grain": "daily",
+      "is_guardrail": false,
+      "row_count": 139,
+      "min_date": "2015-05-03",
+      "max_date": "2015-09-18",
+      "min_value": 0.004368950322021769,
+      "max_value": 0.013008672448298866,
+      "avg_value": 0.008279210590641843,
+      "sample_rows": [
+        {
+          "date": "2015-05-03",
+          "numerator": 83.0,
+          "denominator": 13304.0,
+          "metric_value": 0.006238725195429946,
+          "quality_passed": true
+        },
+        {
+          "date": "2015-05-04",
+          "numerator": 154.0,
+          "denominator": 18681.0,
+          "metric_value": 0.008243670039077137,
+          "quality_passed": true
+        },
+        {
+          "date": "2015-05-05",
+          "numerator": 225.0,
+          "denominator": 22225.0,
+          "metric_value": 0.010123734533183352,
+          "quality_passed": true
+        },
+        {
+          "date": "2015-05-06",
+          "numerator": 258.0,
+          "denominator": 23015.0,
+          "metric_value": 0.01121008038235933,
+          "quality_passed": true
+        },
+        {
+          "date": "2015-05-07",
+          "numerator": 217.0,
+          "denominator": 22369.0,
+          "metric_value": 0.009700925387813492,
+          "quality_passed": true
+        }
+      ]
+    },
+    {
+      "metric_name": "refund_rate_guardrail",
+      "denominator_type": "purchase_events",
+      "grain": "daily",
+      "is_guardrail": true,
+      "row_count": 139,
+      "min_date": "2015-05-03",
+      "max_date": "2015-09-18",
+      "min_value": 0.0,
+      "max_value": 0.0,
+      "avg_value": 0.0,
+      "sample_rows": [
+        {
+          "date": "2015-05-03",
+          "numerator": 0.0,
+          "denominator": 83.0,
+          "metric_value": 0.0,
+          "quality_passed": true
+        },
+        {
+          "date": "2015-05-04",
+          "numerator": 0.0,
+          "denominator": 154.0,
+          "metric_value": 0.0,
+          "quality_passed": true
+        },
+        {
+          "date": "2015-05-05",
+          "numerator": 0.0,
+          "denominator": 225.0,
+          "metric_value": 0.0,
+          "quality_passed": true
+        },
+        {
+          "date": "2015-05-06",
+          "numerator": 0.0,
+          "denominator": 258.0,
+          "metric_value": 0.0,
+          "quality_passed": true
+        },
+        {
+          "date": "2015-05-07",
+          "numerator": 0.0,
+          "denominator": 217.0,
+          "metric_value": 0.0,
+          "quality_passed": true
+        }
+      ]
+    },
+    {
+      "metric_name": "purchase_conversion_rate_user",
+      "denominator_type": "distinct_users",
+      "grain": "daily",
+      "is_guardrail": false,
+      "row_count": 139,
+      "min_date": "2015-05-03",
+      "max_date": "2015-09-18",
+      "min_value": 0.0038533170637723973,
+      "max_value": 0.011979680036393965,
+      "avg_value": 0.007899122735193788,
+      "sample_rows": [
+        {
+          "date": "2015-05-03",
+          "numerator": 52.0,
+          "denominator": 7865.0,
+          "metric_value": 0.006611570247933884,
+          "quality_passed": true
+        },
+        {
+          "date": "2015-05-04",
+          "numerator": 101.0,
+          "denominator": 11019.0,
+          "metric_value": 0.009165986024140121,
+          "quality_passed": true
+        },
+        {
+          "date": "2015-05-05",
+          "numerator": 155.0,
+          "denominator": 13084.0,
+          "metric_value": 0.011846530113115256,
+          "quality_passed": true
+        },
+        {
+          "date": "2015-05-06",
+          "numerator": 151.0,
+          "denominator": 13687.0,
+          "metric_value": 0.011032366479140791,
+          "quality_passed": true
+        },
+        {
+          "date": "2015-05-07",
+          "numerator": 115.0,
+          "denominator": 13086.0,
+          "metric_value": 0.00878801772887055,
+          "quality_passed": true
+        }
+      ]
+    }
+  ],
+  "evidence_statement": "MetaSignal computed daily metric results from standardized RetailRocket parquet and inserted them into Postgres."
+}
