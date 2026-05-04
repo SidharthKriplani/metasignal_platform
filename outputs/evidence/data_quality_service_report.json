@@ -1,0 +1,97 @@
+{
+  "artifact": "data_quality_service_report",
+  "source_file": "data/interim/events_standardized.parquet",
+  "run_id": "4077b0f8-6767-4c7e-ba6e-685db283878c",
+  "status": "success",
+  "rows_processed": 2756101,
+  "checks_passed": 5,
+  "checks_failed": 0,
+  "checks": [
+    {
+      "check_name": "required_columns_present",
+      "entity": "events_standardized",
+      "expected_value": 6,
+      "actual_value": 6,
+      "threshold": 0,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "required_columns": [
+          "event_timestamp",
+          "event_date",
+          "user_id",
+          "event_type",
+          "item_id",
+          "transaction_id"
+        ],
+        "actual_columns": [
+          "event_timestamp",
+          "event_date",
+          "user_id",
+          "event_type",
+          "item_id",
+          "transaction_id"
+        ]
+      }
+    },
+    {
+      "check_name": "row_count_nonzero",
+      "entity": "events_standardized",
+      "expected_value": 1,
+      "actual_value": 2756101,
+      "threshold": 0,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "rule": "standardized event table must not be empty"
+      }
+    },
+    {
+      "check_name": "user_id_null_rate",
+      "entity": "events_standardized",
+      "expected_value": 0.0,
+      "actual_value": 0.0,
+      "threshold": 0.001,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "rule": "user_id null rate must be <= 0.1%"
+      }
+    },
+    {
+      "check_name": "event_type_domain_check",
+      "entity": "events_standardized",
+      "expected_value": 3,
+      "actual_value": 3,
+      "threshold": 0,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "allowed_event_types": [
+          "addtocart",
+          "transaction",
+          "view"
+        ],
+        "observed_event_types": [
+          "addtocart",
+          "transaction",
+          "view"
+        ],
+        "invalid_event_types": []
+      }
+    },
+    {
+      "check_name": "date_coverage_check",
+      "entity": "events_standardized",
+      "expected_value": 30,
+      "actual_value": 139,
+      "threshold": 30,
+      "passed": true,
+      "severity": "warning",
+      "check_details": {
+        "rule": "dataset should contain at least 30 event dates for demo usefulness"
+      }
+    }
+  ],
+  "evidence_statement": "MetaSignal validated standardized event data before metric computation using reusable quality checks."
+}
