@@ -1,0 +1,52 @@
+{
+  "artifact": "metric_conflict_report",
+  "active_metric_count": 3,
+  "families_scanned": 2,
+  "conflict_count": 1,
+  "conflicts": [
+    {
+      "metric_family": "conversion_rate",
+      "conflict_type": "active_metric_semantic_conflict",
+      "reason": "Multiple active metrics appear to describe the same business concept but use different denominator/grain/entity logic.",
+      "denominator_types": [
+        "distinct_users",
+        "event_count"
+      ],
+      "grains": [
+        "daily"
+      ],
+      "entity_types": [
+        "event",
+        "user"
+      ],
+      "affected_metrics": [
+        {
+          "id": "69b58048-d266-440b-818d-3ea3894910a5",
+          "name": "purchase_conversion_rate_user",
+          "display_name": "Purchase Conversion Rate - User Denominator",
+          "denominator_type": "distinct_users",
+          "denominator_sql": "COUNT(DISTINCT user_id)",
+          "grain": "daily",
+          "entity_type": "user",
+          "owner": "growth_analytics",
+          "version": 1,
+          "config_hash": "3a10625dba1e72586ad2fcd7732b2b6e2eda57adde2cee4072186dcccfddea25"
+        },
+        {
+          "id": "5f1d164b-3bf4-4fd5-9cc9-98cf4141bc56",
+          "name": "purchase_conversion_rate_event",
+          "display_name": "Purchase Conversion Rate - Event Denominator",
+          "denominator_type": "event_count",
+          "denominator_sql": "COUNT(*) FILTER (WHERE event_type = 'view')",
+          "grain": "daily",
+          "entity_type": "event",
+          "owner": "growth_analytics",
+          "version": 1,
+          "config_hash": "927ea60b44097d44bbacc2d9b7025d14300a550de9e6a2cb2d2fc4d198de3221"
+        }
+      ],
+      "recommended_action": "Require owner review and mark one metric as authoritative before using this metric family in experiment decisions."
+    }
+  ],
+  "evidence_statement": "MetaSignal scanned active metric definitions and detected denominator/grain conflicts across semantically similar metric families."
+}
