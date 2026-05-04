@@ -9,3 +9,6 @@ __marimo__/
 # generated/local data
 data/interim/*.parquet
 data/raw/retailrocket/
+
+# local secrets
+.env
