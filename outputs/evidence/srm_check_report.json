@@ -1,0 +1,22 @@
+{
+  "artifact": "srm_check_report",
+  "experiment_key": "EXP-CHECKOUT-FRICTION-001",
+  "assignment_method": "deterministic_hash",
+  "expected_treatment_share": 0.5,
+  "observed": {
+    "treatment_count": 10094,
+    "control_count": 9906,
+    "total": 20000,
+    "treatment_share": 0.5047,
+    "control_share": 0.4953
+  },
+  "srm_test": {
+    "test": "chi_square_goodness_of_fit_df1",
+    "chi_square_stat": 1.7672,
+    "p_value": 0.18372898102393756,
+    "alpha": 0.001,
+    "srm_detected": false,
+    "status": "pass"
+  },
+  "evidence_statement": "MetaSignal checked sample ratio mismatch on deterministic experiment assignments before experiment readout."
+}
