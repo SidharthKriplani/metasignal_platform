@@ -1,0 +1,214 @@
+{
+  "artifact": "failure_injection_report",
+  "scenario_count": 3,
+  "blocked_scenarios": 3,
+  "scenarios": [
+    {
+      "scenario_name": "schema_drift_missing_transaction_id",
+      "status": "blocked",
+      "rows_processed": 2756101,
+      "checks_passed": 2,
+      "checks_failed": 1,
+      "checks": [
+        {
+          "check_name": "required_columns_present",
+          "expected_value": 6,
+          "actual_value": 5,
+          "threshold": 0,
+          "passed": false,
+          "severity": "blocking",
+          "check_details": {
+            "required_columns": [
+              "event_timestamp",
+              "event_date",
+              "user_id",
+              "event_type",
+              "item_id",
+              "transaction_id"
+            ],
+            "actual_columns": [
+              "event_timestamp",
+              "event_date",
+              "user_id",
+              "event_type",
+              "item_id"
+            ]
+          }
+        },
+        {
+          "check_name": "user_id_null_rate",
+          "expected_value": 0.0,
+          "actual_value": 0.0,
+          "threshold": 0.001,
+          "passed": true,
+          "severity": "blocking",
+          "check_details": {
+            "rule": "user_id null rate must be <= 0.1%"
+          }
+        },
+        {
+          "check_name": "event_type_domain_check",
+          "expected_value": 3,
+          "actual_value": 3,
+          "threshold": 0,
+          "passed": true,
+          "severity": "blocking",
+          "check_details": {
+            "allowed_event_types": [
+              "addtocart",
+              "transaction",
+              "view"
+            ],
+            "observed_event_types": [
+              "addtocart",
+              "transaction",
+              "view"
+            ],
+            "invalid_event_types": []
+          }
+        }
+      ],
+      "expected_behavior_met": true
+    },
+    {
+      "scenario_name": "invalid_event_type_injection",
+      "status": "blocked",
+      "rows_processed": 2756101,
+      "checks_passed": 2,
+      "checks_failed": 1,
+      "checks": [
+        {
+          "check_name": "required_columns_present",
+          "expected_value": 6,
+          "actual_value": 6,
+          "threshold": 0,
+          "passed": true,
+          "severity": "blocking",
+          "check_details": {
+            "required_columns": [
+              "event_timestamp",
+              "event_date",
+              "user_id",
+              "event_type",
+              "item_id",
+              "transaction_id"
+            ],
+            "actual_columns": [
+              "event_timestamp",
+              "event_date",
+              "user_id",
+              "event_type",
+              "item_id",
+              "transaction_id"
+            ]
+          }
+        },
+        {
+          "check_name": "user_id_null_rate",
+          "expected_value": 0.0,
+          "actual_value": 0.0,
+          "threshold": 0.001,
+          "passed": true,
+          "severity": "blocking",
+          "check_details": {
+            "rule": "user_id null rate must be <= 0.1%"
+          }
+        },
+        {
+          "check_name": "event_type_domain_check",
+          "expected_value": 3,
+          "actual_value": 4,
+          "threshold": 0,
+          "passed": false,
+          "severity": "blocking",
+          "check_details": {
+            "allowed_event_types": [
+              "addtocart",
+              "transaction",
+              "view"
+            ],
+            "observed_event_types": [
+              "addtocart",
+              "checkout_started_unknown",
+              "transaction",
+              "view"
+            ],
+            "invalid_event_types": [
+              "checkout_started_unknown"
+            ]
+          }
+        }
+      ],
+      "expected_behavior_met": true
+    },
+    {
+      "scenario_name": "user_id_null_spike",
+      "status": "blocked",
+      "rows_processed": 2756101,
+      "checks_passed": 2,
+      "checks_failed": 1,
+      "checks": [
+        {
+          "check_name": "required_columns_present",
+          "expected_value": 6,
+          "actual_value": 6,
+          "threshold": 0,
+          "passed": true,
+          "severity": "blocking",
+          "check_details": {
+            "required_columns": [
+              "event_timestamp",
+              "event_date",
+              "user_id",
+              "event_type",
+              "item_id",
+              "transaction_id"
+            ],
+            "actual_columns": [
+              "event_timestamp",
+              "event_date",
+              "user_id",
+              "event_type",
+              "item_id",
+              "transaction_id"
+            ]
+          }
+        },
+        {
+          "check_name": "user_id_null_rate",
+          "expected_value": 0.0,
+          "actual_value": 0.009999996371685943,
+          "threshold": 0.001,
+          "passed": false,
+          "severity": "blocking",
+          "check_details": {
+            "rule": "user_id null rate must be <= 0.1%"
+          }
+        },
+        {
+          "check_name": "event_type_domain_check",
+          "expected_value": 3,
+          "actual_value": 3,
+          "threshold": 0,
+          "passed": true,
+          "severity": "blocking",
+          "check_details": {
+            "allowed_event_types": [
+              "addtocart",
+              "transaction",
+              "view"
+            ],
+            "observed_event_types": [
+              "addtocart",
+              "transaction",
+              "view"
+            ],
+            "invalid_event_types": []
+          }
+        }
+      ],
+      "expected_behavior_met": true
+    }
+  ],
+  "evidence_statement": "MetaSignal injected bad-data scenarios and verified that blocking data quality gates catch them before metric computation."
+}
