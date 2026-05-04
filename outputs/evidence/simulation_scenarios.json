@@ -1,0 +1,72 @@
+[
+  {
+    "scenario_id": "SIM-001",
+    "scenario_name": "Baseline successful daily pipeline",
+    "scenario_type": "pipeline_success",
+    "simulation_day": 1,
+    "event_date": "2015-05-03",
+    "description": "Daily metric pipeline completes with all quality checks passing.",
+    "injected": true,
+    "injection_payload": {
+      "source": "retailrocket_standardized",
+      "expected_rows_min": 2500000
+    },
+    "expected_system_behavior": "pipeline_run_log.status = success; quality checks pass."
+  },
+  {
+    "scenario_id": "SIM-002",
+    "scenario_name": "Schema drift blocked compute",
+    "scenario_type": "schema_drift",
+    "simulation_day": 7,
+    "event_date": "2015-05-09",
+    "description": "Unexpected event column drift should block metric computation.",
+    "injected": true,
+    "injection_payload": {
+      "severity": "blocking",
+      "missing_column": "transaction_id"
+    },
+    "expected_system_behavior": "data_quality_checks.passed = false; pipeline run blocked."
+  },
+  {
+    "scenario_id": "SIM-003",
+    "scenario_name": "Late-arriving partition recompute",
+    "scenario_type": "late_arrival",
+    "simulation_day": 14,
+    "event_date": "2015-05-16",
+    "description": "Late-arriving transaction events trigger partition recompute.",
+    "injected": true,
+    "injection_payload": {
+      "late_event_pct": 3.8,
+      "affected_partition": "2015-05-15"
+    },
+    "expected_system_behavior": "metric_results.late_arrival_flag = true for recomputed rows."
+  },
+  {
+    "scenario_id": "SIM-004",
+    "scenario_name": "Positive primary lift with guardrail breach",
+    "scenario_type": "experiment_guardrail_breach",
+    "simulation_day": 21,
+    "event_date": "2015-05-23",
+    "description": "Treatment improves conversion but breaches refund guardrail.",
+    "injected": true,
+    "injection_payload": {
+      "refund_lift_pct": 3.1,
+      "primary_lift_pct": 4.2
+    },
+    "expected_system_behavior": "decision_recommendation = HOLD despite primary metric lift."
+  },
+  {
+    "scenario_id": "SIM-005",
+    "scenario_name": "Human override with written justification",
+    "scenario_type": "decision_override",
+    "simulation_day": 30,
+    "event_date": "2015-06-01",
+    "description": "Reviewer overrides system HOLD recommendation with documented business rationale.",
+    "injected": true,
+    "injection_payload": {
+      "final_decision": "SHIP_WITH_MONITORING",
+      "system_recommendation": "HOLD"
+    },
+    "expected_system_behavior": "decision_log.override_reason is populated."
+  }
+]

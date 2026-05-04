@@ -1,0 +1,12 @@
+{
+  "artifact_set": "MetaSignal Core Evidence v0",
+  "generated_files": [
+    "metric_registry.json",
+    "simulation_scenarios.json",
+    "pipeline_quality_report.json",
+    "experiment_readout.json",
+    "decision_audit_log.json"
+  ],
+  "evidence_status": "core_seed_complete",
+  "notes": "These artifacts prove the first production-simulated MetaSignal registry, quality, experiment, and decision evidence objects exist."
+}

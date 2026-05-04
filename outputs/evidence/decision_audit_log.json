@@ -1,0 +1,13 @@
+[
+  {
+    "id": "426e888c-4c85-43c8-875c-73ec6d57b790",
+    "experiment_id": "8119ecae-be32-4cf4-a98c-68ebe7ebe21a",
+    "evaluation_id": "729b196d-810f-4961-864a-1d0f3d9bf3a5",
+    "system_recommendation": "HOLD",
+    "final_decision": "HOLD",
+    "reviewer_name": "Demo Reviewer",
+    "override_reason": null,
+    "decision_notes": "System recommendation accepted. Treatment requires iteration before rollout.",
+    "created_at": "2026-05-04T20:27:13.746768+00:00"
+  }
+]

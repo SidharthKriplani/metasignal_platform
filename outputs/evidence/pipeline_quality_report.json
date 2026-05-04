@@ -1,0 +1,75 @@
+{
+  "pipeline_runs": [
+    {
+      "id": "5041d8fb-96fd-402c-9bd7-478928ec5a60",
+      "job_type": "daily_metric_compute",
+      "run_date": "2015-05-03",
+      "status": "success",
+      "rows_processed": 2756101,
+      "rows_expected": 2756101,
+      "quality_checks_passed": 3,
+      "quality_checks_failed": 0,
+      "config_hash": "9313506f42779242f90f1f25737c9fac4c3cf7fc2f3b730111cbdfeb93a28f58",
+      "retry_count": 0,
+      "triggered_by": "seed_core"
+    }
+  ],
+  "data_quality_checks": [
+    {
+      "id": "3ef89c49-557e-4954-a12c-a368a94bf7fb",
+      "run_id": "5041d8fb-96fd-402c-9bd7-478928ec5a60",
+      "check_name": "event_type_domain_check",
+      "entity": "events_standardized",
+      "check_date": "2015-05-03",
+      "expected_value": 3.0,
+      "actual_value": 3.0,
+      "threshold": 0.0,
+      "passed": true,
+      "severity": "warning",
+      "check_details": {
+        "allowed_values": [
+          "view",
+          "addtocart",
+          "transaction"
+        ]
+      }
+    },
+    {
+      "id": "d492fc31-109e-4f4b-89ed-e3a320a0cdd9",
+      "run_id": "5041d8fb-96fd-402c-9bd7-478928ec5a60",
+      "check_name": "required_columns_present",
+      "entity": "events_standardized",
+      "check_date": "2015-05-03",
+      "expected_value": 6.0,
+      "actual_value": 6.0,
+      "threshold": 0.0,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "columns": [
+          "event_timestamp",
+          "event_date",
+          "user_id",
+          "event_type",
+          "item_id",
+          "transaction_id"
+        ]
+      }
+    },
+    {
+      "id": "c8e41d05-569c-4ec0-ac62-1aa06bd0b14e",
+      "run_id": "5041d8fb-96fd-402c-9bd7-478928ec5a60",
+      "check_name": "row_count_parity",
+      "entity": "events_standardized",
+      "check_date": "2015-05-03",
+      "expected_value": 2756101.0,
+      "actual_value": 2756101.0,
+      "threshold": 0.0,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "rule": "actual rows must match generated standardized event count"
+      }
+    }
+  ]
+}
