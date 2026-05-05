@@ -1,9 +1,19 @@
 {
   "artifact": "stream_batch_reconciliation_report",
   "metric_id": "streaming_purchase_event_rate",
-  "streaming_value": 0.08831635710005992,
-  "batch_authoritative_value": 0.08699161174355902,
-  "absolute_delta": 0.0013247453565009004,
-  "reconciliation_status": "pass",
+  "date": "2026-04-01",
+  "streaming_value": 0.09535895576504713,
+  "batch_authoritative_value": 0.0896374184191443,
+  "batch_value": 0.0896374184191443,
+  "absolute_delta": 0.005721537345902833,
+  "relative_delta": 0.06382978723404262,
+  "late_event_count": 100,
+  "duplicate_event_count": 25,
+  "dlq_event_count": 30,
+  "missing_event_count": 0,
+  "reconciliation_status": "minor_delta",
+  "suspected_cause": "late_events+duplicate_events+dlq_events+cuped_adjustment",
+  "threshold_used": 0.15,
+  "calibration_note": "Streaming is provisional count ratio; batch is authoritative and applies grain, late-event inclusion, and CUPED.",
   "batch_remains_authoritative": true
 }

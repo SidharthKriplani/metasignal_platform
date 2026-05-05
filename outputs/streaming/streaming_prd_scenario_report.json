@@ -1,0 +1,58 @@
+{
+  "artifact": "streaming_prd_scenario_report",
+  "scenario_count": 10,
+  "scenarios": [
+    {
+      "scenario": 1,
+      "name": "SRM injection",
+      "implemented": true
+    },
+    {
+      "scenario": 2,
+      "name": "iOS event flow gap",
+      "implemented": true
+    },
+    {
+      "scenario": 3,
+      "name": "Late-arriving events",
+      "implemented": true
+    },
+    {
+      "scenario": 4,
+      "name": "Duplicate events",
+      "implemented": true
+    },
+    {
+      "scenario": 5,
+      "name": "Malformed events",
+      "implemented": true
+    },
+    {
+      "scenario": 6,
+      "name": "Consumer lag spike",
+      "implemented": true
+    },
+    {
+      "scenario": 7,
+      "name": "Provisional anomaly false alarm/spike",
+      "implemented": true
+    },
+    {
+      "scenario": 8,
+      "name": "Stream-batch mismatch",
+      "implemented": true
+    },
+    {
+      "scenario": 9,
+      "name": "DLQ poison type mismatch",
+      "implemented": true
+    },
+    {
+      "scenario": 10,
+      "name": "Replay recovery",
+      "implemented": true
+    }
+  ],
+  "implemented_count": 10,
+  "status": "pass"
+}

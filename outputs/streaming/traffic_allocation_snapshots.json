@@ -1,114 +1,222 @@
 {
   "artifact": "traffic_allocation_snapshots",
-  "snapshot_count": 12,
+  "snapshot_count": 24,
   "snapshots": [
     {
       "experiment_id": "EXP-CHECKOUT-FRICTION-001",
-      "window_id": 0,
-      "control_count": 355,
-      "treatment_count": 345,
-      "observed_control_pct": 0.5071428571428571,
-      "expected_control_pct": 0.5,
-      "deviation_pp": 0.7142857142857117
+      "variant": "control",
+      "window_start": "2026-04-01T09:00:00+00:00",
+      "event_count": 257,
+      "share_pct": 0.514,
+      "expected_pct": 0.5,
+      "delta_pp": 1.4000000000000012
     },
     {
       "experiment_id": "EXP-CHECKOUT-FRICTION-001",
-      "window_id": 1,
-      "control_count": 301,
-      "treatment_count": 399,
-      "observed_control_pct": 0.43,
-      "expected_control_pct": 0.5,
-      "deviation_pp": 7.000000000000001
+      "variant": "treatment",
+      "window_start": "2026-04-01T09:00:00+00:00",
+      "event_count": 243,
+      "share_pct": 0.486,
+      "expected_pct": 0.5,
+      "delta_pp": -1.4000000000000012
     },
     {
       "experiment_id": "EXP-CHECKOUT-FRICTION-001",
-      "window_id": 2,
-      "control_count": 237,
-      "treatment_count": 463,
-      "observed_control_pct": 0.3385714285714286,
-      "expected_control_pct": 0.5,
-      "deviation_pp": 16.142857142857142
+      "variant": "control",
+      "window_start": "2026-04-01T09:05:00+00:00",
+      "event_count": 263,
+      "share_pct": 0.526,
+      "expected_pct": 0.5,
+      "delta_pp": 2.6000000000000023
     },
     {
       "experiment_id": "EXP-CHECKOUT-FRICTION-001",
-      "window_id": 3,
-      "control_count": 243,
-      "treatment_count": 457,
-      "observed_control_pct": 0.34714285714285714,
-      "expected_control_pct": 0.5,
-      "deviation_pp": 15.285714285714286
+      "variant": "treatment",
+      "window_start": "2026-04-01T09:05:00+00:00",
+      "event_count": 237,
+      "share_pct": 0.474,
+      "expected_pct": 0.5,
+      "delta_pp": -2.6000000000000023
     },
     {
       "experiment_id": "EXP-CHECKOUT-FRICTION-001",
-      "window_id": 4,
-      "control_count": 240,
-      "treatment_count": 440,
-      "observed_control_pct": 0.35294117647058826,
-      "expected_control_pct": 0.5,
-      "deviation_pp": 14.705882352941174
+      "variant": "control",
+      "window_start": "2026-04-01T09:10:00+00:00",
+      "event_count": 301,
+      "share_pct": 0.602,
+      "expected_pct": 0.5,
+      "delta_pp": 10.199999999999998
     },
     {
       "experiment_id": "EXP-CHECKOUT-FRICTION-001",
-      "window_id": 5,
-      "control_count": 346,
-      "treatment_count": 354,
-      "observed_control_pct": 0.4942857142857143,
-      "expected_control_pct": 0.5,
-      "deviation_pp": 0.5714285714285727
+      "variant": "treatment",
+      "window_start": "2026-04-01T09:10:00+00:00",
+      "event_count": 199,
+      "share_pct": 0.398,
+      "expected_pct": 0.5,
+      "delta_pp": -10.199999999999998
     },
     {
       "experiment_id": "EXP-CHECKOUT-FRICTION-001",
-      "window_id": 6,
-      "control_count": 328,
-      "treatment_count": 372,
-      "observed_control_pct": 0.4685714285714286,
-      "expected_control_pct": 0.5,
-      "deviation_pp": 3.1428571428571415
+      "variant": "control",
+      "window_start": "2026-04-01T09:15:00+00:00",
+      "event_count": 277,
+      "share_pct": 0.554,
+      "expected_pct": 0.5,
+      "delta_pp": 5.400000000000005
     },
     {
       "experiment_id": "EXP-CHECKOUT-FRICTION-001",
-      "window_id": 7,
-      "control_count": 363,
-      "treatment_count": 337,
-      "observed_control_pct": 0.5185714285714286,
-      "expected_control_pct": 0.5,
-      "deviation_pp": 1.8571428571428572
+      "variant": "treatment",
+      "window_start": "2026-04-01T09:15:00+00:00",
+      "event_count": 223,
+      "share_pct": 0.446,
+      "expected_pct": 0.5,
+      "delta_pp": -5.3999999999999995
     },
     {
       "experiment_id": "EXP-CHECKOUT-FRICTION-001",
-      "window_id": 8,
-      "control_count": 333,
-      "treatment_count": 332,
-      "observed_control_pct": 0.5007518796992482,
-      "expected_control_pct": 0.5,
-      "deviation_pp": 0.07518796992481702
+      "variant": "control",
+      "window_start": "2026-04-01T09:20:00+00:00",
+      "event_count": 265,
+      "share_pct": 0.5638297872340425,
+      "expected_pct": 0.5,
+      "delta_pp": 6.382978723404253
     },
     {
       "experiment_id": "EXP-CHECKOUT-FRICTION-001",
-      "window_id": 9,
-      "control_count": 350,
-      "treatment_count": 350,
-      "observed_control_pct": 0.5,
-      "expected_control_pct": 0.5,
-      "deviation_pp": 0.0
+      "variant": "treatment",
+      "window_start": "2026-04-01T09:20:00+00:00",
+      "event_count": 205,
+      "share_pct": 0.43617021276595747,
+      "expected_pct": 0.5,
+      "delta_pp": -6.382978723404253
     },
     {
       "experiment_id": "EXP-CHECKOUT-FRICTION-001",
-      "window_id": 10,
-      "control_count": 366,
-      "treatment_count": 334,
-      "observed_control_pct": 0.5228571428571429,
-      "expected_control_pct": 0.5,
-      "deviation_pp": 2.285714285714291
+      "variant": "control",
+      "window_start": "2026-04-01T09:25:00+00:00",
+      "event_count": 145,
+      "share_pct": 0.45454545454545453,
+      "expected_pct": 0.5,
+      "delta_pp": -4.545454545454547
     },
     {
       "experiment_id": "EXP-CHECKOUT-FRICTION-001",
-      "window_id": 11,
-      "control_count": 360,
-      "treatment_count": 340,
-      "observed_control_pct": 0.5142857142857142,
-      "expected_control_pct": 0.5,
-      "deviation_pp": 1.4285714285714235
+      "variant": "treatment",
+      "window_start": "2026-04-01T09:25:00+00:00",
+      "event_count": 174,
+      "share_pct": 0.5454545454545454,
+      "expected_pct": 0.5,
+      "delta_pp": 4.545454545454541
+    },
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "variant": "control",
+      "window_start": "2026-04-01T09:30:00+00:00",
+      "event_count": 182,
+      "share_pct": 0.5565749235474006,
+      "expected_pct": 0.5,
+      "delta_pp": 5.657492354740057
+    },
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "variant": "treatment",
+      "window_start": "2026-04-01T09:30:00+00:00",
+      "event_count": 145,
+      "share_pct": 0.4434250764525994,
+      "expected_pct": 0.5,
+      "delta_pp": -5.657492354740063
+    },
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "variant": "control",
+      "window_start": "2026-04-01T09:35:00+00:00",
+      "event_count": 253,
+      "share_pct": 0.506,
+      "expected_pct": 0.5,
+      "delta_pp": 0.6000000000000005
+    },
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "variant": "treatment",
+      "window_start": "2026-04-01T09:35:00+00:00",
+      "event_count": 247,
+      "share_pct": 0.494,
+      "expected_pct": 0.5,
+      "delta_pp": -0.6000000000000005
+    },
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "variant": "control",
+      "window_start": "2026-04-01T09:40:00+00:00",
+      "event_count": 195,
+      "share_pct": 0.4875,
+      "expected_pct": 0.5,
+      "delta_pp": -1.250000000000001
+    },
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "variant": "treatment",
+      "window_start": "2026-04-01T09:40:00+00:00",
+      "event_count": 205,
+      "share_pct": 0.5125,
+      "expected_pct": 0.5,
+      "delta_pp": 1.2499999999999956
+    },
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "variant": "control",
+      "window_start": "2026-04-01T09:45:00+00:00",
+      "event_count": 264,
+      "share_pct": 0.528,
+      "expected_pct": 0.5,
+      "delta_pp": 2.8000000000000025
+    },
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "variant": "treatment",
+      "window_start": "2026-04-01T09:45:00+00:00",
+      "event_count": 236,
+      "share_pct": 0.472,
+      "expected_pct": 0.5,
+      "delta_pp": -2.8000000000000025
+    },
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "variant": "control",
+      "window_start": "2026-04-01T09:50:00+00:00",
+      "event_count": 246,
+      "share_pct": 0.492,
+      "expected_pct": 0.5,
+      "delta_pp": -0.8000000000000007
+    },
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "variant": "treatment",
+      "window_start": "2026-04-01T09:50:00+00:00",
+      "event_count": 254,
+      "share_pct": 0.508,
+      "expected_pct": 0.5,
+      "delta_pp": 0.8000000000000007
+    },
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "variant": "control",
+      "window_start": "2026-04-01T09:55:00+00:00",
+      "event_count": 255,
+      "share_pct": 0.51,
+      "expected_pct": 0.5,
+      "delta_pp": 1.0000000000000009
+    },
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "variant": "treatment",
+      "window_start": "2026-04-01T09:55:00+00:00",
+      "event_count": 245,
+      "share_pct": 0.49,
+      "expected_pct": 0.5,
+      "delta_pp": -1.0000000000000009
     }
   ]
 }

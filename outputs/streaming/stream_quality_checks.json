@@ -1,0 +1,426 @@
+{
+  "artifact": "stream_quality_checks",
+  "check_count": 60,
+  "checks": [
+    {
+      "window_id": 0,
+      "check_name": "minimum_valid_events",
+      "status": "pass",
+      "value": 500,
+      "threshold": 100
+    },
+    {
+      "window_id": 0,
+      "check_name": "malformed_rate",
+      "status": "pass",
+      "value": 0.005290072297654735,
+      "threshold": 0.01
+    },
+    {
+      "window_id": 0,
+      "check_name": "duplicate_rate",
+      "status": "warn",
+      "value": 0.004408393581378946,
+      "threshold": 0.002
+    },
+    {
+      "window_id": 0,
+      "check_name": "late_event_rate",
+      "status": "warn",
+      "value": 0.017633574325515784,
+      "threshold": 0.002
+    },
+    {
+      "window_id": 0,
+      "check_name": "consumer_lag_p95",
+      "status": "pass",
+      "value": 44.0,
+      "threshold": 300
+    },
+    {
+      "window_id": 1,
+      "check_name": "minimum_valid_events",
+      "status": "pass",
+      "value": 500,
+      "threshold": 100
+    },
+    {
+      "window_id": 1,
+      "check_name": "malformed_rate",
+      "status": "pass",
+      "value": 0.005290072297654735,
+      "threshold": 0.01
+    },
+    {
+      "window_id": 1,
+      "check_name": "duplicate_rate",
+      "status": "warn",
+      "value": 0.004408393581378946,
+      "threshold": 0.002
+    },
+    {
+      "window_id": 1,
+      "check_name": "late_event_rate",
+      "status": "warn",
+      "value": 0.017633574325515784,
+      "threshold": 0.002
+    },
+    {
+      "window_id": 1,
+      "check_name": "consumer_lag_p95",
+      "status": "pass",
+      "value": 43.0,
+      "threshold": 300
+    },
+    {
+      "window_id": 2,
+      "check_name": "minimum_valid_events",
+      "status": "pass",
+      "value": 500,
+      "threshold": 100
+    },
+    {
+      "window_id": 2,
+      "check_name": "malformed_rate",
+      "status": "pass",
+      "value": 0.005290072297654735,
+      "threshold": 0.01
+    },
+    {
+      "window_id": 2,
+      "check_name": "duplicate_rate",
+      "status": "warn",
+      "value": 0.004408393581378946,
+      "threshold": 0.002
+    },
+    {
+      "window_id": 2,
+      "check_name": "late_event_rate",
+      "status": "warn",
+      "value": 0.017633574325515784,
+      "threshold": 0.002
+    },
+    {
+      "window_id": 2,
+      "check_name": "consumer_lag_p95",
+      "status": "pass",
+      "value": 42.0,
+      "threshold": 300
+    },
+    {
+      "window_id": 3,
+      "check_name": "minimum_valid_events",
+      "status": "pass",
+      "value": 500,
+      "threshold": 100
+    },
+    {
+      "window_id": 3,
+      "check_name": "malformed_rate",
+      "status": "pass",
+      "value": 0.005290072297654735,
+      "threshold": 0.01
+    },
+    {
+      "window_id": 3,
+      "check_name": "duplicate_rate",
+      "status": "warn",
+      "value": 0.004408393581378946,
+      "threshold": 0.002
+    },
+    {
+      "window_id": 3,
+      "check_name": "late_event_rate",
+      "status": "warn",
+      "value": 0.017633574325515784,
+      "threshold": 0.002
+    },
+    {
+      "window_id": 3,
+      "check_name": "consumer_lag_p95",
+      "status": "pass",
+      "value": 44.0,
+      "threshold": 300
+    },
+    {
+      "window_id": 4,
+      "check_name": "minimum_valid_events",
+      "status": "pass",
+      "value": 470,
+      "threshold": 100
+    },
+    {
+      "window_id": 4,
+      "check_name": "malformed_rate",
+      "status": "pass",
+      "value": 0.005290072297654735,
+      "threshold": 0.01
+    },
+    {
+      "window_id": 4,
+      "check_name": "duplicate_rate",
+      "status": "warn",
+      "value": 0.004408393581378946,
+      "threshold": 0.002
+    },
+    {
+      "window_id": 4,
+      "check_name": "late_event_rate",
+      "status": "warn",
+      "value": 0.017633574325515784,
+      "threshold": 0.002
+    },
+    {
+      "window_id": 4,
+      "check_name": "consumer_lag_p95",
+      "status": "pass",
+      "value": 42.0,
+      "threshold": 300
+    },
+    {
+      "window_id": 5,
+      "check_name": "minimum_valid_events",
+      "status": "pass",
+      "value": 319,
+      "threshold": 100
+    },
+    {
+      "window_id": 5,
+      "check_name": "malformed_rate",
+      "status": "pass",
+      "value": 0.005290072297654735,
+      "threshold": 0.01
+    },
+    {
+      "window_id": 5,
+      "check_name": "duplicate_rate",
+      "status": "warn",
+      "value": 0.004408393581378946,
+      "threshold": 0.002
+    },
+    {
+      "window_id": 5,
+      "check_name": "late_event_rate",
+      "status": "warn",
+      "value": 0.017633574325515784,
+      "threshold": 0.002
+    },
+    {
+      "window_id": 5,
+      "check_name": "consumer_lag_p95",
+      "status": "pass",
+      "value": 44.0,
+      "threshold": 300
+    },
+    {
+      "window_id": 6,
+      "check_name": "minimum_valid_events",
+      "status": "pass",
+      "value": 327,
+      "threshold": 100
+    },
+    {
+      "window_id": 6,
+      "check_name": "malformed_rate",
+      "status": "pass",
+      "value": 0.005290072297654735,
+      "threshold": 0.01
+    },
+    {
+      "window_id": 6,
+      "check_name": "duplicate_rate",
+      "status": "warn",
+      "value": 0.004408393581378946,
+      "threshold": 0.002
+    },
+    {
+      "window_id": 6,
+      "check_name": "late_event_rate",
+      "status": "warn",
+      "value": 0.017633574325515784,
+      "threshold": 0.002
+    },
+    {
+      "window_id": 6,
+      "check_name": "consumer_lag_p95",
+      "status": "pass",
+      "value": 44.0,
+      "threshold": 300
+    },
+    {
+      "window_id": 7,
+      "check_name": "minimum_valid_events",
+      "status": "pass",
+      "value": 500,
+      "threshold": 100
+    },
+    {
+      "window_id": 7,
+      "check_name": "malformed_rate",
+      "status": "pass",
+      "value": 0.005290072297654735,
+      "threshold": 0.01
+    },
+    {
+      "window_id": 7,
+      "check_name": "duplicate_rate",
+      "status": "warn",
+      "value": 0.004408393581378946,
+      "threshold": 0.002
+    },
+    {
+      "window_id": 7,
+      "check_name": "late_event_rate",
+      "status": "warn",
+      "value": 0.017633574325515784,
+      "threshold": 0.002
+    },
+    {
+      "window_id": 7,
+      "check_name": "consumer_lag_p95",
+      "status": "warn",
+      "value": 1487.0,
+      "threshold": 300
+    },
+    {
+      "window_id": 8,
+      "check_name": "minimum_valid_events",
+      "status": "pass",
+      "value": 400,
+      "threshold": 100
+    },
+    {
+      "window_id": 8,
+      "check_name": "malformed_rate",
+      "status": "pass",
+      "value": 0.005290072297654735,
+      "threshold": 0.01
+    },
+    {
+      "window_id": 8,
+      "check_name": "duplicate_rate",
+      "status": "warn",
+      "value": 0.004408393581378946,
+      "threshold": 0.002
+    },
+    {
+      "window_id": 8,
+      "check_name": "late_event_rate",
+      "status": "warn",
+      "value": 0.017633574325515784,
+      "threshold": 0.002
+    },
+    {
+      "window_id": 8,
+      "check_name": "consumer_lag_p95",
+      "status": "pass",
+      "value": 44.0,
+      "threshold": 300
+    },
+    {
+      "window_id": 9,
+      "check_name": "minimum_valid_events",
+      "status": "pass",
+      "value": 500,
+      "threshold": 100
+    },
+    {
+      "window_id": 9,
+      "check_name": "malformed_rate",
+      "status": "pass",
+      "value": 0.005290072297654735,
+      "threshold": 0.01
+    },
+    {
+      "window_id": 9,
+      "check_name": "duplicate_rate",
+      "status": "warn",
+      "value": 0.004408393581378946,
+      "threshold": 0.002
+    },
+    {
+      "window_id": 9,
+      "check_name": "late_event_rate",
+      "status": "warn",
+      "value": 0.017633574325515784,
+      "threshold": 0.002
+    },
+    {
+      "window_id": 9,
+      "check_name": "consumer_lag_p95",
+      "status": "pass",
+      "value": 43.0,
+      "threshold": 300
+    },
+    {
+      "window_id": 10,
+      "check_name": "minimum_valid_events",
+      "status": "pass",
+      "value": 500,
+      "threshold": 100
+    },
+    {
+      "window_id": 10,
+      "check_name": "malformed_rate",
+      "status": "pass",
+      "value": 0.005290072297654735,
+      "threshold": 0.01
+    },
+    {
+      "window_id": 10,
+      "check_name": "duplicate_rate",
+      "status": "warn",
+      "value": 0.004408393581378946,
+      "threshold": 0.002
+    },
+    {
+      "window_id": 10,
+      "check_name": "late_event_rate",
+      "status": "warn",
+      "value": 0.017633574325515784,
+      "threshold": 0.002
+    },
+    {
+      "window_id": 10,
+      "check_name": "consumer_lag_p95",
+      "status": "pass",
+      "value": 44.0,
+      "threshold": 300
+    },
+    {
+      "window_id": 11,
+      "check_name": "minimum_valid_events",
+      "status": "pass",
+      "value": 500,
+      "threshold": 100
+    },
+    {
+      "window_id": 11,
+      "check_name": "malformed_rate",
+      "status": "pass",
+      "value": 0.005290072297654735,
+      "threshold": 0.01
+    },
+    {
+      "window_id": 11,
+      "check_name": "duplicate_rate",
+      "status": "warn",
+      "value": 0.004408393581378946,
+      "threshold": 0.002
+    },
+    {
+      "window_id": 11,
+      "check_name": "late_event_rate",
+      "status": "warn",
+      "value": 0.017633574325515784,
+      "threshold": 0.002
+    },
+    {
+      "window_id": 11,
+      "check_name": "consumer_lag_p95",
+      "status": "pass",
+      "value": 43.0,
+      "threshold": 300
+    }
+  ]
+}

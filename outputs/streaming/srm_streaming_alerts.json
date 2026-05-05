@@ -1,46 +1,102 @@
 {
   "artifact": "srm_streaming_alerts",
-  "alert_count": 4,
+  "alert_count": 8,
   "alerts": [
     {
       "experiment_id": "EXP-CHECKOUT-FRICTION-001",
-      "window_id": 1,
-      "observed_control_pct": 0.43,
+      "window_start": "2026-04-01T09:00:00+00:00",
+      "window_end": "2026-04-01T09:10:00+00:00",
       "expected_control_pct": 0.5,
-      "deviation_pp": 7.000000000000001,
-      "sample_size": 700,
-      "alert_level": "investigate",
-      "provisional_status": "pending_batch_confirmation"
+      "observed_control_pct": 0.52,
+      "deviation_pp": 2.0000000000000018,
+      "sample_size": 1000,
+      "alert_level": "warn",
+      "provisional_status": "pending_batch_confirmation",
+      "batch_confirmation_status": "confirmed"
     },
     {
       "experiment_id": "EXP-CHECKOUT-FRICTION-001",
-      "window_id": 2,
-      "observed_control_pct": 0.3385714285714286,
+      "window_start": "2026-04-01T09:00:00+00:00",
+      "window_end": "2026-04-01T09:15:00+00:00",
       "expected_control_pct": 0.5,
-      "deviation_pp": 16.142857142857142,
-      "sample_size": 700,
-      "alert_level": "investigate",
-      "provisional_status": "pending_batch_confirmation"
+      "observed_control_pct": 0.5473333333333333,
+      "deviation_pp": 4.733333333333334,
+      "sample_size": 1500,
+      "alert_level": "warn",
+      "provisional_status": "pending_batch_confirmation",
+      "batch_confirmation_status": "confirmed"
     },
     {
       "experiment_id": "EXP-CHECKOUT-FRICTION-001",
-      "window_id": 3,
-      "observed_control_pct": 0.34714285714285714,
+      "window_start": "2026-04-01T09:00:00+00:00",
+      "window_end": "2026-04-01T09:20:00+00:00",
       "expected_control_pct": 0.5,
-      "deviation_pp": 15.285714285714286,
-      "sample_size": 700,
-      "alert_level": "investigate",
-      "provisional_status": "pending_batch_confirmation"
+      "observed_control_pct": 0.549,
+      "deviation_pp": 4.900000000000004,
+      "sample_size": 2000,
+      "alert_level": "warn",
+      "provisional_status": "pending_batch_confirmation",
+      "batch_confirmation_status": "confirmed"
     },
     {
       "experiment_id": "EXP-CHECKOUT-FRICTION-001",
-      "window_id": 4,
-      "observed_control_pct": 0.35294117647058826,
+      "window_start": "2026-04-01T09:00:00+00:00",
+      "window_end": "2026-04-01T09:25:00+00:00",
       "expected_control_pct": 0.5,
-      "deviation_pp": 14.705882352941174,
-      "sample_size": 680,
+      "observed_control_pct": 0.5518218623481781,
+      "deviation_pp": 5.182186234817809,
+      "sample_size": 2470,
       "alert_level": "investigate",
-      "provisional_status": "pending_batch_confirmation"
+      "provisional_status": "pending_batch_confirmation",
+      "batch_confirmation_status": "confirmed"
+    },
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "window_start": "2026-04-01T09:00:00+00:00",
+      "window_end": "2026-04-01T09:30:00+00:00",
+      "expected_control_pct": 0.5,
+      "observed_control_pct": 0.5406955898171387,
+      "deviation_pp": 4.069558981713872,
+      "sample_size": 2789,
+      "alert_level": "warn",
+      "provisional_status": "pending_batch_confirmation",
+      "batch_confirmation_status": "confirmed"
+    },
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "window_start": "2026-04-01T09:05:00+00:00",
+      "window_end": "2026-04-01T09:35:00+00:00",
+      "expected_control_pct": 0.5,
+      "observed_control_pct": 0.547782874617737,
+      "deviation_pp": 4.778287461773701,
+      "sample_size": 2616,
+      "alert_level": "warn",
+      "provisional_status": "pending_batch_confirmation",
+      "batch_confirmation_status": "confirmed"
+    },
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "window_start": "2026-04-01T09:10:00+00:00",
+      "window_end": "2026-04-01T09:40:00+00:00",
+      "expected_control_pct": 0.5,
+      "observed_control_pct": 0.543960244648318,
+      "deviation_pp": 4.396024464831805,
+      "sample_size": 2616,
+      "alert_level": "warn",
+      "provisional_status": "pending_batch_confirmation",
+      "batch_confirmation_status": "confirmed"
+    },
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "window_start": "2026-04-01T09:15:00+00:00",
+      "window_end": "2026-04-01T09:45:00+00:00",
+      "expected_control_pct": 0.5,
+      "observed_control_pct": 0.5234499205087441,
+      "deviation_pp": 2.344992050874406,
+      "sample_size": 2516,
+      "alert_level": "warn",
+      "provisional_status": "pending_batch_confirmation",
+      "batch_confirmation_status": "confirmed"
     }
   ]
 }

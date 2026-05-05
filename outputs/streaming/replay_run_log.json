@@ -1,0 +1,18 @@
+{
+  "artifact": "replay_run_log",
+  "replay_id": "replay_20260401_1100",
+  "triggered_by": "consumer_recovery_after_two_hour_gap",
+  "window_range_replayed": [
+    "2026-04-01T09:50:00+00:00",
+    "2026-04-01T10:00:00+00:00"
+  ],
+  "events_reprocessed": 1000,
+  "artifacts_updated": [
+    "streaming_metric_snapshots",
+    "srm_streaming_alerts",
+    "traffic_allocation_snapshots",
+    "stream_batch_reconciliation_report"
+  ],
+  "batch_truth_unchanged": true,
+  "completed_at": "2026-05-05T06:57:27.508169+00:00"
+}

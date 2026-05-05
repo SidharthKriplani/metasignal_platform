@@ -4,62 +4,110 @@
   "windows": [
     {
       "window_id": 0,
-      "p95_lag_seconds": 43.0,
+      "window_start": "2026-04-01T09:00:00+00:00",
+      "p50_lag_seconds": 23.0,
+      "p95_lag_seconds": 44.0,
+      "p99_lag_seconds": 45.0,
+      "max_lag_seconds": 45.0,
       "alert_level": "none"
     },
     {
       "window_id": 1,
+      "window_start": "2026-04-01T09:05:00+00:00",
+      "p50_lag_seconds": 25.0,
       "p95_lag_seconds": 43.0,
+      "p99_lag_seconds": 45.0,
+      "max_lag_seconds": 45.0,
       "alert_level": "none"
     },
     {
       "window_id": 2,
-      "p95_lag_seconds": 43.0,
+      "window_start": "2026-04-01T09:10:00+00:00",
+      "p50_lag_seconds": 24.0,
+      "p95_lag_seconds": 42.0,
+      "p99_lag_seconds": 45.0,
+      "max_lag_seconds": 45.0,
       "alert_level": "none"
     },
     {
       "window_id": 3,
-      "p95_lag_seconds": 43.0,
+      "window_start": "2026-04-01T09:15:00+00:00",
+      "p50_lag_seconds": 25.0,
+      "p95_lag_seconds": 44.0,
+      "p99_lag_seconds": 45.0,
+      "max_lag_seconds": 45.0,
       "alert_level": "none"
     },
     {
       "window_id": 4,
-      "p95_lag_seconds": 44.0,
+      "window_start": "2026-04-01T09:20:00+00:00",
+      "p50_lag_seconds": 24.0,
+      "p95_lag_seconds": 42.0,
+      "p99_lag_seconds": 45.0,
+      "max_lag_seconds": 45.0,
       "alert_level": "none"
     },
     {
       "window_id": 5,
+      "window_start": "2026-04-01T09:25:00+00:00",
+      "p50_lag_seconds": 26.0,
       "p95_lag_seconds": 44.0,
+      "p99_lag_seconds": 45.0,
+      "max_lag_seconds": 45.0,
       "alert_level": "none"
     },
     {
       "window_id": 6,
+      "window_start": "2026-04-01T09:30:00+00:00",
+      "p50_lag_seconds": 23.0,
       "p95_lag_seconds": 44.0,
+      "p99_lag_seconds": 45.0,
+      "max_lag_seconds": 45.0,
       "alert_level": "none"
     },
     {
       "window_id": 7,
-      "p95_lag_seconds": 791.0,
+      "window_start": "2026-04-01T09:35:00+00:00",
+      "p50_lag_seconds": 1339.0,
+      "p95_lag_seconds": 1487.0,
+      "p99_lag_seconds": 1496.0,
+      "max_lag_seconds": 1500.0,
       "alert_level": "investigate"
     },
     {
       "window_id": 8,
-      "p95_lag_seconds": 43.0,
+      "window_start": "2026-04-01T09:40:00+00:00",
+      "p50_lag_seconds": 24.0,
+      "p95_lag_seconds": 44.0,
+      "p99_lag_seconds": 45.0,
+      "max_lag_seconds": 45.0,
       "alert_level": "none"
     },
     {
       "window_id": 9,
+      "window_start": "2026-04-01T09:45:00+00:00",
+      "p50_lag_seconds": 24.0,
       "p95_lag_seconds": 43.0,
+      "p99_lag_seconds": 45.0,
+      "max_lag_seconds": 45.0,
       "alert_level": "none"
     },
     {
       "window_id": 10,
-      "p95_lag_seconds": 43.0,
+      "window_start": "2026-04-01T09:50:00+00:00",
+      "p50_lag_seconds": 25.0,
+      "p95_lag_seconds": 44.0,
+      "p99_lag_seconds": 45.0,
+      "max_lag_seconds": 45.0,
       "alert_level": "none"
     },
     {
       "window_id": 11,
+      "window_start": "2026-04-01T09:55:00+00:00",
+      "p50_lag_seconds": 24.0,
       "p95_lag_seconds": 43.0,
+      "p99_lag_seconds": 45.0,
+      "max_lag_seconds": 45.0,
       "alert_level": "none"
     }
   ]

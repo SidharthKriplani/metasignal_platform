@@ -1,12 +1,15 @@
 {
   "artifact": "streaming_health_report",
-  "total_events_emitted": 8425,
-  "valid_events_for_provisional_metrics": 8345,
-  "dlq_events": 20,
-  "late_events": 35,
+  "window_start": "2026-04-01T09:00:00+00:00",
+  "total_events": 5671,
+  "valid_events": 5516,
+  "dlq_events": 30,
+  "late_events": 100,
   "duplicates": 25,
-  "srm_alerts_active": 4,
+  "srm_alerts_active": 8,
   "instrumentation_alerts_active": 2,
+  "consumer_lag_p95": 1487.0,
   "provisional_anomaly_alerts_active": 1,
+  "stream_quality_warn_or_fail_count": 25,
   "overall_health_status": "investigate"
 }

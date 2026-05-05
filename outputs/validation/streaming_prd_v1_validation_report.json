@@ -1,0 +1,182 @@
+{
+  "artifact": "streaming_prd_v1_validation_report",
+  "check_count": 43,
+  "passed_count": 43,
+  "failed_count": 0,
+  "status": "pass",
+  "checks": [
+    {
+      "check": "class_exists_EventSource",
+      "passed": true
+    },
+    {
+      "check": "class_exists_AsyncSimulatorEventSource",
+      "passed": true
+    },
+    {
+      "check": "class_exists_AsyncEventQueue",
+      "passed": true
+    },
+    {
+      "check": "class_exists_StreamEventConsumer",
+      "passed": true
+    },
+    {
+      "check": "class_exists_StreamValidator",
+      "passed": true
+    },
+    {
+      "check": "class_exists_DeadLetterQueueWriter",
+      "passed": true
+    },
+    {
+      "check": "class_exists_SRMDetector",
+      "passed": true
+    },
+    {
+      "check": "class_exists_TrafficAllocationMonitor",
+      "passed": true
+    },
+    {
+      "check": "class_exists_InstrumentationHealthMonitor",
+      "passed": true
+    },
+    {
+      "check": "class_exists_ConsumerLagMonitor",
+      "passed": true
+    },
+    {
+      "check": "class_exists_RealtimeMetricSnapshotter",
+      "passed": true
+    },
+    {
+      "check": "class_exists_ProvisionalAnomalyDetector",
+      "passed": true
+    },
+    {
+      "check": "class_exists_StreamBatchReconciler",
+      "passed": true
+    },
+    {
+      "check": "class_exists_ReplayManager",
+      "passed": true
+    },
+    {
+      "check": "class_exists_StreamQualityChecker",
+      "passed": true
+    },
+    {
+      "check": "artifact_exists_srm_streaming_alerts.json",
+      "passed": true
+    },
+    {
+      "check": "artifact_exists_traffic_allocation_snapshots.json",
+      "passed": true
+    },
+    {
+      "check": "artifact_exists_instrumentation_alerts.json",
+      "passed": true
+    },
+    {
+      "check": "artifact_exists_consumer_lag_report.json",
+      "passed": true
+    },
+    {
+      "check": "artifact_exists_late_event_report.json",
+      "passed": true
+    },
+    {
+      "check": "artifact_exists_duplicate_event_report.json",
+      "passed": true
+    },
+    {
+      "check": "artifact_exists_dlq_events.json",
+      "passed": true
+    },
+    {
+      "check": "artifact_exists_streaming_metric_snapshots.json",
+      "passed": true
+    },
+    {
+      "check": "artifact_exists_provisional_anomaly_alerts.json",
+      "passed": true
+    },
+    {
+      "check": "artifact_exists_stream_quality_checks.json",
+      "passed": true
+    },
+    {
+      "check": "artifact_exists_stream_batch_reconciliation_report.json",
+      "passed": true
+    },
+    {
+      "check": "artifact_exists_streaming_health_report.json",
+      "passed": true
+    },
+    {
+      "check": "artifact_exists_replay_run_log.json",
+      "passed": true
+    },
+    {
+      "check": "artifact_exists_streaming_prd_scenario_report.json",
+      "passed": true
+    },
+    {
+      "check": "srm_alerts_present",
+      "passed": true
+    },
+    {
+      "check": "srm_batch_confirmation_status_present",
+      "passed": true
+    },
+    {
+      "check": "instrumentation_alerts_present",
+      "passed": true
+    },
+    {
+      "check": "consumer_lag_spike_detected",
+      "passed": true
+    },
+    {
+      "check": "late_events_detected",
+      "passed": true
+    },
+    {
+      "check": "duplicates_detected",
+      "passed": true
+    },
+    {
+      "check": "dlq_events_present",
+      "passed": true
+    },
+    {
+      "check": "all_snapshots_provisional",
+      "passed": true
+    },
+    {
+      "check": "provisional_anomaly_present",
+      "passed": true
+    },
+    {
+      "check": "stream_quality_checks_present",
+      "passed": true
+    },
+    {
+      "check": "reconciliation_has_relative_delta",
+      "passed": true
+    },
+    {
+      "check": "replay_log_present",
+      "passed": true
+    },
+    {
+      "check": "ten_streaming_scenarios_implemented",
+      "passed": true
+    },
+    {
+      "check": "dlq_parquet_written_or_json_fallback_available",
+      "passed": true
+    }
+  ],
+  "evidence_statement": "Streaming PRD v1 validation confirms modular EventSource/consumer/validator/monitor architecture, 10 failure scenarios, stream quality checks, replay, DLQ, provisional-only snapshots, and stream-batch reconciliation."
+}
