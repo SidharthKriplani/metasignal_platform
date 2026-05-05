@@ -47,7 +47,7 @@
       "path": "outputs/evidence/pipeline_quality_report.json",
       "exists": true,
       "valid_json": true,
-      "size_bytes": 46203,
+      "size_bytes": 57233,
       "artifact": null
     },
     {
