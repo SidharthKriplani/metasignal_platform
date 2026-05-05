@@ -1,0 +1,45 @@
+{
+  "artifact": "anomaly_detection_report",
+  "metric_name": "purchase_conversion_rate_user",
+  "rows_scanned": 139,
+  "method": "day_of_week_adjusted_rolling_z_score_v0_with_synthetic_injection",
+  "threshold": 3.0,
+  "dow_adjusted": true,
+  "injected_anomaly": {
+    "date": "2015-07-11",
+    "baseline_value": 0.003973691422307481,
+    "injected_value": 0.015894765689229925,
+    "detected": true
+  },
+  "alert_count": 3,
+  "alerts": [
+    {
+      "date": "2015-07-11",
+      "metric_value": 0.015894765689229925,
+      "expected_value": 0.0066503152212903285,
+      "z_score": 10.049996052087984,
+      "baseline_type": "day_of_week_rolling",
+      "alert_type": "dow_adjusted_z_score_threshold",
+      "is_injected_anomaly": true
+    },
+    {
+      "date": "2015-08-10",
+      "metric_value": 0.006023562760209053,
+      "expected_value": 0.009345254316744833,
+      "z_score": -3.4982118927431167,
+      "baseline_type": "day_of_week_rolling",
+      "alert_type": "dow_adjusted_z_score_threshold",
+      "is_injected_anomaly": false
+    },
+    {
+      "date": "2015-08-30",
+      "metric_value": 0.01019892961728769,
+      "expected_value": 0.005879454052403909,
+      "z_score": 3.4134558025518347,
+      "baseline_type": "day_of_week_rolling",
+      "alert_type": "dow_adjusted_z_score_threshold",
+      "is_injected_anomaly": false
+    }
+  ],
+  "evidence_statement": "MetaSignal detected a labeled synthetic anomaly using day-of-week adjusted rolling baseline logic and produced auditable anomaly evidence."
+}

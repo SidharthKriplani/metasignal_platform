@@ -1,0 +1,15 @@
+{
+  "artifact": "provisional_anomaly_alerts",
+  "alert_count": 1,
+  "alerts": [
+    {
+      "metric_id": "streaming_purchase_event_rate",
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "window_id": 9,
+      "metric_value": 0.31,
+      "expected_value": 0.0637593984962406,
+      "alert_type": "provisional_realtime_alert",
+      "provisional_label": true
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "artifact": "instrumentation_alerts",
+  "alert_count": 2,
+  "alerts": [
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "platform": "ios",
+      "window_id": 5,
+      "baseline_event_count": 18.6,
+      "observed_event_count": 0,
+      "alert_level": "critical",
+      "suspected_cause": "ios_purchase_instrumentation_gap"
+    },
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "platform": "ios",
+      "window_id": 6,
+      "baseline_event_count": 18.6,
+      "observed_event_count": 0,
+      "alert_level": "critical",
+      "suspected_cause": "ios_purchase_instrumentation_gap"
+    }
+  ]
+}

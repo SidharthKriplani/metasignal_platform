@@ -1,0 +1,46 @@
+{
+  "artifact": "srm_streaming_alerts",
+  "alert_count": 4,
+  "alerts": [
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "window_id": 1,
+      "observed_control_pct": 0.43,
+      "expected_control_pct": 0.5,
+      "deviation_pp": 7.000000000000001,
+      "sample_size": 700,
+      "alert_level": "investigate",
+      "provisional_status": "pending_batch_confirmation"
+    },
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "window_id": 2,
+      "observed_control_pct": 0.3385714285714286,
+      "expected_control_pct": 0.5,
+      "deviation_pp": 16.142857142857142,
+      "sample_size": 700,
+      "alert_level": "investigate",
+      "provisional_status": "pending_batch_confirmation"
+    },
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "window_id": 3,
+      "observed_control_pct": 0.34714285714285714,
+      "expected_control_pct": 0.5,
+      "deviation_pp": 15.285714285714286,
+      "sample_size": 700,
+      "alert_level": "investigate",
+      "provisional_status": "pending_batch_confirmation"
+    },
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "window_id": 4,
+      "observed_control_pct": 0.35294117647058826,
+      "expected_control_pct": 0.5,
+      "deviation_pp": 14.705882352941174,
+      "sample_size": 680,
+      "alert_level": "investigate",
+      "provisional_status": "pending_batch_confirmation"
+    }
+  ]
+}

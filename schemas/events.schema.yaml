@@ -1,1 +1,25 @@
+raw_source:
+  dataset_name: retailrocket
+  file_name: events.csv
+  columns:
+    - timestamp
+    - visitorid
+    - event
+    - itemid
+    - transactionid
 
+canonical_event:
+  columns:
+    - event_timestamp
+    - event_date
+    - user_id
+    - event_type
+    - item_id
+    - transaction_id
+
+  rename_map:
+    timestamp: event_timestamp
+    visitorid: user_id
+    event: event_type
+    itemid: item_id
+    transactionid: transaction_id

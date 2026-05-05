@@ -1,0 +1,272 @@
+{
+  "artifact": "evidence_artifact_validation_report",
+  "expected_artifact_count": 37,
+  "present_artifact_count": 37,
+  "valid_json_count": 34,
+  "missing_count": 0,
+  "invalid_json_count": 3,
+  "empty_file_count": 0,
+  "status": "review",
+  "checks": [
+    {
+      "path": "outputs/evidence/core_evidence_manifest.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 426,
+      "artifact": null
+    },
+    {
+      "path": "outputs/evidence/decision_audit_log.json",
+      "exists": true,
+      "valid_json": false,
+      "size_bytes": 921,
+      "artifact": null
+    },
+    {
+      "path": "outputs/evidence/experiment_readout.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 3220,
+      "artifact": null
+    },
+    {
+      "path": "outputs/evidence/metric_registry.json",
+      "exists": true,
+      "valid_json": false,
+      "size_bytes": 2547,
+      "artifact": null
+    },
+    {
+      "path": "outputs/evidence/metric_results_summary.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 4307,
+      "artifact": "metric_results_summary"
+    },
+    {
+      "path": "outputs/evidence/pipeline_quality_report.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 112383,
+      "artifact": null
+    },
+    {
+      "path": "outputs/evidence/simulation_scenarios.json",
+      "exists": true,
+      "valid_json": false,
+      "size_bytes": 2536,
+      "artifact": null
+    },
+    {
+      "path": "outputs/evidence/data_quality_service_report.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 2517,
+      "artifact": "data_quality_service_report"
+    },
+    {
+      "path": "outputs/evidence/metric_conflict_report.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 1985,
+      "artifact": "metric_conflict_report"
+    },
+    {
+      "path": "outputs/evidence/failure_injection_report.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 5775,
+      "artifact": "failure_injection_report"
+    },
+    {
+      "path": "outputs/evidence/experiment_assignment_balance.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 646,
+      "artifact": "experiment_assignment_balance"
+    },
+    {
+      "path": "outputs/evidence/srm_check_report.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 659,
+      "artifact": "srm_check_report"
+    },
+    {
+      "path": "outputs/evidence/cuped_experiment_readout.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 1731,
+      "artifact": "cuped_experiment_readout"
+    },
+    {
+      "path": "outputs/evidence/guardrail_decision_report.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 1123,
+      "artifact": "guardrail_decision_report"
+    },
+    {
+      "path": "outputs/evidence/post_launch_validation_report.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 987,
+      "artifact": "post_launch_validation_report"
+    },
+    {
+      "path": "outputs/evidence/anomaly_detection_report.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 1518,
+      "artifact": "anomaly_detection_report"
+    },
+    {
+      "path": "outputs/evidence/golden_scenario_suite_report.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 1576,
+      "artifact": "golden_scenario_suite_report"
+    },
+    {
+      "path": "outputs/validation/cuped_aa_validation_report.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 680,
+      "artifact": "cuped_aa_validation_report"
+    },
+    {
+      "path": "outputs/validation/api_smoke_test_report.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 1170,
+      "artifact": "api_smoke_test_report"
+    },
+    {
+      "path": "outputs/validation/streaming_extension_validation_report.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 2994,
+      "artifact": "streaming_extension_validation_report"
+    },
+    {
+      "path": "outputs/reports/metasignal_resume_signal_summary.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 3962,
+      "artifact": "metasignal_resume_signal_summary"
+    },
+    {
+      "path": "outputs/reports/metasignal_demo_narrative.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 2974,
+      "artifact": "metasignal_demo_narrative"
+    },
+    {
+      "path": "outputs/reports/metasignal_architecture_summary.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 2532,
+      "artifact": "metasignal_architecture_summary"
+    },
+    {
+      "path": "outputs/reports/metasignal_interview_defense.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 2725,
+      "artifact": "metasignal_interview_defense"
+    },
+    {
+      "path": "outputs/reports/metasignal_core_completion_report.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 976,
+      "artifact": "metasignal_core_completion_report"
+    },
+    {
+      "path": "outputs/reports/metasignal_streaming_extension_summary.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 2205,
+      "artifact": "metasignal_streaming_extension_summary"
+    },
+    {
+      "path": "outputs/streaming/streaming_metric_snapshots.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 3312,
+      "artifact": "streaming_metric_snapshots"
+    },
+    {
+      "path": "outputs/streaming/srm_streaming_alerts.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 1397,
+      "artifact": "srm_streaming_alerts"
+    },
+    {
+      "path": "outputs/streaming/traffic_allocation_snapshots.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 3304,
+      "artifact": "traffic_allocation_snapshots"
+    },
+    {
+      "path": "outputs/streaming/instrumentation_alerts.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 628,
+      "artifact": "instrumentation_alerts"
+    },
+    {
+      "path": "outputs/streaming/consumer_lag_report.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 1218,
+      "artifact": "consumer_lag_report"
+    },
+    {
+      "path": "outputs/streaming/late_event_report.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 126,
+      "artifact": "late_event_report"
+    },
+    {
+      "path": "outputs/streaming/duplicate_event_report.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 109,
+      "artifact": "duplicate_event_report"
+    },
+    {
+      "path": "outputs/streaming/dlq_events.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 10604,
+      "artifact": "dlq_events"
+    },
+    {
+      "path": "outputs/streaming/provisional_anomaly_alerts.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 377,
+      "artifact": "provisional_anomaly_alerts"
+    },
+    {
+      "path": "outputs/streaming/stream_batch_reconciliation_report.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 313,
+      "artifact": "stream_batch_reconciliation_report"
+    },
+    {
+      "path": "outputs/streaming/streaming_health_report.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 332,
+      "artifact": "streaming_health_report"
+    }
+  ],
+  "evidence_statement": "MetaSignal validates that core evidence, experiment evidence, anomaly evidence, and CUPED validation artifacts exist as concrete files."
+}

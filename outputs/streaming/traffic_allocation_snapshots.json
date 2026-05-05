@@ -1,0 +1,114 @@
+{
+  "artifact": "traffic_allocation_snapshots",
+  "snapshot_count": 12,
+  "snapshots": [
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "window_id": 0,
+      "control_count": 355,
+      "treatment_count": 345,
+      "observed_control_pct": 0.5071428571428571,
+      "expected_control_pct": 0.5,
+      "deviation_pp": 0.7142857142857117
+    },
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "window_id": 1,
+      "control_count": 301,
+      "treatment_count": 399,
+      "observed_control_pct": 0.43,
+      "expected_control_pct": 0.5,
+      "deviation_pp": 7.000000000000001
+    },
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "window_id": 2,
+      "control_count": 237,
+      "treatment_count": 463,
+      "observed_control_pct": 0.3385714285714286,
+      "expected_control_pct": 0.5,
+      "deviation_pp": 16.142857142857142
+    },
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "window_id": 3,
+      "control_count": 243,
+      "treatment_count": 457,
+      "observed_control_pct": 0.34714285714285714,
+      "expected_control_pct": 0.5,
+      "deviation_pp": 15.285714285714286
+    },
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "window_id": 4,
+      "control_count": 240,
+      "treatment_count": 440,
+      "observed_control_pct": 0.35294117647058826,
+      "expected_control_pct": 0.5,
+      "deviation_pp": 14.705882352941174
+    },
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "window_id": 5,
+      "control_count": 346,
+      "treatment_count": 354,
+      "observed_control_pct": 0.4942857142857143,
+      "expected_control_pct": 0.5,
+      "deviation_pp": 0.5714285714285727
+    },
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "window_id": 6,
+      "control_count": 328,
+      "treatment_count": 372,
+      "observed_control_pct": 0.4685714285714286,
+      "expected_control_pct": 0.5,
+      "deviation_pp": 3.1428571428571415
+    },
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "window_id": 7,
+      "control_count": 363,
+      "treatment_count": 337,
+      "observed_control_pct": 0.5185714285714286,
+      "expected_control_pct": 0.5,
+      "deviation_pp": 1.8571428571428572
+    },
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "window_id": 8,
+      "control_count": 333,
+      "treatment_count": 332,
+      "observed_control_pct": 0.5007518796992482,
+      "expected_control_pct": 0.5,
+      "deviation_pp": 0.07518796992481702
+    },
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "window_id": 9,
+      "control_count": 350,
+      "treatment_count": 350,
+      "observed_control_pct": 0.5,
+      "expected_control_pct": 0.5,
+      "deviation_pp": 0.0
+    },
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "window_id": 10,
+      "control_count": 366,
+      "treatment_count": 334,
+      "observed_control_pct": 0.5228571428571429,
+      "expected_control_pct": 0.5,
+      "deviation_pp": 2.285714285714291
+    },
+    {
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "window_id": 11,
+      "control_count": 360,
+      "treatment_count": 340,
+      "observed_control_pct": 0.5142857142857142,
+      "expected_control_pct": 0.5,
+      "deviation_pp": 1.4285714285714235
+    }
+  ]
+}

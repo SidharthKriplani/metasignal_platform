@@ -1,0 +1,18 @@
+{
+  "artifact": "cuped_aa_validation_report",
+  "validation_type": "synthetic_aa_test",
+  "runs": 1000,
+  "users_per_run": 4000,
+  "alpha": 0.05,
+  "raw_false_positive_rate": 0.054,
+  "cuped_false_positive_rate": 0.055,
+  "mean_variance_reduction_pct": 26.457644990971335,
+  "median_variance_reduction_pct": 26.465747824420177,
+  "cuped_p_value_uniformity": {
+    "ks_statistic": 0.018581095742613907,
+    "ks_critical_5pct": 0.04300697617828996,
+    "passed": true
+  },
+  "status": "pass",
+  "evidence_statement": "MetaSignal validates CUPED on 1000 synthetic A/A runs: false positive rate remains controlled and CUPED p-values are checked against a Uniform(0,1) distribution."
+}

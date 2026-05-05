@@ -1,0 +1,88 @@
+{
+  "experiments": [
+    {
+      "id": "8119ecae-be32-4cf4-a98c-68ebe7ebe21a",
+      "experiment_key": "EXP-CHECKOUT-FRICTION-001",
+      "name": "Checkout Friction Reduction",
+      "hypothesis": "Reducing checkout friction should increase purchase conversion without increasing refund rate.",
+      "start_date": "2015-05-10",
+      "end_date": "2015-05-24",
+      "status": "evaluated",
+      "expected_mde": 0.02,
+      "expected_duration_days": 14,
+      "alpha": 0.05,
+      "power": 0.8,
+      "use_cuped": true,
+      "assignment_method": "deterministic_hash",
+      "treatment_split_pct": 0.5,
+      "guardrail_metric_configs": [
+        {
+          "metric_id": "626b138d-03c4-4383-bef8-8f3e2ba2e094",
+          "metric_name": "refund_rate_guardrail",
+          "maturity_window_days": 30,
+          "max_allowed_relative_increase_pct": 2.0
+        }
+      ]
+    }
+  ],
+  "evaluations": [
+    {
+      "id": "729b196d-810f-4961-864a-1d0f3d9bf3a5",
+      "experiment_id": "8119ecae-be32-4cf4-a98c-68ebe7ebe21a",
+      "evaluation_day": 14,
+      "sample_size_treatment": 48520,
+      "sample_size_control": 48610,
+      "primary_metric_lift": 0.041,
+      "primary_metric_ci_lower": 0.012,
+      "primary_metric_ci_upper": 0.071,
+      "p_value": 0.008,
+      "is_significant": true,
+      "cuped_applied": true,
+      "cuped_theta": 0.37,
+      "variance_reduction_pct": 18.4,
+      "guardrail_results": [
+        {
+          "status": "breached",
+          "metric_name": "refund_rate_guardrail",
+          "maturity_status": "immature_at_day_14",
+          "observed_relative_increase_pct": 3.1,
+          "max_allowed_relative_increase_pct": 2.0
+        }
+      ],
+      "guardrails_cleared": false,
+      "decision_recommendation": "HOLD",
+      "recommendation_reason": "Primary metric is statistically positive, but guardrail-first decisioning blocks shipment because refund-rate guardrail breached tolerance.",
+      "evaluator_version": "eval_core_v0.1"
+    },
+    {
+      "id": "2f95223d-3ed9-4212-b4f3-c1353ae63d8a",
+      "experiment_id": "8119ecae-be32-4cf4-a98c-68ebe7ebe21a",
+      "evaluation_day": 15,
+      "sample_size_treatment": 10094,
+      "sample_size_control": 9906,
+      "primary_metric_lift": 4.196918014435674,
+      "primary_metric_ci_lower": 0.02359025497567921,
+      "primary_metric_ci_upper": 0.03132447306146633,
+      "p_value": 5.0328101033515e-44,
+      "is_significant": true,
+      "cuped_applied": true,
+      "cuped_theta": 0.003781839684224902,
+      "variance_reduction_pct": 0.43644149502035656,
+      "guardrail_results": [
+        {
+          "status": "breached",
+          "metric_name": "refund_rate_guardrail",
+          "guardrail_type": "delayed_refund_rate",
+          "decision_effect": "blocks_ship",
+          "maturity_status": "immature_at_day_14",
+          "observed_relative_increase_pct": 3.1,
+          "max_allowed_relative_increase_pct": 2.0
+        }
+      ],
+      "guardrails_cleared": false,
+      "decision_recommendation": "HOLD",
+      "recommendation_reason": "Primary metric is positive, but guardrail-first decisioning blocks shipment because refund-rate guardrail breached tolerance.",
+      "evaluator_version": "cuped_v0"
+    }
+  ]
+}

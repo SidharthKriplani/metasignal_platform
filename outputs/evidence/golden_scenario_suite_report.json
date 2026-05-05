@@ -1,0 +1,58 @@
+{
+  "artifact": "golden_scenario_suite_report",
+  "scenario_count": 8,
+  "passed_count": 8,
+  "failed_count": 0,
+  "status": "pass",
+  "scenarios": [
+    {
+      "scenario": "metric_registry_exists",
+      "expected": "at least 3 metric definitions",
+      "passed": true,
+      "observed": 3
+    },
+    {
+      "scenario": "metric_results_computed",
+      "expected": "daily metric rows exist",
+      "passed": true,
+      "observed": 417
+    },
+    {
+      "scenario": "quality_failures_are_captured",
+      "expected": "failure injection creates failed checks",
+      "passed": true,
+      "observed": 30
+    },
+    {
+      "scenario": "simulation_events_defined",
+      "expected": "at least 5 simulation events",
+      "passed": true,
+      "observed": 5
+    },
+    {
+      "scenario": "experiment_assignments_exist",
+      "expected": "at least 10k assignments",
+      "passed": true,
+      "observed": 20000
+    },
+    {
+      "scenario": "cuped_evaluation_exists",
+      "expected": "at least one CUPED evaluation",
+      "passed": true,
+      "observed": 2
+    },
+    {
+      "scenario": "guardrail_blocks_positive_primary_metric",
+      "expected": "final decision HOLD when guardrail breached",
+      "passed": true,
+      "observed": "HOLD"
+    },
+    {
+      "scenario": "pipeline_runs_logged",
+      "expected": "pipeline run logs exist",
+      "passed": true,
+      "observed": 51
+    }
+  ],
+  "evidence_statement": "MetaSignal golden scenario suite validates core registry, metric compute, quality failure, assignment, CUPED, guardrail, and audit behaviors."
+}

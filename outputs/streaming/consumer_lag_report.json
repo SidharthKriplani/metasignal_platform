@@ -1,0 +1,66 @@
+{
+  "artifact": "consumer_lag_report",
+  "window_count": 12,
+  "windows": [
+    {
+      "window_id": 0,
+      "p95_lag_seconds": 43.0,
+      "alert_level": "none"
+    },
+    {
+      "window_id": 1,
+      "p95_lag_seconds": 43.0,
+      "alert_level": "none"
+    },
+    {
+      "window_id": 2,
+      "p95_lag_seconds": 43.0,
+      "alert_level": "none"
+    },
+    {
+      "window_id": 3,
+      "p95_lag_seconds": 43.0,
+      "alert_level": "none"
+    },
+    {
+      "window_id": 4,
+      "p95_lag_seconds": 44.0,
+      "alert_level": "none"
+    },
+    {
+      "window_id": 5,
+      "p95_lag_seconds": 44.0,
+      "alert_level": "none"
+    },
+    {
+      "window_id": 6,
+      "p95_lag_seconds": 44.0,
+      "alert_level": "none"
+    },
+    {
+      "window_id": 7,
+      "p95_lag_seconds": 791.0,
+      "alert_level": "investigate"
+    },
+    {
+      "window_id": 8,
+      "p95_lag_seconds": 43.0,
+      "alert_level": "none"
+    },
+    {
+      "window_id": 9,
+      "p95_lag_seconds": 43.0,
+      "alert_level": "none"
+    },
+    {
+      "window_id": 10,
+      "p95_lag_seconds": 43.0,
+      "alert_level": "none"
+    },
+    {
+      "window_id": 11,
+      "p95_lag_seconds": 43.0,
+      "alert_level": "none"
+    }
+  ]
+}

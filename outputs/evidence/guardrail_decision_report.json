@@ -1,0 +1,28 @@
+{
+  "artifact": "guardrail_decision_report",
+  "experiment_key": "EXP-CHECKOUT-FRICTION-001",
+  "primary_metric": {
+    "cuped_relative_lift": 4.196918014435674,
+    "p_value": 5.0328101033515e-44,
+    "is_significant": true,
+    "primary_positive": true
+  },
+  "guardrails": [
+    {
+      "metric_name": "refund_rate_guardrail",
+      "guardrail_type": "delayed_refund_rate",
+      "max_allowed_relative_increase_pct": 2.0,
+      "observed_relative_increase_pct": 3.1,
+      "maturity_status": "immature_at_day_14",
+      "status": "breached",
+      "decision_effect": "blocks_ship"
+    }
+  ],
+  "guardrails_cleared": false,
+  "system_recommendation": "HOLD",
+  "final_decision": "HOLD",
+  "decision_reason": "Primary metric is positive, but guardrail-first decisioning blocks shipment because refund-rate guardrail breached tolerance.",
+  "db_evaluation_id": "2f95223d-3ed9-4212-b4f3-c1353ae63d8a",
+  "db_decision_id": "9ace4673-7dfe-4d12-a447-5da8a637204d",
+  "evidence_statement": "MetaSignal applied guardrail-first decisioning: a statistically positive CUPED readout is blocked when a guardrail breaches tolerance."
+}

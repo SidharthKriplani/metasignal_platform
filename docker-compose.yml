@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: metasignal_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: metasignal_user
+      POSTGRES_PASSWORD: metasignal_pass
+      POSTGRES_DB: metasignal_db
+    ports:
+      - "5433:5432"
+    volumes:
+      - metasignal_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U metasignal_user -d metasignal_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  metasignal_pgdata:

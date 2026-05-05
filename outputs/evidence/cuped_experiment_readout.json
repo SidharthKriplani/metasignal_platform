@@ -1,0 +1,52 @@
+{
+  "artifact": "cuped_experiment_readout",
+  "experiment_key": "EXP-CHECKOUT-FRICTION-001",
+  "period": {
+    "pre_period_end_before": "2015-05-10",
+    "experiment_start": "2015-05-10",
+    "experiment_end": "2015-05-24"
+  },
+  "sample": {
+    "assigned_users": 20000,
+    "treatment_users": 10094,
+    "control_users": 9906,
+    "synthetic_uplift_users": 255
+  },
+  "raw_readout": {
+    "n_treatment": 10094,
+    "n_control": 9906,
+    "mean_treatment": 0.03407965127798692,
+    "mean_control": 0.006460730870179689,
+    "absolute_lift": 0.02761892040780723,
+    "relative_lift": 4.274891024370913,
+    "standard_error": 0.0019772573197277274,
+    "z_score": 13.968298477008757,
+    "p_value": 2.4337177882351793e-44,
+    "ci_low": 0.023743496061140887,
+    "ci_high": 0.031494344754473574,
+    "is_significant": true
+  },
+  "cuped_readout": {
+    "n_treatment": 10094,
+    "n_control": 9906,
+    "mean_treatment": 0.03399963239840071,
+    "mean_control": 0.0065422683798279395,
+    "absolute_lift": 0.02745736401857277,
+    "relative_lift": 4.196918014435674,
+    "standard_error": 0.0019730148178028362,
+    "z_score": 13.916450992065784,
+    "p_value": 5.0328101033515e-44,
+    "ci_low": 0.02359025497567921,
+    "ci_high": 0.03132447306146633,
+    "is_significant": true
+  },
+  "cuped": {
+    "covariate": "pre_event_count",
+    "theta": 0.003781839684224902,
+    "raw_variance": 0.019984839241952653,
+    "cuped_variance": 0.01989761711078766,
+    "variance_reduction_pct": 0.43644149502035656
+  },
+  "db_evaluation_id": "2f95223d-3ed9-4212-b4f3-c1353ae63d8a",
+  "evidence_statement": "MetaSignal computed an experiment readout with CUPED variance adjustment using deterministic user assignments and pre-period behavior."
+}

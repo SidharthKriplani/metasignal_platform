@@ -1,0 +1,5 @@
+{
+  "artifact": "duplicate_event_report",
+  "duplicate_count": 25,
+  "dedup_method": "event_id_seen_before"
+}
