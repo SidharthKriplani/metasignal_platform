@@ -1,7 +1,7 @@
 {
   "artifact": "data_quality_service_report",
   "source_file": "data/interim/events_standardized.parquet",
-  "run_id": "e80bc393-0085-438e-875c-6fa2f52349be",
+  "run_id": "6cc3ca82-8796-482c-9794-eafdddb81211",
   "status": "success",
   "rows_processed": 2756101,
   "checks_passed": 5,

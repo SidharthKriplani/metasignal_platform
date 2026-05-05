@@ -14,6 +14,7 @@ COMMANDS = [
     "PYTHONPATH=. python3 scripts/generate_assignments_v0.py",
     "PYTHONPATH=. python3 scripts/run_srm_check_v0.py",
     "PYTHONPATH=. python3 scripts/run_cuped_v0.py",
+    "PYTHONPATH=. python3 scripts/run_cuped_aa_validation_v0.py",
     "PYTHONPATH=. python3 scripts/run_guardrail_decision_v0.py",
     "PYTHONPATH=. python3 scripts/run_post_launch_validation_v0.py",
     "PYTHONPATH=. python3 scripts/run_anomaly_detector_v0.py",

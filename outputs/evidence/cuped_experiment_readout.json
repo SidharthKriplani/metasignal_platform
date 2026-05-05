@@ -47,6 +47,6 @@
     "cuped_variance": 0.01989761711078766,
     "variance_reduction_pct": 0.43644149502035656
   },
-  "db_evaluation_id": "9511557a-08f6-4b88-b796-a6f1ddf65838",
+  "db_evaluation_id": "788a2c50-33c2-405a-9a69-184b9c79a605",
   "evidence_statement": "MetaSignal computed an experiment readout with CUPED variance adjustment using deterministic user assignments and pre-period behavior."
 }
