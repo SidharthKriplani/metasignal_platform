@@ -1,8 +1,8 @@
 {
   "artifact": "evidence_artifact_validation_report",
-  "expected_artifact_count": 18,
-  "present_artifact_count": 18,
-  "valid_json_count": 15,
+  "expected_artifact_count": 19,
+  "present_artifact_count": 19,
+  "valid_json_count": 16,
   "missing_count": 0,
   "invalid_json_count": 3,
   "empty_file_count": 0,
@@ -47,7 +47,7 @@
       "path": "outputs/evidence/pipeline_quality_report.json",
       "exists": true,
       "valid_json": true,
-      "size_bytes": 57233,
+      "size_bytes": 68263,
       "artifact": null
     },
     {
@@ -133,6 +133,13 @@
       "valid_json": true,
       "size_bytes": 680,
       "artifact": "cuped_aa_validation_report"
+    },
+    {
+      "path": "outputs/validation/api_smoke_test_report.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 1170,
+      "artifact": "api_smoke_test_report"
     }
   ],
   "evidence_statement": "MetaSignal validates that core evidence, experiment evidence, anomaly evidence, and CUPED validation artifacts exist as concrete files."

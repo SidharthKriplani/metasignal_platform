@@ -25,6 +25,7 @@ EXPECTED_ARTIFACTS = [
     "outputs/evidence/anomaly_detection_report.json",
     "outputs/evidence/golden_scenario_suite_report.json",
     "outputs/validation/cuped_aa_validation_report.json",
+    "outputs/validation/api_smoke_test_report.json",
 ]
 
 
