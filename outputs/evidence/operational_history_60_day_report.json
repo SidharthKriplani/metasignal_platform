@@ -5,7 +5,7 @@
   "start_date": "2024-01-01",
   "day_count": 60,
   "scenario_count": 13,
-  "simulation_events_rows_inserted": 1,
+  "simulation_events_rows_inserted": 13,
   "metric_registry_prd_metric_count": 7,
   "conflict_count": 4,
   "backfill_job_count": 4,

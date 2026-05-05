@@ -137,6 +137,10 @@ def delete_prior_seed() -> None:
     if "check_details" in table_cols:
         safe_exec("DELETE FROM data_quality_checks WHERE CAST(check_details AS TEXT) LIKE :marker", {"marker": f"%{MARKER}%"})
 
+    sim_cols = get_cols("simulation_events")
+    if "scenario_id" in sim_cols:
+        safe_exec("DELETE FROM simulation_events WHERE scenario_id LIKE :marker", {"marker": f"{MARKER}%"})
+
 
 def default_for_col(name: str, type_text: str) -> Any:
     t = type_text.lower()
@@ -286,6 +290,7 @@ def main() -> None:
             "affected_entity": "events",
             "injected_value": json.dumps({"scenario_key": key, "day": day, "expected_response": desc}),
             "scenario_key": key,
+            "scenario_id": f"{MARKER}_{key}",
         })
         if inserted:
             simulation_inserted += 1
