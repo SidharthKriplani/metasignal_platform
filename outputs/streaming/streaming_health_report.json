@@ -1,0 +1,12 @@
+{
+  "artifact": "streaming_health_report",
+  "total_events_emitted": 8425,
+  "valid_events_for_provisional_metrics": 8380,
+  "dlq_events": 20,
+  "late_events": 0,
+  "duplicates": 25,
+  "srm_alerts_active": 4,
+  "instrumentation_alerts_active": 2,
+  "provisional_anomaly_alerts_active": 1,
+  "overall_health_status": "investigate"
+}

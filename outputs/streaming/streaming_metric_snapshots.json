@@ -1,0 +1,115 @@
+{
+  "artifact": "streaming_metric_snapshots",
+  "snapshot_count": 12,
+  "provisional_label": true,
+  "snapshots": [
+    {
+      "metric_id": "streaming_purchase_event_rate",
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "window_id": 0,
+      "event_count": 700,
+      "purchase_count": 49,
+      "metric_value": 0.07,
+      "provisional_label": true
+    },
+    {
+      "metric_id": "streaming_purchase_event_rate",
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "window_id": 1,
+      "event_count": 700,
+      "purchase_count": 48,
+      "metric_value": 0.06857142857142857,
+      "provisional_label": true
+    },
+    {
+      "metric_id": "streaming_purchase_event_rate",
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "window_id": 2,
+      "event_count": 700,
+      "purchase_count": 38,
+      "metric_value": 0.054285714285714284,
+      "provisional_label": true
+    },
+    {
+      "metric_id": "streaming_purchase_event_rate",
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "window_id": 3,
+      "event_count": 700,
+      "purchase_count": 62,
+      "metric_value": 0.08857142857142856,
+      "provisional_label": true
+    },
+    {
+      "metric_id": "streaming_purchase_event_rate",
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "window_id": 4,
+      "event_count": 680,
+      "purchase_count": 42,
+      "metric_value": 0.061764705882352944,
+      "provisional_label": true
+    },
+    {
+      "metric_id": "streaming_purchase_event_rate",
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "window_id": 5,
+      "event_count": 700,
+      "purchase_count": 37,
+      "metric_value": 0.05285714285714286,
+      "provisional_label": true
+    },
+    {
+      "metric_id": "streaming_purchase_event_rate",
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "window_id": 6,
+      "event_count": 700,
+      "purchase_count": 38,
+      "metric_value": 0.054285714285714284,
+      "provisional_label": true
+    },
+    {
+      "metric_id": "streaming_purchase_event_rate",
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "window_id": 7,
+      "event_count": 700,
+      "purchase_count": 53,
+      "metric_value": 0.07571428571428572,
+      "provisional_label": true
+    },
+    {
+      "metric_id": "streaming_purchase_event_rate",
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "window_id": 8,
+      "event_count": 700,
+      "purchase_count": 52,
+      "metric_value": 0.07428571428571429,
+      "provisional_label": true
+    },
+    {
+      "metric_id": "streaming_purchase_event_rate",
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "window_id": 9,
+      "event_count": 700,
+      "purchase_count": 217,
+      "metric_value": 0.31,
+      "provisional_label": true
+    },
+    {
+      "metric_id": "streaming_purchase_event_rate",
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "window_id": 10,
+      "event_count": 700,
+      "purchase_count": 55,
+      "metric_value": 0.07857142857142857,
+      "provisional_label": true
+    },
+    {
+      "metric_id": "streaming_purchase_event_rate",
+      "experiment_id": "EXP-CHECKOUT-FRICTION-001",
+      "window_id": 11,
+      "event_count": 700,
+      "purchase_count": 50,
+      "metric_value": 0.07142857142857142,
+      "provisional_label": true
+    }
+  ]
+}
