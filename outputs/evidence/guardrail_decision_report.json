@@ -22,7 +22,7 @@
   "system_recommendation": "HOLD",
   "final_decision": "HOLD",
   "decision_reason": "Primary metric is positive, but guardrail-first decisioning blocks shipment because refund-rate guardrail breached tolerance.",
-  "db_evaluation_id": "21c4638c-a549-4896-b3b7-b632c2163429",
-  "db_decision_id": "939598ee-65ab-4e8e-be13-4029e0e1c1ce",
+  "db_evaluation_id": "df4c690d-15ef-4f7c-902e-72bccc091f10",
+  "db_decision_id": "35f1eab2-996e-48fd-840a-312a80f1156c",
   "evidence_statement": "MetaSignal applied guardrail-first decisioning: a statistically positive CUPED readout is blocked when a guardrail breaches tolerance."
 }
