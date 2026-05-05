@@ -7,6 +7,14 @@
 
 ---
 
+## Why MetaSignal exists
+
+Most A/B testing implementations get the easy parts right and the hard parts wrong. SRM is checked once and forgotten. CUPED is run but the covariate selection is arbitrary. Guardrail regressions are caught — two weeks after launch when the data team notices. Peeking happens because nobody enforces a stopping rule.
+
+MetaSignal builds the experiment infrastructure layer that sits between raw event data and a launch decision: deterministic SRM validation, CUPED with correct covariate adjustment, 1,000-run A/A calibration to verify false positive rate, right-censored guardrail handling for delayed metrics, day-of-week anomaly detection, and a streaming early-warning layer that surfaces distribution shifts before full experiment runtime. Every decision is backed by a versioned JSON artifact — not a slide deck.
+
+---
+
 ## Architecture
 
 ```mermaid
