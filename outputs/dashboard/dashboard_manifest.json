@@ -3,11 +3,11 @@
   "status": "pass",
   "artifact_inventory": {
     "evidence": 21,
-    "validation": 8,
+    "validation": 9,
     "reports": 8,
     "streaming": 14
   },
-  "artifact_inventory_total": 51,
+  "artifact_inventory_total": 52,
   "dashboard_paths": [
     "outputs/dashboard/index.html",
     "docs/index.html"

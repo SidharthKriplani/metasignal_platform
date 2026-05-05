@@ -62,7 +62,7 @@
     {
       "name": "artifact_inventory_total_positive",
       "passed": true,
-      "observed": 51
+      "observed": 52
     },
     {
       "name": "manifest_status_pass",
