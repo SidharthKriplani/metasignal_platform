@@ -1,0 +1,74 @@
+{
+  "artifact": "metasignal_dashboard_validation_v1",
+  "status": "pass",
+  "check_count": 13,
+  "passed_count": 13,
+  "checks": [
+    {
+      "name": "docs_index_exists",
+      "passed": true,
+      "observed": "docs/index.html"
+    },
+    {
+      "name": "local_index_exists",
+      "passed": true,
+      "observed": "outputs/dashboard/index.html"
+    },
+    {
+      "name": "manifest_exists",
+      "passed": true,
+      "observed": "outputs/dashboard/dashboard_manifest.json"
+    },
+    {
+      "name": "html_contains_MetaSignal_Evidence_Dashboard",
+      "passed": true,
+      "observed": "MetaSignal Evidence Dashboard"
+    },
+    {
+      "name": "html_contains_CUPED_+_Guardrails",
+      "passed": true,
+      "observed": "CUPED + Guardrails"
+    },
+    {
+      "name": "html_contains_Streaming_Provisional",
+      "passed": true,
+      "observed": "Streaming Provisional"
+    },
+    {
+      "name": "html_contains_Batch_Authoritative",
+      "passed": true,
+      "observed": "Batch Authoritative"
+    },
+    {
+      "name": "html_contains_System_Flow",
+      "passed": true,
+      "observed": "System Flow"
+    },
+    {
+      "name": "html_contains_Evidence_Summary",
+      "passed": true,
+      "observed": "Evidence Summary"
+    },
+    {
+      "name": "html_contains_Claim_Boundary",
+      "passed": true,
+      "observed": "Claim Boundary"
+    },
+    {
+      "name": "html_contains_Run_Locally",
+      "passed": true,
+      "observed": "Run Locally"
+    },
+    {
+      "name": "artifact_inventory_total_positive",
+      "passed": true,
+      "observed": 51
+    },
+    {
+      "name": "manifest_status_pass",
+      "passed": true,
+      "observed": "pass"
+    }
+  ],
+  "evidence_statement": "Validates MetaSignal static evidence dashboard and GitHub Pages entrypoint."
+}
