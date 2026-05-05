@@ -1,9 +1,9 @@
 {
   "artifact": "streaming_health_report",
   "total_events_emitted": 8425,
-  "valid_events_for_provisional_metrics": 8380,
+  "valid_events_for_provisional_metrics": 8345,
   "dlq_events": 20,
-  "late_events": 0,
+  "late_events": 35,
   "duplicates": 25,
   "srm_alerts_active": 4,
   "instrumentation_alerts_active": 2,

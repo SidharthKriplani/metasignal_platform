@@ -110,9 +110,13 @@ def main() -> None:
             continue
         seen.add(event["event_id"])
 
-        if lag_seconds > 900:
+        window_start_dt = datetime.fromisoformat(event["window_start"])
+        is_late_by_watermark = event_time < window_start_dt - timedelta(minutes=15)
+
+        if is_late_by_watermark:
             late_event = dict(event)
             late_event["lateness_seconds"] = lag_seconds
+            late_event["late_reason"] = "event_time_before_watermark"
             late.append(late_event)
             continue
 

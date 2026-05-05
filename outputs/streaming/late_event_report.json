@@ -1,5 +1,5 @@
 {
   "artifact": "late_event_report",
-  "late_event_count": 0,
+  "late_event_count": 35,
   "handling": "batch_authoritative_layer_handles_late_events"
 }

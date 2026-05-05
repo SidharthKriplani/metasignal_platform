@@ -1,9 +1,9 @@
 {
   "artifact": "stream_batch_reconciliation_report",
   "metric_id": "streaming_purchase_event_rate",
-  "streaming_value": 0.08842482100238663,
-  "batch_authoritative_value": 0.08709844868735084,
-  "absolute_delta": 0.0013263723150357953,
+  "streaming_value": 0.08831635710005992,
+  "batch_authoritative_value": 0.08699161174355902,
+  "absolute_delta": 0.0013247453565009004,
   "reconciliation_status": "pass",
   "batch_remains_authoritative": true
 }

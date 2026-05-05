@@ -77,11 +77,11 @@
     {
       "experiment_id": "EXP-CHECKOUT-FRICTION-001",
       "window_id": 8,
-      "control_count": 352,
-      "treatment_count": 348,
-      "observed_control_pct": 0.5028571428571429,
+      "control_count": 333,
+      "treatment_count": 332,
+      "observed_control_pct": 0.5007518796992482,
       "expected_control_pct": 0.5,
-      "deviation_pp": 0.28571428571428914
+      "deviation_pp": 0.07518796992481702
     },
     {
       "experiment_id": "EXP-CHECKOUT-FRICTION-001",

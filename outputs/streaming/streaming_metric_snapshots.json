@@ -79,9 +79,9 @@
       "metric_id": "streaming_purchase_event_rate",
       "experiment_id": "EXP-CHECKOUT-FRICTION-001",
       "window_id": 8,
-      "event_count": 700,
-      "purchase_count": 52,
-      "metric_value": 0.07428571428571429,
+      "event_count": 665,
+      "purchase_count": 48,
+      "metric_value": 0.07218045112781955,
       "provisional_label": true
     },
     {
