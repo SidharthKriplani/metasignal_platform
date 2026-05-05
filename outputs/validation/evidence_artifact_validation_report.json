@@ -1,0 +1,139 @@
+{
+  "artifact": "evidence_artifact_validation_report",
+  "expected_artifact_count": 18,
+  "present_artifact_count": 18,
+  "valid_json_count": 15,
+  "missing_count": 0,
+  "invalid_json_count": 3,
+  "empty_file_count": 0,
+  "status": "review",
+  "checks": [
+    {
+      "path": "outputs/evidence/core_evidence_manifest.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 426,
+      "artifact": null
+    },
+    {
+      "path": "outputs/evidence/decision_audit_log.json",
+      "exists": true,
+      "valid_json": false,
+      "size_bytes": 921,
+      "artifact": null
+    },
+    {
+      "path": "outputs/evidence/experiment_readout.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 3220,
+      "artifact": null
+    },
+    {
+      "path": "outputs/evidence/metric_registry.json",
+      "exists": true,
+      "valid_json": false,
+      "size_bytes": 2547,
+      "artifact": null
+    },
+    {
+      "path": "outputs/evidence/metric_results_summary.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 4307,
+      "artifact": "metric_results_summary"
+    },
+    {
+      "path": "outputs/evidence/pipeline_quality_report.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 46203,
+      "artifact": null
+    },
+    {
+      "path": "outputs/evidence/simulation_scenarios.json",
+      "exists": true,
+      "valid_json": false,
+      "size_bytes": 2536,
+      "artifact": null
+    },
+    {
+      "path": "outputs/evidence/data_quality_service_report.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 2517,
+      "artifact": "data_quality_service_report"
+    },
+    {
+      "path": "outputs/evidence/metric_conflict_report.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 1985,
+      "artifact": "metric_conflict_report"
+    },
+    {
+      "path": "outputs/evidence/failure_injection_report.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 5775,
+      "artifact": "failure_injection_report"
+    },
+    {
+      "path": "outputs/evidence/experiment_assignment_balance.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 646,
+      "artifact": "experiment_assignment_balance"
+    },
+    {
+      "path": "outputs/evidence/srm_check_report.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 659,
+      "artifact": "srm_check_report"
+    },
+    {
+      "path": "outputs/evidence/cuped_experiment_readout.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 1731,
+      "artifact": "cuped_experiment_readout"
+    },
+    {
+      "path": "outputs/evidence/guardrail_decision_report.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 1123,
+      "artifact": "guardrail_decision_report"
+    },
+    {
+      "path": "outputs/evidence/post_launch_validation_report.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 987,
+      "artifact": "post_launch_validation_report"
+    },
+    {
+      "path": "outputs/evidence/anomaly_detection_report.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 1518,
+      "artifact": "anomaly_detection_report"
+    },
+    {
+      "path": "outputs/evidence/golden_scenario_suite_report.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 1576,
+      "artifact": "golden_scenario_suite_report"
+    },
+    {
+      "path": "outputs/validation/cuped_aa_validation_report.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 680,
+      "artifact": "cuped_aa_validation_report"
+    }
+  ],
+  "evidence_statement": "MetaSignal validates that core evidence, experiment evidence, anomaly evidence, and CUPED validation artifacts exist as concrete files."
+}
