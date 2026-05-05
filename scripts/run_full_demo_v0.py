@@ -21,6 +21,7 @@ COMMANDS = [
     "PYTHONPATH=. python3 scripts/run_golden_scenarios_v0.py",
     "PYTHONPATH=. python3 scripts/validate_evidence_artifacts_v0.py",
     "PYTHONPATH=. python3 scripts/export_resume_signal_summary_v0.py",
+    "PYTHONPATH=. python3 scripts/smoke_test_api_v0.py",
     "PYTHONPATH=. python3 scripts/export_core_artifacts.py",
     "PYTHONPATH=. python3 scripts/show_core_report.py",
 ]

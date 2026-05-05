@@ -1,0 +1,50 @@
+{
+  "artifact": "api_smoke_test_report",
+  "endpoint_count": 8,
+  "passed_count": 8,
+  "failed_count": 0,
+  "status": "pass",
+  "endpoints": [
+    {
+      "endpoint": "/health",
+      "status_code": 200,
+      "passed": true
+    },
+    {
+      "endpoint": "/metrics",
+      "status_code": 200,
+      "passed": true
+    },
+    {
+      "endpoint": "/experiments",
+      "status_code": 200,
+      "passed": true
+    },
+    {
+      "endpoint": "/experiments/EXP-CHECKOUT-FRICTION-001/readout",
+      "status_code": 200,
+      "passed": true
+    },
+    {
+      "endpoint": "/data-quality/latest",
+      "status_code": 200,
+      "passed": true
+    },
+    {
+      "endpoint": "/evidence/guardrail_decision_report",
+      "status_code": 200,
+      "passed": true
+    },
+    {
+      "endpoint": "/validation/cuped_aa_validation_report",
+      "status_code": 200,
+      "passed": true
+    },
+    {
+      "endpoint": "/resume-signal",
+      "status_code": 200,
+      "passed": true
+    }
+  ],
+  "evidence_statement": "MetaSignal exposes core metrics, experiment readout, data quality, evidence artifacts, validation artifacts, and resume-signal summary through a FastAPI layer."
+}
