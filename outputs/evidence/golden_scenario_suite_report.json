@@ -21,7 +21,7 @@
       "scenario": "quality_failures_are_captured",
       "expected": "failure injection creates failed checks",
       "passed": true,
-      "observed": 12
+      "observed": 15
     },
     {
       "scenario": "simulation_events_defined",
@@ -51,7 +51,7 @@
       "scenario": "pipeline_runs_logged",
       "expected": "pipeline run logs exist",
       "passed": true,
-      "observed": 21
+      "observed": 26
     }
   ],
   "evidence_statement": "MetaSignal golden scenario suite validates core registry, metric compute, quality failure, assignment, CUPED, guardrail, and audit behaviors."
