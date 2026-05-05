@@ -1,0 +1,95 @@
+{
+  "artifact": "operational_history_60_day_report",
+  "status": "pass",
+  "marker": "operational_history_v1",
+  "start_date": "2024-01-01",
+  "day_count": 60,
+  "scenario_count": 13,
+  "simulation_events_rows_inserted": 1,
+  "metric_registry_prd_metric_count": 7,
+  "conflict_count": 4,
+  "backfill_job_count": 4,
+  "system_health_report_days": 60,
+  "anomaly_alert_count": 2,
+  "implemented_scenarios": [
+    {
+      "scenario_key": "SIM-001",
+      "day": 1,
+      "event_type": "pipeline_success",
+      "description": "Clean baseline. All checks pass."
+    },
+    {
+      "scenario_key": "SIM-002",
+      "day": 11,
+      "event_type": "schema_drift",
+      "description": "Schema drift blocks compute."
+    },
+    {
+      "scenario_key": "SIM-003",
+      "day": 12,
+      "event_type": "quality_recovery_backfill",
+      "description": "Recovery and backfill after schema drift."
+    },
+    {
+      "scenario_key": "SIM-004",
+      "day": 15,
+      "event_type": "null_spike",
+      "description": "Null spike blocks compute."
+    },
+    {
+      "scenario_key": "SIM-005",
+      "day": 20,
+      "event_type": "late_arriving_data",
+      "description": "Late-arriving data triggers recompute."
+    },
+    {
+      "scenario_key": "SIM-006",
+      "day": 25,
+      "event_type": "double_counting",
+      "description": "Double-counting blocks compute."
+    },
+    {
+      "scenario_key": "SIM-007",
+      "day": 28,
+      "event_type": "real_anomaly_ios_outage",
+      "description": "Confirmed iOS outage anomaly."
+    },
+    {
+      "scenario_key": "SIM-008",
+      "day": 35,
+      "event_type": "dow_false_positive_suppressed",
+      "description": "DOW adjusted detector suppresses false positive."
+    },
+    {
+      "scenario_key": "SIM-009",
+      "day": 40,
+      "event_type": "metric_definition_change",
+      "description": "DAU v2 introduced and v1 deprecated."
+    },
+    {
+      "scenario_key": "SIM-010",
+      "day": 30,
+      "event_type": "experiment_start",
+      "description": "Checkout experiment starts."
+    },
+    {
+      "scenario_key": "SIM-011",
+      "day": 44,
+      "event_type": "delayed_guardrail_immature",
+      "description": "Positive primary but delayed guardrail immature."
+    },
+    {
+      "scenario_key": "SIM-012",
+      "day": 44,
+      "event_type": "human_override",
+      "description": "Reviewer override with written reason."
+    },
+    {
+      "scenario_key": "SIM-013",
+      "day": 50,
+      "event_type": "clean_ship",
+      "description": "Clean ship with mature guardrails."
+    }
+  ],
+  "evidence_statement": "MetaSignal now seeds a PRD-level 60-day operational history with 13 simulation scenarios, expanded metric registry, backfill jobs, metric conflicts, anomaly alerts, and system health reports."
+}
