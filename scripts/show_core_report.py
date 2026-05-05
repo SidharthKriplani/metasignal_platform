@@ -78,7 +78,7 @@ def main() -> None:
         print("\nEvidence status")
         print("---------------")
         print("PASS: Core registry, quality, experiment, and decision evidence exists.")
-        print("NEXT: Add file output artifacts under outputs/evidence/.")
+        print("PASS: Evidence artifacts are generated under outputs/evidence/ and validation artifacts under outputs/validation/.")
 
 
 if __name__ == "__main__":
