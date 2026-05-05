@@ -26,6 +26,10 @@ EXPECTED_ARTIFACTS = [
     "outputs/evidence/golden_scenario_suite_report.json",
     "outputs/validation/cuped_aa_validation_report.json",
     "outputs/validation/api_smoke_test_report.json",
+    "outputs/reports/metasignal_resume_signal_summary.json",
+    "outputs/reports/metasignal_demo_narrative.json",
+    "outputs/reports/metasignal_architecture_summary.json",
+    "outputs/reports/metasignal_interview_defense.json",
 ]
 
 

@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import subprocess
 import sys
-from pathlib import Path
 
 
 COMMANDS = [
@@ -19,10 +18,13 @@ COMMANDS = [
     "PYTHONPATH=. python3 scripts/run_post_launch_validation_v0.py",
     "PYTHONPATH=. python3 scripts/run_anomaly_detector_v0.py",
     "PYTHONPATH=. python3 scripts/run_golden_scenarios_v0.py",
-    "PYTHONPATH=. python3 scripts/validate_evidence_artifacts_v0.py",
-    "PYTHONPATH=. python3 scripts/export_resume_signal_summary_v0.py",
-    "PYTHONPATH=. python3 scripts/smoke_test_api_v0.py",
     "PYTHONPATH=. python3 scripts/export_core_artifacts.py",
+    "PYTHONPATH=. python3 scripts/export_resume_signal_summary_v0.py",
+    "PYTHONPATH=. python3 scripts/export_demo_narrative_v0.py",
+    "PYTHONPATH=. python3 scripts/export_architecture_summary_v0.py",
+    "PYTHONPATH=. python3 scripts/export_interview_defense_v0.py",
+    "PYTHONPATH=. python3 scripts/smoke_test_api_v0.py",
+    "PYTHONPATH=. python3 scripts/validate_evidence_artifacts_v0.py",
     "PYTHONPATH=. python3 scripts/show_core_report.py",
 ]
 
@@ -39,6 +41,9 @@ def main() -> None:
 
     print("\n=== MetaSignal Full Demo v0 completed successfully ===")
     print("Evidence folder: outputs/evidence")
+    print("Validation folder: outputs/validation")
+    print("Reports folder: outputs/reports")
+    print("Docs folder: docs")
 
 
 if __name__ == "__main__":

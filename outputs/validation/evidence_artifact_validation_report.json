@@ -1,8 +1,8 @@
 {
   "artifact": "evidence_artifact_validation_report",
-  "expected_artifact_count": 19,
-  "present_artifact_count": 19,
-  "valid_json_count": 16,
+  "expected_artifact_count": 23,
+  "present_artifact_count": 23,
+  "valid_json_count": 20,
   "missing_count": 0,
   "invalid_json_count": 3,
   "empty_file_count": 0,
@@ -47,7 +47,7 @@
       "path": "outputs/evidence/pipeline_quality_report.json",
       "exists": true,
       "valid_json": true,
-      "size_bytes": 68263,
+      "size_bytes": 79293,
       "artifact": null
     },
     {
@@ -140,6 +140,34 @@
       "valid_json": true,
       "size_bytes": 1170,
       "artifact": "api_smoke_test_report"
+    },
+    {
+      "path": "outputs/reports/metasignal_resume_signal_summary.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 3962,
+      "artifact": "metasignal_resume_signal_summary"
+    },
+    {
+      "path": "outputs/reports/metasignal_demo_narrative.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 2974,
+      "artifact": "metasignal_demo_narrative"
+    },
+    {
+      "path": "outputs/reports/metasignal_architecture_summary.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 2532,
+      "artifact": "metasignal_architecture_summary"
+    },
+    {
+      "path": "outputs/reports/metasignal_interview_defense.json",
+      "exists": true,
+      "valid_json": true,
+      "size_bytes": 2725,
+      "artifact": "metasignal_interview_defense"
     }
   ],
   "evidence_statement": "MetaSignal validates that core evidence, experiment evidence, anomaly evidence, and CUPED validation artifacts exist as concrete files."
