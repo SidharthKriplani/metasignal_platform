@@ -53,6 +53,36 @@
       "decision_recommendation": "HOLD",
       "recommendation_reason": "Primary metric is statistically positive, but guardrail-first decisioning blocks shipment because refund-rate guardrail breached tolerance.",
       "evaluator_version": "eval_core_v0.1"
+    },
+    {
+      "id": "9511557a-08f6-4b88-b796-a6f1ddf65838",
+      "experiment_id": "8119ecae-be32-4cf4-a98c-68ebe7ebe21a",
+      "evaluation_day": 15,
+      "sample_size_treatment": 10094,
+      "sample_size_control": 9906,
+      "primary_metric_lift": 4.196918014435674,
+      "primary_metric_ci_lower": 0.02359025497567921,
+      "primary_metric_ci_upper": 0.03132447306146633,
+      "p_value": 5.0328101033515e-44,
+      "is_significant": true,
+      "cuped_applied": true,
+      "cuped_theta": 0.003781839684224902,
+      "variance_reduction_pct": 0.43644149502035656,
+      "guardrail_results": [
+        {
+          "status": "breached",
+          "metric_name": "refund_rate_guardrail",
+          "guardrail_type": "delayed_refund_rate",
+          "decision_effect": "blocks_ship",
+          "maturity_status": "immature_at_day_14",
+          "observed_relative_increase_pct": 3.1,
+          "max_allowed_relative_increase_pct": 2.0
+        }
+      ],
+      "guardrails_cleared": false,
+      "decision_recommendation": "HOLD",
+      "recommendation_reason": "Primary metric is positive, but guardrail-first decisioning blocks shipment because refund-rate guardrail breached tolerance.",
+      "evaluator_version": "cuped_v0"
     }
   ]
 }

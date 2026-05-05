@@ -11,7 +11,7 @@ import pandas as pd
 from sqlalchemy import delete, select
 
 from src.metasignal.db.session import SessionLocal
-from src.metasignal.db.models import Experiment, ExperimentAssignment, ExperimentEvaluation
+from src.metasignal.db.models import Experiment, ExperimentAssignment, ExperimentEvaluation, DecisionLog
 
 
 EVENTS_PATH = Path("data/interim/events_standardized.parquet")
@@ -199,6 +199,18 @@ def main() -> None:
         raw_var = variance(y)
         cuped_var = variance(user_df["cuped_conversion"].astype(float).tolist())
         variance_reduction_pct = (1.0 - (cuped_var / raw_var)) * 100.0 if raw_var > 0 else 0.0
+
+        old_evals = session.scalars(
+            select(ExperimentEvaluation).where(
+                ExperimentEvaluation.experiment_id == experiment.id,
+                ExperimentEvaluation.evaluator_version == "cuped_v0",
+            )
+        ).all()
+
+        for old_eval in old_evals:
+            session.execute(
+                delete(DecisionLog).where(DecisionLog.evaluation_id == old_eval.id)
+            )
 
         session.execute(
             delete(ExperimentEvaluation).where(
