@@ -1,0 +1,23 @@
+{
+  "artifact": "post_launch_validation_report",
+  "experiment_key": "EXP-CHECKOUT-FRICTION-001",
+  "right_censoring": {
+    "metric_name": "refund_rate_guardrail",
+    "readout_day": 14,
+    "maturity_window_days": 30,
+    "is_mature": false,
+    "right_censoring_flag": true,
+    "observed_relative_increase_pct_day_14": 3.1,
+    "projected_mature_relative_increase_pct_day_30": 3.8,
+    "max_allowed_relative_increase_pct": 2.0,
+    "status": "immature_but_breached"
+  },
+  "post_launch_assessment": {
+    "decision_reviewed": "HOLD",
+    "would_ship_without_guardrail": true,
+    "actual_system_decision": "HOLD",
+    "post_launch_status": "blocked_before_rollout",
+    "lesson": "Delayed guardrails must be treated as immature until maturity window closes; positive primary lift alone is insufficient."
+  },
+  "evidence_statement": "MetaSignal marks delayed guardrails as right-censored and prevents positive primary-metric readouts from shipping without mature guardrail review."
+}

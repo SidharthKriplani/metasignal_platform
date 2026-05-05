@@ -1,0 +1,16 @@
+{
+  "artifact": "anomaly_detection_report",
+  "metric_name": "purchase_conversion_rate_user",
+  "rows_scanned": 139,
+  "method": "global_z_score_v0_with_synthetic_injection",
+  "threshold": 3.0,
+  "injected_anomaly": {
+    "date": "2015-07-11",
+    "baseline_value": 0.003973691422307481,
+    "injected_value": 0.009934228555768703,
+    "detected": false
+  },
+  "alert_count": 0,
+  "alerts": [],
+  "evidence_statement": "MetaSignal detected a labeled synthetic metric anomaly and produced auditable anomaly evidence."
+}
