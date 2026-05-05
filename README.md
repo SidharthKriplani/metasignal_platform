@@ -3,6 +3,7 @@
 **Production-simulated experimentation, metrics intelligence, and streaming observability platform.**
 
 <p>
+  <a href="https://sidharthkriplani.github.io/metasignal_platform/"><img alt="Live Dashboard" src="https://img.shields.io/badge/Live%20Dashboard-GitHub%20Pages-2ea44f?style=for-the-badge&logo=githubpages&logoColor=white"></a>
   <img alt="PRD Status" src="https://img.shields.io/badge/PRD%20Core-PASS-brightgreen?style=for-the-badge">
   <img alt="Experimentation" src="https://img.shields.io/badge/Experimentation-CUPED%20%2B%20Guardrails-2563eb?style=for-the-badge">
   <img alt="Decision System" src="https://img.shields.io/badge/Decision%20System-Auditable-7c3aed?style=for-the-badge">
@@ -20,6 +21,13 @@
 </p>
 
 ---
+
+## Live Dashboard
+
+**Open the visual showcase:**  
+https://sidharthkriplani.github.io/metasignal_platform/
+
+The dashboard summarizes MetaSignal's evidence artifacts, metrics intelligence flow, CUPED validation, guardrail-first decisioning, operational history, and streaming reconciliation layer.
 
 ## At a Glance
 
