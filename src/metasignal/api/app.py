@@ -126,6 +126,17 @@ def list_experiments() -> list[dict[str, Any]]:
 
 @app.get("/experiments/{experiment_key}/readout")
 def experiment_readout(experiment_key: str) -> dict[str, Any]:
+    def safe(obj: Any, field: str, default: Any = None) -> Any:
+        return getattr(obj, field, default) if obj is not None else default
+
+    def safe_first(obj: Any, fields: list[str], default: Any = None) -> Any:
+        if obj is None:
+            return default
+        for field in fields:
+            if hasattr(obj, field):
+                return getattr(obj, field)
+        return default
+
     with SessionLocal() as session:
         experiment = session.scalar(select(Experiment).where(Experiment.experiment_key == experiment_key))
         if experiment is None:
@@ -148,20 +159,25 @@ def experiment_readout(experiment_key: str) -> dict[str, Any]:
         "name": experiment.name,
         "hypothesis": experiment.hypothesis,
         "latest_evaluation": None if evaluation is None else {
-            "primary_metric_lift": evaluation.primary_metric_lift,
-            "p_value": evaluation.p_value,
-            "is_significant": evaluation.is_significant,
-            "cuped_applied": evaluation.cuped_applied,
-            "variance_reduction_pct": evaluation.variance_reduction_pct,
-            "guardrails_cleared": evaluation.guardrails_cleared,
-            "system_recommendation": evaluation.system_recommendation,
+            "primary_metric_lift": safe(evaluation, "primary_metric_lift"),
+            "primary_metric_ci_lower": safe(evaluation, "primary_metric_ci_lower"),
+            "primary_metric_ci_upper": safe(evaluation, "primary_metric_ci_upper"),
+            "p_value": safe(evaluation, "p_value"),
+            "is_significant": safe(evaluation, "is_significant"),
+            "cuped_applied": safe(evaluation, "cuped_applied"),
+            "cuped_theta": safe(evaluation, "cuped_theta"),
+            "variance_reduction_pct": safe(evaluation, "variance_reduction_pct"),
+            "guardrails_cleared": safe(evaluation, "guardrails_cleared"),
+            "peeking_warning": safe(evaluation, "peeking_warning"),
+            "simpsons_flag": safe(evaluation, "simpsons_flag"),
+            "novelty_flag": safe(evaluation, "novelty_flag"),
         },
         "latest_decision": None if decision is None else {
-            "system_recommendation": decision.system_recommendation,
-            "final_decision": decision.final_decision,
-            "decision_reason": decision.decision_reason,
-            "reviewer": decision.reviewer,
-            "override_reason": decision.override_reason,
+            "system_recommendation": safe_first(decision, ["system_recommendation", "recommendation"]),
+            "final_decision": safe(decision, "final_decision"),
+            "reason": safe_first(decision, ["reason", "decision_reason", "recommendation_reason"]),
+            "reviewer": safe_first(decision, ["reviewer", "reviewed_by", "reviewer_name"]),
+            "override_reason": safe(decision, "override_reason"),
         },
     }
 
