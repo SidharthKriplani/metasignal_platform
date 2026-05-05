@@ -1,0 +1,110 @@
+{
+  "artifact": "streaming_extension_validation_report",
+  "check_count": 20,
+  "passed_count": 20,
+  "failed_count": 0,
+  "status": "pass",
+  "checks": [
+    {
+      "check": "streaming_metric_snapshots.json_exists",
+      "passed": true,
+      "path": "outputs/streaming/streaming_metric_snapshots.json"
+    },
+    {
+      "check": "srm_streaming_alerts.json_exists",
+      "passed": true,
+      "path": "outputs/streaming/srm_streaming_alerts.json"
+    },
+    {
+      "check": "traffic_allocation_snapshots.json_exists",
+      "passed": true,
+      "path": "outputs/streaming/traffic_allocation_snapshots.json"
+    },
+    {
+      "check": "instrumentation_alerts.json_exists",
+      "passed": true,
+      "path": "outputs/streaming/instrumentation_alerts.json"
+    },
+    {
+      "check": "consumer_lag_report.json_exists",
+      "passed": true,
+      "path": "outputs/streaming/consumer_lag_report.json"
+    },
+    {
+      "check": "late_event_report.json_exists",
+      "passed": true,
+      "path": "outputs/streaming/late_event_report.json"
+    },
+    {
+      "check": "duplicate_event_report.json_exists",
+      "passed": true,
+      "path": "outputs/streaming/duplicate_event_report.json"
+    },
+    {
+      "check": "dlq_events.json_exists",
+      "passed": true,
+      "path": "outputs/streaming/dlq_events.json"
+    },
+    {
+      "check": "provisional_anomaly_alerts.json_exists",
+      "passed": true,
+      "path": "outputs/streaming/provisional_anomaly_alerts.json"
+    },
+    {
+      "check": "stream_batch_reconciliation_report.json_exists",
+      "passed": true,
+      "path": "outputs/streaming/stream_batch_reconciliation_report.json"
+    },
+    {
+      "check": "streaming_health_report.json_exists",
+      "passed": true,
+      "path": "outputs/streaming/streaming_health_report.json"
+    },
+    {
+      "check": "srm_early_warning_detected",
+      "passed": true,
+      "observed": 4
+    },
+    {
+      "check": "instrumentation_gap_detected",
+      "passed": true,
+      "observed": 2
+    },
+    {
+      "check": "late_events_detected",
+      "passed": true,
+      "observed": 35
+    },
+    {
+      "check": "duplicates_detected",
+      "passed": true,
+      "observed": 25
+    },
+    {
+      "check": "dlq_events_quarantined",
+      "passed": true,
+      "observed": 20
+    },
+    {
+      "check": "provisional_anomaly_detected",
+      "passed": true,
+      "observed": 1
+    },
+    {
+      "check": "stream_batch_reconciliation_passed",
+      "passed": true,
+      "observed": "pass"
+    },
+    {
+      "check": "streaming_snapshots_are_provisional",
+      "passed": true,
+      "observed": 12
+    },
+    {
+      "check": "streaming_health_requires_investigation",
+      "passed": true,
+      "observed": "investigate"
+    }
+  ],
+  "evidence_statement": "MetaSignal streaming extension validates provisional SRM, traffic allocation drift, instrumentation gap, consumer lag, late-event, duplicate, DLQ, provisional anomaly, and stream-batch reconciliation behavior."
+}
