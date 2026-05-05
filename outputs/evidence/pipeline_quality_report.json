@@ -597,6 +597,71 @@
       "config_hash": "b3c533fdb8a7f08646bbbb1e9df0a358c918158deb3681810352df5af513964a",
       "retry_count": 0,
       "triggered_by": "run_failure_injection_v0"
+    },
+    {
+      "id": "d4c7152f-b8a9-4180-af61-5ea836092652",
+      "job_type": "data_quality_v0",
+      "run_date": "2015-05-03",
+      "status": "success",
+      "rows_processed": 2756101,
+      "rows_expected": 2756101,
+      "quality_checks_passed": 5,
+      "quality_checks_failed": 0,
+      "config_hash": "62e33a5094ce37a92ec48b7072528fab5ee3d77a8034cd37ab9b7155f99d009f",
+      "retry_count": 0,
+      "triggered_by": "run_data_quality_v0"
+    },
+    {
+      "id": "36283dc3-8b3e-4ff6-b306-e9d08701ef52",
+      "job_type": "metric_compute_v0",
+      "run_date": "2015-05-03",
+      "status": "success",
+      "rows_processed": 2756101,
+      "rows_expected": 2756101,
+      "quality_checks_passed": 1,
+      "quality_checks_failed": 0,
+      "config_hash": "b5db6db77d1058d89bce7643c2c4a1cbed42c8d8b85aa099012a9f2029b394fe",
+      "retry_count": 0,
+      "triggered_by": "compute_metrics_v0"
+    },
+    {
+      "id": "c198797c-4b51-448e-a966-cc392f7c2cd0",
+      "job_type": "failure_injection_schema_drift_missing_transaction_id",
+      "run_date": "2015-05-03",
+      "status": "blocked",
+      "rows_processed": 2756101,
+      "rows_expected": 2756101,
+      "quality_checks_passed": 2,
+      "quality_checks_failed": 1,
+      "config_hash": "b9876289570e4db6859bb6e4ea4665b6c74cb91884a4c3f996b51991c8f1b447",
+      "retry_count": 0,
+      "triggered_by": "run_failure_injection_v0"
+    },
+    {
+      "id": "6c3cf75a-1727-42ff-abaf-26cd0ca27b08",
+      "job_type": "failure_injection_invalid_event_type_injection",
+      "run_date": "2015-05-03",
+      "status": "blocked",
+      "rows_processed": 2756101,
+      "rows_expected": 2756101,
+      "quality_checks_passed": 2,
+      "quality_checks_failed": 1,
+      "config_hash": "bbb262e30cb19bf9f2223f1bdc983bc6f762c8e08334b348b740ce73df298308",
+      "retry_count": 0,
+      "triggered_by": "run_failure_injection_v0"
+    },
+    {
+      "id": "2aba1e38-e02d-4229-ad84-b1e3b7dab646",
+      "job_type": "failure_injection_user_id_null_spike",
+      "run_date": "2015-05-03",
+      "status": "blocked",
+      "rows_processed": 2756101,
+      "rows_expected": 2756101,
+      "quality_checks_passed": 2,
+      "quality_checks_failed": 1,
+      "config_hash": "b3c533fdb8a7f08646bbbb1e9df0a358c918158deb3681810352df5af513964a",
+      "retry_count": 0,
+      "triggered_by": "run_failure_injection_v0"
     }
   ],
   "data_quality_checks": [
@@ -616,8 +681,8 @@
       }
     },
     {
-      "id": "11ad71fb-6862-4ba8-ba62-dc4b890657a9",
-      "run_id": "606865fa-f2bd-4358-b6cd-cdfdbac0be02",
+      "id": "d00ee5a0-77bd-4bbb-ae48-b0c833b3e233",
+      "run_id": "d4c7152f-b8a9-4180-af61-5ea836092652",
       "check_name": "date_coverage_check",
       "entity": "events_standardized",
       "check_date": "2015-05-03",
@@ -631,8 +696,8 @@
       }
     },
     {
-      "id": "9039ef89-1d40-4e4e-b208-da1ca6d03359",
-      "run_id": "a2077647-f9f7-491d-aaed-135251503f5f",
+      "id": "8c6a5ca7-2f50-4fee-bb1e-27e9e1a40725",
+      "run_id": "e80bc393-0085-438e-875c-6fa2f52349be",
       "check_name": "date_coverage_check",
       "entity": "events_standardized",
       "check_date": "2015-05-03",
@@ -646,8 +711,8 @@
       }
     },
     {
-      "id": "018297e9-f29a-40de-86cc-7a7d26dbaf24",
-      "run_id": "fcaad64f-0a32-4328-af48-907bb2607783",
+      "id": "4f1939c1-709d-42ea-800b-41353b9687d2",
+      "run_id": "4077b0f8-6767-4c7e-ba6e-685db283878c",
       "check_name": "date_coverage_check",
       "entity": "events_standardized",
       "check_date": "2015-05-03",
@@ -691,8 +756,8 @@
       }
     },
     {
-      "id": "4f1939c1-709d-42ea-800b-41353b9687d2",
-      "run_id": "4077b0f8-6767-4c7e-ba6e-685db283878c",
+      "id": "11ad71fb-6862-4ba8-ba62-dc4b890657a9",
+      "run_id": "606865fa-f2bd-4358-b6cd-cdfdbac0be02",
       "check_name": "date_coverage_check",
       "entity": "events_standardized",
       "check_date": "2015-05-03",
@@ -706,8 +771,8 @@
       }
     },
     {
-      "id": "8c6a5ca7-2f50-4fee-bb1e-27e9e1a40725",
-      "run_id": "e80bc393-0085-438e-875c-6fa2f52349be",
+      "id": "9039ef89-1d40-4e4e-b208-da1ca6d03359",
+      "run_id": "a2077647-f9f7-491d-aaed-135251503f5f",
       "check_name": "date_coverage_check",
       "entity": "events_standardized",
       "check_date": "2015-05-03",
@@ -736,35 +801,25 @@
       }
     },
     {
-      "id": "c6db37c7-f57d-4f20-9aea-72a256fca4c3",
-      "run_id": "6146d5d0-cce0-433d-b72f-13193958aba6",
-      "check_name": "event_type_domain_check",
+      "id": "018297e9-f29a-40de-86cc-7a7d26dbaf24",
+      "run_id": "fcaad64f-0a32-4328-af48-907bb2607783",
+      "check_name": "date_coverage_check",
       "entity": "events_standardized",
       "check_date": "2015-05-03",
-      "expected_value": 3.0,
-      "actual_value": 3.0,
-      "threshold": 0.0,
+      "expected_value": 30.0,
+      "actual_value": 139.0,
+      "threshold": 30.0,
       "passed": true,
-      "severity": "blocking",
+      "severity": "warning",
       "check_details": {
-        "allowed_event_types": [
-          "addtocart",
-          "transaction",
-          "view"
-        ],
-        "invalid_event_types": [],
-        "observed_event_types": [
-          "addtocart",
-          "transaction",
-          "view"
-        ]
+        "rule": "dataset should contain at least 30 event dates for demo usefulness"
       }
     },
     {
-      "id": "e9eadd6d-895b-4d8d-93c9-cbf8d64764a0",
-      "run_id": "62c577d9-6b08-469c-b995-2cdcac30e890",
+      "id": "0be7d4e2-7a58-4dd0-a3f6-f09a58f386fd",
+      "run_id": "cbef646a-cd77-4fe1-b9cd-0f9e3d2a83cf",
       "check_name": "event_type_domain_check",
-      "entity": "user_id_null_spike",
+      "entity": "schema_drift_missing_transaction_id",
       "check_date": "2015-05-03",
       "expected_value": 3.0,
       "actual_value": 3.0,
@@ -780,84 +835,6 @@
         "invalid_event_types": [],
         "observed_event_types": [
           "addtocart",
-          "transaction",
-          "view"
-        ]
-      }
-    },
-    {
-      "id": "9dc9f840-ba0a-47c4-be3f-17f3a07deee0",
-      "run_id": "5b66687f-c3a6-4196-a858-136ea25765ed",
-      "check_name": "event_type_domain_check",
-      "entity": "user_id_null_spike",
-      "check_date": "2015-05-03",
-      "expected_value": 3.0,
-      "actual_value": 3.0,
-      "threshold": 0.0,
-      "passed": true,
-      "severity": "blocking",
-      "check_details": {
-        "allowed_event_types": [
-          "addtocart",
-          "transaction",
-          "view"
-        ],
-        "invalid_event_types": [],
-        "observed_event_types": [
-          "addtocart",
-          "transaction",
-          "view"
-        ]
-      }
-    },
-    {
-      "id": "615caa82-2600-44b7-be79-321d20a1ccdb",
-      "run_id": "98130f01-ec22-42e8-9488-d7ead4fc4041",
-      "check_name": "event_type_domain_check",
-      "entity": "user_id_null_spike",
-      "check_date": "2015-05-03",
-      "expected_value": 3.0,
-      "actual_value": 3.0,
-      "threshold": 0.0,
-      "passed": true,
-      "severity": "blocking",
-      "check_details": {
-        "allowed_event_types": [
-          "addtocart",
-          "transaction",
-          "view"
-        ],
-        "invalid_event_types": [],
-        "observed_event_types": [
-          "addtocart",
-          "transaction",
-          "view"
-        ]
-      }
-    },
-    {
-      "id": "11c424ee-656f-4e10-9bd2-6e3462579dec",
-      "run_id": "f7f6a4fe-f600-49a6-a8a9-361de52175cb",
-      "check_name": "event_type_domain_check",
-      "entity": "invalid_event_type_injection",
-      "check_date": "2015-05-03",
-      "expected_value": 3.0,
-      "actual_value": 4.0,
-      "threshold": 0.0,
-      "passed": false,
-      "severity": "blocking",
-      "check_details": {
-        "allowed_event_types": [
-          "addtocart",
-          "transaction",
-          "view"
-        ],
-        "invalid_event_types": [
-          "checkout_started_unknown"
-        ],
-        "observed_event_types": [
-          "addtocart",
-          "checkout_started_unknown",
           "transaction",
           "view"
         ]
@@ -889,8 +866,8 @@
       }
     },
     {
-      "id": "3559eea7-72db-4bb0-ad71-cd176524ddd4",
-      "run_id": "805af7ce-1a56-4941-aaab-bd00e2f37a80",
+      "id": "eb464a5b-ca49-4d23-9019-d56ca7e31451",
+      "run_id": "879771d7-b256-433f-9430-6e68a226bb78",
       "check_name": "event_type_domain_check",
       "entity": "invalid_event_type_injection",
       "check_date": "2015-05-03",
@@ -942,6 +919,84 @@
       }
     },
     {
+      "id": "38dd8f4c-1ea4-4eac-9af7-1d258e485755",
+      "run_id": "b42921ed-5a26-4adc-89d5-cf5734485435",
+      "check_name": "event_type_domain_check",
+      "entity": "schema_drift_missing_transaction_id",
+      "check_date": "2015-05-03",
+      "expected_value": 3.0,
+      "actual_value": 3.0,
+      "threshold": 0.0,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "allowed_event_types": [
+          "addtocart",
+          "transaction",
+          "view"
+        ],
+        "invalid_event_types": [],
+        "observed_event_types": [
+          "addtocart",
+          "transaction",
+          "view"
+        ]
+      }
+    },
+    {
+      "id": "c6db37c7-f57d-4f20-9aea-72a256fca4c3",
+      "run_id": "6146d5d0-cce0-433d-b72f-13193958aba6",
+      "check_name": "event_type_domain_check",
+      "entity": "events_standardized",
+      "check_date": "2015-05-03",
+      "expected_value": 3.0,
+      "actual_value": 3.0,
+      "threshold": 0.0,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "allowed_event_types": [
+          "addtocart",
+          "transaction",
+          "view"
+        ],
+        "invalid_event_types": [],
+        "observed_event_types": [
+          "addtocart",
+          "transaction",
+          "view"
+        ]
+      }
+    },
+    {
+      "id": "11c424ee-656f-4e10-9bd2-6e3462579dec",
+      "run_id": "f7f6a4fe-f600-49a6-a8a9-361de52175cb",
+      "check_name": "event_type_domain_check",
+      "entity": "invalid_event_type_injection",
+      "check_date": "2015-05-03",
+      "expected_value": 3.0,
+      "actual_value": 4.0,
+      "threshold": 0.0,
+      "passed": false,
+      "severity": "blocking",
+      "check_details": {
+        "allowed_event_types": [
+          "addtocart",
+          "transaction",
+          "view"
+        ],
+        "invalid_event_types": [
+          "checkout_started_unknown"
+        ],
+        "observed_event_types": [
+          "addtocart",
+          "checkout_started_unknown",
+          "transaction",
+          "view"
+        ]
+      }
+    },
+    {
       "id": "6e2da667-614d-4834-8c2a-fdcdd5504361",
       "run_id": "1cbef261-40ae-461f-beea-8fff3519ad65",
       "check_name": "event_type_domain_check",
@@ -967,10 +1022,35 @@
       }
     },
     {
-      "id": "e793ce28-0968-4b9b-a199-fa11558a68a1",
-      "run_id": "30b9b8e1-3601-457b-a485-acae6fcb999c",
+      "id": "615caa82-2600-44b7-be79-321d20a1ccdb",
+      "run_id": "98130f01-ec22-42e8-9488-d7ead4fc4041",
       "check_name": "event_type_domain_check",
-      "entity": "schema_drift_missing_transaction_id",
+      "entity": "user_id_null_spike",
+      "check_date": "2015-05-03",
+      "expected_value": 3.0,
+      "actual_value": 3.0,
+      "threshold": 0.0,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "allowed_event_types": [
+          "addtocart",
+          "transaction",
+          "view"
+        ],
+        "invalid_event_types": [],
+        "observed_event_types": [
+          "addtocart",
+          "transaction",
+          "view"
+        ]
+      }
+    },
+    {
+      "id": "7b2ebea7-4ce5-4e8d-9d69-4f8c63ee9b77",
+      "run_id": "4077b0f8-6767-4c7e-ba6e-685db283878c",
+      "check_name": "event_type_domain_check",
+      "entity": "events_standardized",
       "check_date": "2015-05-03",
       "expected_value": 3.0,
       "actual_value": 3.0,
@@ -1017,8 +1097,8 @@
       }
     },
     {
-      "id": "3ef89c49-557e-4954-a12c-a368a94bf7fb",
-      "run_id": "5041d8fb-96fd-402c-9bd7-478928ec5a60",
+      "id": "ae581931-dbc9-418d-a9a7-7c5dd058550b",
+      "run_id": "a2077647-f9f7-491d-aaed-135251503f5f",
       "check_name": "event_type_domain_check",
       "entity": "events_standardized",
       "check_date": "2015-05-03",
@@ -1026,12 +1106,18 @@
       "actual_value": 3.0,
       "threshold": 0.0,
       "passed": true,
-      "severity": "warning",
+      "severity": "blocking",
       "check_details": {
-        "allowed_values": [
-          "view",
+        "allowed_event_types": [
           "addtocart",
-          "transaction"
+          "transaction",
+          "view"
+        ],
+        "invalid_event_types": [],
+        "observed_event_types": [
+          "addtocart",
+          "transaction",
+          "view"
         ]
       }
     },
@@ -1064,35 +1150,29 @@
       }
     },
     {
-      "id": "c1092b4a-dab6-45b4-8221-c1a7e2b84119",
-      "run_id": "a42e4345-0568-47b0-a627-c87b828209b3",
+      "id": "3ef89c49-557e-4954-a12c-a368a94bf7fb",
+      "run_id": "5041d8fb-96fd-402c-9bd7-478928ec5a60",
       "check_name": "event_type_domain_check",
-      "entity": "user_id_null_spike",
+      "entity": "events_standardized",
       "check_date": "2015-05-03",
       "expected_value": 3.0,
       "actual_value": 3.0,
       "threshold": 0.0,
       "passed": true,
-      "severity": "blocking",
+      "severity": "warning",
       "check_details": {
-        "allowed_event_types": [
+        "allowed_values": [
+          "view",
           "addtocart",
-          "transaction",
-          "view"
-        ],
-        "invalid_event_types": [],
-        "observed_event_types": [
-          "addtocart",
-          "transaction",
-          "view"
+          "transaction"
         ]
       }
     },
     {
-      "id": "16ffb804-23a0-4cc9-ac19-ab0639ccca91",
-      "run_id": "e35ef2a0-4ba6-4001-99d1-2153185bb9a7",
+      "id": "9dc9f840-ba0a-47c4-be3f-17f3a07deee0",
+      "run_id": "5b66687f-c3a6-4196-a858-136ea25765ed",
       "check_name": "event_type_domain_check",
-      "entity": "events_standardized",
+      "entity": "user_id_null_spike",
       "check_date": "2015-05-03",
       "expected_value": 3.0,
       "actual_value": 3.0,
@@ -1139,8 +1219,8 @@
       }
     },
     {
-      "id": "7aa91de2-e1af-411c-a4f2-066efc77b474",
-      "run_id": "fdd76c20-8705-44cf-9f74-0dee5de1b1bc",
+      "id": "b1a03e95-c8e9-4c9e-9ed2-df1957087c49",
+      "run_id": "c198797c-4b51-448e-a966-cc392f7c2cd0",
       "check_name": "event_type_domain_check",
       "entity": "schema_drift_missing_transaction_id",
       "check_date": "2015-05-03",
@@ -1164,33 +1244,8 @@
       }
     },
     {
-      "id": "7fc9c1c6-f1b6-46fd-b45d-135d691e4eca",
-      "run_id": "ab797c44-9634-4344-b393-c469786749a6",
-      "check_name": "event_type_domain_check",
-      "entity": "user_id_null_spike",
-      "check_date": "2015-05-03",
-      "expected_value": 3.0,
-      "actual_value": 3.0,
-      "threshold": 0.0,
-      "passed": true,
-      "severity": "blocking",
-      "check_details": {
-        "allowed_event_types": [
-          "addtocart",
-          "transaction",
-          "view"
-        ],
-        "invalid_event_types": [],
-        "observed_event_types": [
-          "addtocart",
-          "transaction",
-          "view"
-        ]
-      }
-    },
-    {
-      "id": "263aca38-13dd-4fb2-b55c-728eebc5a363",
-      "run_id": "cb094136-a789-4aae-9067-ff40dbd13b3c",
+      "id": "3559eea7-72db-4bb0-ad71-cd176524ddd4",
+      "run_id": "805af7ce-1a56-4941-aaab-bd00e2f37a80",
       "check_name": "event_type_domain_check",
       "entity": "invalid_event_type_injection",
       "check_date": "2015-05-03",
@@ -1211,6 +1266,31 @@
         "observed_event_types": [
           "addtocart",
           "checkout_started_unknown",
+          "transaction",
+          "view"
+        ]
+      }
+    },
+    {
+      "id": "e793ce28-0968-4b9b-a199-fa11558a68a1",
+      "run_id": "30b9b8e1-3601-457b-a485-acae6fcb999c",
+      "check_name": "event_type_domain_check",
+      "entity": "schema_drift_missing_transaction_id",
+      "check_date": "2015-05-03",
+      "expected_value": 3.0,
+      "actual_value": 3.0,
+      "threshold": 0.0,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "allowed_event_types": [
+          "addtocart",
+          "transaction",
+          "view"
+        ],
+        "invalid_event_types": [],
+        "observed_event_types": [
+          "addtocart",
           "transaction",
           "view"
         ]
@@ -1242,33 +1322,8 @@
       }
     },
     {
-      "id": "8d24ad8c-c00e-471c-9fed-f3ecd87bad1c",
-      "run_id": "ae3a58f2-aa99-42d7-a0e4-31bd9ade1319",
-      "check_name": "event_type_domain_check",
-      "entity": "user_id_null_spike",
-      "check_date": "2015-05-03",
-      "expected_value": 3.0,
-      "actual_value": 3.0,
-      "threshold": 0.0,
-      "passed": true,
-      "severity": "blocking",
-      "check_details": {
-        "allowed_event_types": [
-          "addtocart",
-          "transaction",
-          "view"
-        ],
-        "invalid_event_types": [],
-        "observed_event_types": [
-          "addtocart",
-          "transaction",
-          "view"
-        ]
-      }
-    },
-    {
-      "id": "6641ac43-f896-40fa-9297-c2a29fc40c05",
-      "run_id": "84ea3ba1-6829-4148-bee9-7f5f8fea3796",
+      "id": "7aa91de2-e1af-411c-a4f2-066efc77b474",
+      "run_id": "fdd76c20-8705-44cf-9f74-0dee5de1b1bc",
       "check_name": "event_type_domain_check",
       "entity": "schema_drift_missing_transaction_id",
       "check_date": "2015-05-03",
@@ -1296,6 +1351,56 @@
       "run_id": "d192acf7-fa65-4271-968a-d085c1120893",
       "check_name": "event_type_domain_check",
       "entity": "schema_drift_missing_transaction_id",
+      "check_date": "2015-05-03",
+      "expected_value": 3.0,
+      "actual_value": 3.0,
+      "threshold": 0.0,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "allowed_event_types": [
+          "addtocart",
+          "transaction",
+          "view"
+        ],
+        "invalid_event_types": [],
+        "observed_event_types": [
+          "addtocart",
+          "transaction",
+          "view"
+        ]
+      }
+    },
+    {
+      "id": "7858081a-d510-4633-8e2b-4764a2b8dcff",
+      "run_id": "2aba1e38-e02d-4229-ad84-b1e3b7dab646",
+      "check_name": "event_type_domain_check",
+      "entity": "user_id_null_spike",
+      "check_date": "2015-05-03",
+      "expected_value": 3.0,
+      "actual_value": 3.0,
+      "threshold": 0.0,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "allowed_event_types": [
+          "addtocart",
+          "transaction",
+          "view"
+        ],
+        "invalid_event_types": [],
+        "observed_event_types": [
+          "addtocart",
+          "transaction",
+          "view"
+        ]
+      }
+    },
+    {
+      "id": "16ffb804-23a0-4cc9-ac19-ab0639ccca91",
+      "run_id": "e35ef2a0-4ba6-4001-99d1-2153185bb9a7",
+      "check_name": "event_type_domain_check",
+      "entity": "events_standardized",
       "check_date": "2015-05-03",
       "expected_value": 3.0,
       "actual_value": 3.0,
@@ -1345,38 +1450,10 @@
       }
     },
     {
-      "id": "3fe45eba-0004-45a1-b9ba-40d51a4e1a1a",
-      "run_id": "fdb06b4a-e435-481f-b750-186520042bb8",
+      "id": "7fc9c1c6-f1b6-46fd-b45d-135d691e4eca",
+      "run_id": "ab797c44-9634-4344-b393-c469786749a6",
       "check_name": "event_type_domain_check",
-      "entity": "invalid_event_type_injection",
-      "check_date": "2015-05-03",
-      "expected_value": 3.0,
-      "actual_value": 4.0,
-      "threshold": 0.0,
-      "passed": false,
-      "severity": "blocking",
-      "check_details": {
-        "allowed_event_types": [
-          "addtocart",
-          "transaction",
-          "view"
-        ],
-        "invalid_event_types": [
-          "checkout_started_unknown"
-        ],
-        "observed_event_types": [
-          "addtocart",
-          "checkout_started_unknown",
-          "transaction",
-          "view"
-        ]
-      }
-    },
-    {
-      "id": "58dc4529-4838-4801-bb84-4cc4612b98fc",
-      "run_id": "fcaad64f-0a32-4328-af48-907bb2607783",
-      "check_name": "event_type_domain_check",
-      "entity": "events_standardized",
+      "entity": "user_id_null_spike",
       "check_date": "2015-05-03",
       "expected_value": 3.0,
       "actual_value": 3.0,
@@ -1423,8 +1500,8 @@
       }
     },
     {
-      "id": "eb464a5b-ca49-4d23-9019-d56ca7e31451",
-      "run_id": "879771d7-b256-433f-9430-6e68a226bb78",
+      "id": "3fe45eba-0004-45a1-b9ba-40d51a4e1a1a",
+      "run_id": "fdb06b4a-e435-481f-b750-186520042bb8",
       "check_name": "event_type_domain_check",
       "entity": "invalid_event_type_injection",
       "check_date": "2015-05-03",
@@ -1451,8 +1528,36 @@
       }
     },
     {
-      "id": "38dd8f4c-1ea4-4eac-9af7-1d258e485755",
-      "run_id": "b42921ed-5a26-4adc-89d5-cf5734485435",
+      "id": "263aca38-13dd-4fb2-b55c-728eebc5a363",
+      "run_id": "cb094136-a789-4aae-9067-ff40dbd13b3c",
+      "check_name": "event_type_domain_check",
+      "entity": "invalid_event_type_injection",
+      "check_date": "2015-05-03",
+      "expected_value": 3.0,
+      "actual_value": 4.0,
+      "threshold": 0.0,
+      "passed": false,
+      "severity": "blocking",
+      "check_details": {
+        "allowed_event_types": [
+          "addtocart",
+          "transaction",
+          "view"
+        ],
+        "invalid_event_types": [
+          "checkout_started_unknown"
+        ],
+        "observed_event_types": [
+          "addtocart",
+          "checkout_started_unknown",
+          "transaction",
+          "view"
+        ]
+      }
+    },
+    {
+      "id": "6641ac43-f896-40fa-9297-c2a29fc40c05",
+      "run_id": "84ea3ba1-6829-4148-bee9-7f5f8fea3796",
       "check_name": "event_type_domain_check",
       "entity": "schema_drift_missing_transaction_id",
       "check_date": "2015-05-03",
@@ -1470,34 +1575,6 @@
         "invalid_event_types": [],
         "observed_event_types": [
           "addtocart",
-          "transaction",
-          "view"
-        ]
-      }
-    },
-    {
-      "id": "4811f8d5-52ef-4168-acd1-055e1efd10bf",
-      "run_id": "63e28a74-c682-435a-809d-c0815f14f08d",
-      "check_name": "event_type_domain_check",
-      "entity": "invalid_event_type_injection",
-      "check_date": "2015-05-03",
-      "expected_value": 3.0,
-      "actual_value": 4.0,
-      "threshold": 0.0,
-      "passed": false,
-      "severity": "blocking",
-      "check_details": {
-        "allowed_event_types": [
-          "addtocart",
-          "transaction",
-          "view"
-        ],
-        "invalid_event_types": [
-          "checkout_started_unknown"
-        ],
-        "observed_event_types": [
-          "addtocart",
-          "checkout_started_unknown",
           "transaction",
           "view"
         ]
@@ -1529,15 +1606,15 @@
       }
     },
     {
-      "id": "ae581931-dbc9-418d-a9a7-7c5dd058550b",
-      "run_id": "a2077647-f9f7-491d-aaed-135251503f5f",
+      "id": "c5ed192f-0828-4884-9257-1137c43d9dbd",
+      "run_id": "6c3cf75a-1727-42ff-abaf-26cd0ca27b08",
       "check_name": "event_type_domain_check",
-      "entity": "events_standardized",
+      "entity": "invalid_event_type_injection",
       "check_date": "2015-05-03",
       "expected_value": 3.0,
-      "actual_value": 3.0,
+      "actual_value": 4.0,
       "threshold": 0.0,
-      "passed": true,
+      "passed": false,
       "severity": "blocking",
       "check_details": {
         "allowed_event_types": [
@@ -1545,34 +1622,12 @@
           "transaction",
           "view"
         ],
-        "invalid_event_types": [],
-        "observed_event_types": [
-          "addtocart",
-          "transaction",
-          "view"
-        ]
-      }
-    },
-    {
-      "id": "0be7d4e2-7a58-4dd0-a3f6-f09a58f386fd",
-      "run_id": "cbef646a-cd77-4fe1-b9cd-0f9e3d2a83cf",
-      "check_name": "event_type_domain_check",
-      "entity": "schema_drift_missing_transaction_id",
-      "check_date": "2015-05-03",
-      "expected_value": 3.0,
-      "actual_value": 3.0,
-      "threshold": 0.0,
-      "passed": true,
-      "severity": "blocking",
-      "check_details": {
-        "allowed_event_types": [
-          "addtocart",
-          "transaction",
-          "view"
+        "invalid_event_types": [
+          "checkout_started_unknown"
         ],
-        "invalid_event_types": [],
         "observed_event_types": [
           "addtocart",
+          "checkout_started_unknown",
           "transaction",
           "view"
         ]
@@ -1604,10 +1659,35 @@
       }
     },
     {
-      "id": "7ab1ef90-6540-4a3e-bd5a-137ab9e83bfe",
-      "run_id": "43e2e034-c00b-42e0-a8da-d9b7e77f332f",
+      "id": "692b3baa-0078-4157-a8ae-849eb5aa169b",
+      "run_id": "d4c7152f-b8a9-4180-af61-5ea836092652",
       "check_name": "event_type_domain_check",
-      "entity": "user_id_null_spike",
+      "entity": "events_standardized",
+      "check_date": "2015-05-03",
+      "expected_value": 3.0,
+      "actual_value": 3.0,
+      "threshold": 0.0,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "allowed_event_types": [
+          "addtocart",
+          "transaction",
+          "view"
+        ],
+        "invalid_event_types": [],
+        "observed_event_types": [
+          "addtocart",
+          "transaction",
+          "view"
+        ]
+      }
+    },
+    {
+      "id": "58dc4529-4838-4801-bb84-4cc4612b98fc",
+      "run_id": "fcaad64f-0a32-4328-af48-907bb2607783",
+      "check_name": "event_type_domain_check",
+      "entity": "events_standardized",
       "check_date": "2015-05-03",
       "expected_value": 3.0,
       "actual_value": 3.0,
@@ -1657,10 +1737,10 @@
       }
     },
     {
-      "id": "7b2ebea7-4ce5-4e8d-9d69-4f8c63ee9b77",
-      "run_id": "4077b0f8-6767-4c7e-ba6e-685db283878c",
+      "id": "7ab1ef90-6540-4a3e-bd5a-137ab9e83bfe",
+      "run_id": "43e2e034-c00b-42e0-a8da-d9b7e77f332f",
       "check_name": "event_type_domain_check",
-      "entity": "events_standardized",
+      "entity": "user_id_null_spike",
       "check_date": "2015-05-03",
       "expected_value": 3.0,
       "actual_value": 3.0,
@@ -1682,10 +1762,113 @@
       }
     },
     {
-      "id": "48a891b3-81a7-4970-9fe3-c7e3b9b9fedd",
-      "run_id": "5b66687f-c3a6-4196-a858-136ea25765ed",
-      "check_name": "required_columns_present",
+      "id": "c1092b4a-dab6-45b4-8221-c1a7e2b84119",
+      "run_id": "a42e4345-0568-47b0-a627-c87b828209b3",
+      "check_name": "event_type_domain_check",
       "entity": "user_id_null_spike",
+      "check_date": "2015-05-03",
+      "expected_value": 3.0,
+      "actual_value": 3.0,
+      "threshold": 0.0,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "allowed_event_types": [
+          "addtocart",
+          "transaction",
+          "view"
+        ],
+        "invalid_event_types": [],
+        "observed_event_types": [
+          "addtocart",
+          "transaction",
+          "view"
+        ]
+      }
+    },
+    {
+      "id": "e9eadd6d-895b-4d8d-93c9-cbf8d64764a0",
+      "run_id": "62c577d9-6b08-469c-b995-2cdcac30e890",
+      "check_name": "event_type_domain_check",
+      "entity": "user_id_null_spike",
+      "check_date": "2015-05-03",
+      "expected_value": 3.0,
+      "actual_value": 3.0,
+      "threshold": 0.0,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "allowed_event_types": [
+          "addtocart",
+          "transaction",
+          "view"
+        ],
+        "invalid_event_types": [],
+        "observed_event_types": [
+          "addtocart",
+          "transaction",
+          "view"
+        ]
+      }
+    },
+    {
+      "id": "8d24ad8c-c00e-471c-9fed-f3ecd87bad1c",
+      "run_id": "ae3a58f2-aa99-42d7-a0e4-31bd9ade1319",
+      "check_name": "event_type_domain_check",
+      "entity": "user_id_null_spike",
+      "check_date": "2015-05-03",
+      "expected_value": 3.0,
+      "actual_value": 3.0,
+      "threshold": 0.0,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "allowed_event_types": [
+          "addtocart",
+          "transaction",
+          "view"
+        ],
+        "invalid_event_types": [],
+        "observed_event_types": [
+          "addtocart",
+          "transaction",
+          "view"
+        ]
+      }
+    },
+    {
+      "id": "4811f8d5-52ef-4168-acd1-055e1efd10bf",
+      "run_id": "63e28a74-c682-435a-809d-c0815f14f08d",
+      "check_name": "event_type_domain_check",
+      "entity": "invalid_event_type_injection",
+      "check_date": "2015-05-03",
+      "expected_value": 3.0,
+      "actual_value": 4.0,
+      "threshold": 0.0,
+      "passed": false,
+      "severity": "blocking",
+      "check_details": {
+        "allowed_event_types": [
+          "addtocart",
+          "transaction",
+          "view"
+        ],
+        "invalid_event_types": [
+          "checkout_started_unknown"
+        ],
+        "observed_event_types": [
+          "addtocart",
+          "checkout_started_unknown",
+          "transaction",
+          "view"
+        ]
+      }
+    },
+    {
+      "id": "5baac90c-7686-404b-85eb-f37c7add1bfb",
+      "run_id": "1cbef261-40ae-461f-beea-8fff3519ad65",
+      "check_name": "required_columns_present",
+      "entity": "events_standardized",
       "check_date": "2015-05-03",
       "expected_value": 6.0,
       "actual_value": 6.0,
@@ -1827,36 +2010,6 @@
       "run_id": "43e2e034-c00b-42e0-a8da-d9b7e77f332f",
       "check_name": "required_columns_present",
       "entity": "user_id_null_spike",
-      "check_date": "2015-05-03",
-      "expected_value": 6.0,
-      "actual_value": 6.0,
-      "threshold": 0.0,
-      "passed": true,
-      "severity": "blocking",
-      "check_details": {
-        "actual_columns": [
-          "event_timestamp",
-          "event_date",
-          "user_id",
-          "event_type",
-          "item_id",
-          "transaction_id"
-        ],
-        "required_columns": [
-          "event_timestamp",
-          "event_date",
-          "user_id",
-          "event_type",
-          "item_id",
-          "transaction_id"
-        ]
-      }
-    },
-    {
-      "id": "5baac90c-7686-404b-85eb-f37c7add1bfb",
-      "run_id": "1cbef261-40ae-461f-beea-8fff3519ad65",
-      "check_name": "required_columns_present",
-      "entity": "events_standardized",
       "check_date": "2015-05-03",
       "expected_value": 6.0,
       "actual_value": 6.0,
@@ -2656,6 +2809,36 @@
       }
     },
     {
+      "id": "48a891b3-81a7-4970-9fe3-c7e3b9b9fedd",
+      "run_id": "5b66687f-c3a6-4196-a858-136ea25765ed",
+      "check_name": "required_columns_present",
+      "entity": "user_id_null_spike",
+      "check_date": "2015-05-03",
+      "expected_value": 6.0,
+      "actual_value": 6.0,
+      "threshold": 0.0,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "actual_columns": [
+          "event_timestamp",
+          "event_date",
+          "user_id",
+          "event_type",
+          "item_id",
+          "transaction_id"
+        ],
+        "required_columns": [
+          "event_timestamp",
+          "event_date",
+          "user_id",
+          "event_type",
+          "item_id",
+          "transaction_id"
+        ]
+      }
+    },
+    {
       "id": "ebcb2d5d-14d3-4f9d-a981-137bd24229cc",
       "run_id": "a2077647-f9f7-491d-aaed-135251503f5f",
       "check_name": "required_columns_present",
@@ -2775,8 +2958,127 @@
       }
     },
     {
-      "id": "74427999-b69f-4e91-8c6c-915c8b043e9a",
-      "run_id": "606865fa-f2bd-4358-b6cd-cdfdbac0be02",
+      "id": "6dbcf637-23a4-49cf-b55a-84b0f8c6479c",
+      "run_id": "d4c7152f-b8a9-4180-af61-5ea836092652",
+      "check_name": "required_columns_present",
+      "entity": "events_standardized",
+      "check_date": "2015-05-03",
+      "expected_value": 6.0,
+      "actual_value": 6.0,
+      "threshold": 0.0,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "actual_columns": [
+          "event_timestamp",
+          "event_date",
+          "user_id",
+          "event_type",
+          "item_id",
+          "transaction_id"
+        ],
+        "required_columns": [
+          "event_timestamp",
+          "event_date",
+          "user_id",
+          "event_type",
+          "item_id",
+          "transaction_id"
+        ]
+      }
+    },
+    {
+      "id": "f9b7fa35-0317-482a-9693-eeac806db1c7",
+      "run_id": "c198797c-4b51-448e-a966-cc392f7c2cd0",
+      "check_name": "required_columns_present",
+      "entity": "schema_drift_missing_transaction_id",
+      "check_date": "2015-05-03",
+      "expected_value": 6.0,
+      "actual_value": 5.0,
+      "threshold": 0.0,
+      "passed": false,
+      "severity": "blocking",
+      "check_details": {
+        "actual_columns": [
+          "event_timestamp",
+          "event_date",
+          "user_id",
+          "event_type",
+          "item_id"
+        ],
+        "required_columns": [
+          "event_timestamp",
+          "event_date",
+          "user_id",
+          "event_type",
+          "item_id",
+          "transaction_id"
+        ]
+      }
+    },
+    {
+      "id": "cdcd3300-4f59-4550-834f-c67651389282",
+      "run_id": "6c3cf75a-1727-42ff-abaf-26cd0ca27b08",
+      "check_name": "required_columns_present",
+      "entity": "invalid_event_type_injection",
+      "check_date": "2015-05-03",
+      "expected_value": 6.0,
+      "actual_value": 6.0,
+      "threshold": 0.0,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "actual_columns": [
+          "event_timestamp",
+          "event_date",
+          "user_id",
+          "event_type",
+          "item_id",
+          "transaction_id"
+        ],
+        "required_columns": [
+          "event_timestamp",
+          "event_date",
+          "user_id",
+          "event_type",
+          "item_id",
+          "transaction_id"
+        ]
+      }
+    },
+    {
+      "id": "ffd2f78c-68b7-4ef7-9831-ff471ae59853",
+      "run_id": "2aba1e38-e02d-4229-ad84-b1e3b7dab646",
+      "check_name": "required_columns_present",
+      "entity": "user_id_null_spike",
+      "check_date": "2015-05-03",
+      "expected_value": 6.0,
+      "actual_value": 6.0,
+      "threshold": 0.0,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "actual_columns": [
+          "event_timestamp",
+          "event_date",
+          "user_id",
+          "event_type",
+          "item_id",
+          "transaction_id"
+        ],
+        "required_columns": [
+          "event_timestamp",
+          "event_date",
+          "user_id",
+          "event_type",
+          "item_id",
+          "transaction_id"
+        ]
+      }
+    },
+    {
+      "id": "ae179bce-4103-4dd6-b4dd-b85513133b29",
+      "run_id": "1cbef261-40ae-461f-beea-8fff3519ad65",
       "check_name": "row_count_nonzero",
       "entity": "events_standardized",
       "check_date": "2015-05-03",
@@ -2805,6 +3107,21 @@
       }
     },
     {
+      "id": "74427999-b69f-4e91-8c6c-915c8b043e9a",
+      "run_id": "606865fa-f2bd-4358-b6cd-cdfdbac0be02",
+      "check_name": "row_count_nonzero",
+      "entity": "events_standardized",
+      "check_date": "2015-05-03",
+      "expected_value": 1.0,
+      "actual_value": 2756101.0,
+      "threshold": 0.0,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "rule": "standardized event table must not be empty"
+      }
+    },
+    {
       "id": "9fcdabff-8eee-443d-847f-d872c2e3038f",
       "run_id": "e35ef2a0-4ba6-4001-99d1-2153185bb9a7",
       "check_name": "row_count_nonzero",
@@ -2820,23 +3137,8 @@
       }
     },
     {
-      "id": "ae179bce-4103-4dd6-b4dd-b85513133b29",
-      "run_id": "1cbef261-40ae-461f-beea-8fff3519ad65",
-      "check_name": "row_count_nonzero",
-      "entity": "events_standardized",
-      "check_date": "2015-05-03",
-      "expected_value": 1.0,
-      "actual_value": 2756101.0,
-      "threshold": 0.0,
-      "passed": true,
-      "severity": "blocking",
-      "check_details": {
-        "rule": "standardized event table must not be empty"
-      }
-    },
-    {
-      "id": "c333564f-5866-4d48-8b56-af9273a82e4e",
-      "run_id": "4077b0f8-6767-4c7e-ba6e-685db283878c",
+      "id": "65ada348-329d-40c9-925c-7a9349dbb53f",
+      "run_id": "d4c7152f-b8a9-4180-af61-5ea836092652",
       "check_name": "row_count_nonzero",
       "entity": "events_standardized",
       "check_date": "2015-05-03",
@@ -2865,8 +3167,8 @@
       }
     },
     {
-      "id": "381e9a3a-9e92-44ea-b94c-a39bbb567efc",
-      "run_id": "e80bc393-0085-438e-875c-6fa2f52349be",
+      "id": "31ca171f-d735-4a95-a779-444d4edbf858",
+      "run_id": "a2077647-f9f7-491d-aaed-135251503f5f",
       "check_name": "row_count_nonzero",
       "entity": "events_standardized",
       "check_date": "2015-05-03",
@@ -2895,8 +3197,23 @@
       }
     },
     {
-      "id": "31ca171f-d735-4a95-a779-444d4edbf858",
-      "run_id": "a2077647-f9f7-491d-aaed-135251503f5f",
+      "id": "381e9a3a-9e92-44ea-b94c-a39bbb567efc",
+      "run_id": "e80bc393-0085-438e-875c-6fa2f52349be",
+      "check_name": "row_count_nonzero",
+      "entity": "events_standardized",
+      "check_date": "2015-05-03",
+      "expected_value": 1.0,
+      "actual_value": 2756101.0,
+      "threshold": 0.0,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "rule": "standardized event table must not be empty"
+      }
+    },
+    {
+      "id": "c333564f-5866-4d48-8b56-af9273a82e4e",
+      "run_id": "4077b0f8-6767-4c7e-ba6e-685db283878c",
       "check_name": "row_count_nonzero",
       "entity": "events_standardized",
       "check_date": "2015-05-03",
@@ -2925,128 +3242,8 @@
       }
     },
     {
-      "id": "6eed45f3-2e0e-4d80-b57c-fde76da0f8fe",
-      "run_id": "cb094136-a789-4aae-9067-ff40dbd13b3c",
-      "check_name": "user_id_null_rate",
-      "entity": "invalid_event_type_injection",
-      "check_date": "2015-05-03",
-      "expected_value": 0.0,
-      "actual_value": 0.0,
-      "threshold": 0.001,
-      "passed": true,
-      "severity": "blocking",
-      "check_details": {
-        "rule": "user_id null rate must be <= 0.1%"
-      }
-    },
-    {
-      "id": "1cc18a14-3a27-4f84-832b-ef00e02cc319",
-      "run_id": "e80bc393-0085-438e-875c-6fa2f52349be",
-      "check_name": "user_id_null_rate",
-      "entity": "events_standardized",
-      "check_date": "2015-05-03",
-      "expected_value": 0.0,
-      "actual_value": 0.0,
-      "threshold": 0.001,
-      "passed": true,
-      "severity": "blocking",
-      "check_details": {
-        "rule": "user_id null rate must be <= 0.1%"
-      }
-    },
-    {
-      "id": "ca20b3f4-d4fc-4a45-b6cf-1d37af571e82",
-      "run_id": "b42921ed-5a26-4adc-89d5-cf5734485435",
-      "check_name": "user_id_null_rate",
-      "entity": "schema_drift_missing_transaction_id",
-      "check_date": "2015-05-03",
-      "expected_value": 0.0,
-      "actual_value": 0.0,
-      "threshold": 0.001,
-      "passed": true,
-      "severity": "blocking",
-      "check_details": {
-        "rule": "user_id null rate must be <= 0.1%"
-      }
-    },
-    {
-      "id": "c659a224-f776-401c-ba27-5636391ac3b6",
-      "run_id": "ab797c44-9634-4344-b393-c469786749a6",
-      "check_name": "user_id_null_rate",
-      "entity": "user_id_null_spike",
-      "check_date": "2015-05-03",
-      "expected_value": 0.0,
-      "actual_value": 0.009999996371685943,
-      "threshold": 0.001,
-      "passed": false,
-      "severity": "blocking",
-      "check_details": {
-        "rule": "user_id null rate must be <= 0.1%"
-      }
-    },
-    {
-      "id": "c569c245-7a83-423e-a983-a90a165eafea",
-      "run_id": "fdd76c20-8705-44cf-9f74-0dee5de1b1bc",
-      "check_name": "user_id_null_rate",
-      "entity": "schema_drift_missing_transaction_id",
-      "check_date": "2015-05-03",
-      "expected_value": 0.0,
-      "actual_value": 0.0,
-      "threshold": 0.001,
-      "passed": true,
-      "severity": "blocking",
-      "check_details": {
-        "rule": "user_id null rate must be <= 0.1%"
-      }
-    },
-    {
-      "id": "d5fe1bba-000e-4ec2-95e9-4469d5ad70f4",
-      "run_id": "e35ef2a0-4ba6-4001-99d1-2153185bb9a7",
-      "check_name": "user_id_null_rate",
-      "entity": "events_standardized",
-      "check_date": "2015-05-03",
-      "expected_value": 0.0,
-      "actual_value": 0.0,
-      "threshold": 0.001,
-      "passed": true,
-      "severity": "blocking",
-      "check_details": {
-        "rule": "user_id null rate must be <= 0.1%"
-      }
-    },
-    {
-      "id": "2d2d295c-4789-4590-9d4f-4538dbbae25b",
-      "run_id": "64cc7f49-2d13-4775-9f8a-92e65d952bc0",
-      "check_name": "user_id_null_rate",
-      "entity": "user_id_null_spike",
-      "check_date": "2015-05-03",
-      "expected_value": 0.0,
-      "actual_value": 0.009999996371685943,
-      "threshold": 0.001,
-      "passed": false,
-      "severity": "blocking",
-      "check_details": {
-        "rule": "user_id null rate must be <= 0.1%"
-      }
-    },
-    {
-      "id": "028232ad-1842-4eb7-b7dd-70fd83e1957e",
-      "run_id": "63dcb669-7a59-4122-90f7-8a5c709f056b",
-      "check_name": "user_id_null_rate",
-      "entity": "invalid_event_type_injection",
-      "check_date": "2015-05-03",
-      "expected_value": 0.0,
-      "actual_value": 0.0,
-      "threshold": 0.001,
-      "passed": true,
-      "severity": "blocking",
-      "check_details": {
-        "rule": "user_id null rate must be <= 0.1%"
-      }
-    },
-    {
-      "id": "70139918-ba0e-4889-9c95-6cc02334b36b",
-      "run_id": "ae3a58f2-aa99-42d7-a0e4-31bd9ade1319",
+      "id": "68827207-a4c9-4705-ab78-161d646db2e1",
+      "run_id": "43e2e034-c00b-42e0-a8da-d9b7e77f332f",
       "check_name": "user_id_null_rate",
       "entity": "user_id_null_spike",
       "check_date": "2015-05-03",
@@ -3075,10 +3272,10 @@
       }
     },
     {
-      "id": "190460c4-3592-403a-9528-571b1ce0f876",
-      "run_id": "6bd824a0-ff2e-4688-97b9-4624d5fef2e9",
+      "id": "1cc18a14-3a27-4f84-832b-ef00e02cc319",
+      "run_id": "e80bc393-0085-438e-875c-6fa2f52349be",
       "check_name": "user_id_null_rate",
-      "entity": "schema_drift_missing_transaction_id",
+      "entity": "events_standardized",
       "check_date": "2015-05-03",
       "expected_value": 0.0,
       "actual_value": 0.0,
@@ -3090,8 +3287,8 @@
       }
     },
     {
-      "id": "388f5d0d-48d2-441a-8b15-daf9a7f7bf13",
-      "run_id": "879771d7-b256-433f-9430-6e68a226bb78",
+      "id": "77128731-0377-4e2e-9364-de824b8d98f6",
+      "run_id": "fdb06b4a-e435-481f-b750-186520042bb8",
       "check_name": "user_id_null_rate",
       "entity": "invalid_event_type_injection",
       "check_date": "2015-05-03",
@@ -3120,66 +3317,6 @@
       }
     },
     {
-      "id": "99eb8c29-9868-4844-bf0e-2a4fe6732f58",
-      "run_id": "1cbef261-40ae-461f-beea-8fff3519ad65",
-      "check_name": "user_id_null_rate",
-      "entity": "events_standardized",
-      "check_date": "2015-05-03",
-      "expected_value": 0.0,
-      "actual_value": 0.0,
-      "threshold": 0.001,
-      "passed": true,
-      "severity": "blocking",
-      "check_details": {
-        "rule": "user_id null rate must be <= 0.1%"
-      }
-    },
-    {
-      "id": "4ef0aced-9fc4-4651-82c6-be505b21cd86",
-      "run_id": "79f42e05-9089-4c8e-9dc4-6ce9495e2e74",
-      "check_name": "user_id_null_rate",
-      "entity": "schema_drift_missing_transaction_id",
-      "check_date": "2015-05-03",
-      "expected_value": 0.0,
-      "actual_value": 0.0,
-      "threshold": 0.001,
-      "passed": true,
-      "severity": "blocking",
-      "check_details": {
-        "rule": "user_id null rate must be <= 0.1%"
-      }
-    },
-    {
-      "id": "dfb9f694-47ec-4127-ae0e-146ddc7a0157",
-      "run_id": "f7f6a4fe-f600-49a6-a8a9-361de52175cb",
-      "check_name": "user_id_null_rate",
-      "entity": "invalid_event_type_injection",
-      "check_date": "2015-05-03",
-      "expected_value": 0.0,
-      "actual_value": 0.0,
-      "threshold": 0.001,
-      "passed": true,
-      "severity": "blocking",
-      "check_details": {
-        "rule": "user_id null rate must be <= 0.1%"
-      }
-    },
-    {
-      "id": "758ad125-8462-4824-bf5c-d97158af4e36",
-      "run_id": "606865fa-f2bd-4358-b6cd-cdfdbac0be02",
-      "check_name": "user_id_null_rate",
-      "entity": "events_standardized",
-      "check_date": "2015-05-03",
-      "expected_value": 0.0,
-      "actual_value": 0.0,
-      "threshold": 0.001,
-      "passed": true,
-      "severity": "blocking",
-      "check_details": {
-        "rule": "user_id null rate must be <= 0.1%"
-      }
-    },
-    {
       "id": "9d918433-20f7-48cf-a713-4b88abb0d42d",
       "run_id": "5b66687f-c3a6-4196-a858-136ea25765ed",
       "check_name": "user_id_null_rate",
@@ -3195,8 +3332,143 @@
       }
     },
     {
+      "id": "2d2d295c-4789-4590-9d4f-4538dbbae25b",
+      "run_id": "64cc7f49-2d13-4775-9f8a-92e65d952bc0",
+      "check_name": "user_id_null_rate",
+      "entity": "user_id_null_spike",
+      "check_date": "2015-05-03",
+      "expected_value": 0.0,
+      "actual_value": 0.009999996371685943,
+      "threshold": 0.001,
+      "passed": false,
+      "severity": "blocking",
+      "check_details": {
+        "rule": "user_id null rate must be <= 0.1%"
+      }
+    },
+    {
+      "id": "99f9d665-6bb9-4838-a4b3-a12739694e8d",
+      "run_id": "c198797c-4b51-448e-a966-cc392f7c2cd0",
+      "check_name": "user_id_null_rate",
+      "entity": "schema_drift_missing_transaction_id",
+      "check_date": "2015-05-03",
+      "expected_value": 0.0,
+      "actual_value": 0.0,
+      "threshold": 0.001,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "rule": "user_id null rate must be <= 0.1%"
+      }
+    },
+    {
+      "id": "83d090d6-5adf-4930-8cc6-3c249955799c",
+      "run_id": "a2077647-f9f7-491d-aaed-135251503f5f",
+      "check_name": "user_id_null_rate",
+      "entity": "events_standardized",
+      "check_date": "2015-05-03",
+      "expected_value": 0.0,
+      "actual_value": 0.0,
+      "threshold": 0.001,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "rule": "user_id null rate must be <= 0.1%"
+      }
+    },
+    {
+      "id": "028232ad-1842-4eb7-b7dd-70fd83e1957e",
+      "run_id": "63dcb669-7a59-4122-90f7-8a5c709f056b",
+      "check_name": "user_id_null_rate",
+      "entity": "invalid_event_type_injection",
+      "check_date": "2015-05-03",
+      "expected_value": 0.0,
+      "actual_value": 0.0,
+      "threshold": 0.001,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "rule": "user_id null rate must be <= 0.1%"
+      }
+    },
+    {
+      "id": "190460c4-3592-403a-9528-571b1ce0f876",
+      "run_id": "6bd824a0-ff2e-4688-97b9-4624d5fef2e9",
+      "check_name": "user_id_null_rate",
+      "entity": "schema_drift_missing_transaction_id",
+      "check_date": "2015-05-03",
+      "expected_value": 0.0,
+      "actual_value": 0.0,
+      "threshold": 0.001,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "rule": "user_id null rate must be <= 0.1%"
+      }
+    },
+    {
+      "id": "c569c245-7a83-423e-a983-a90a165eafea",
+      "run_id": "fdd76c20-8705-44cf-9f74-0dee5de1b1bc",
+      "check_name": "user_id_null_rate",
+      "entity": "schema_drift_missing_transaction_id",
+      "check_date": "2015-05-03",
+      "expected_value": 0.0,
+      "actual_value": 0.0,
+      "threshold": 0.001,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "rule": "user_id null rate must be <= 0.1%"
+      }
+    },
+    {
+      "id": "ca20b3f4-d4fc-4a45-b6cf-1d37af571e82",
+      "run_id": "b42921ed-5a26-4adc-89d5-cf5734485435",
+      "check_name": "user_id_null_rate",
+      "entity": "schema_drift_missing_transaction_id",
+      "check_date": "2015-05-03",
+      "expected_value": 0.0,
+      "actual_value": 0.0,
+      "threshold": 0.001,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "rule": "user_id null rate must be <= 0.1%"
+      }
+    },
+    {
+      "id": "99eb8c29-9868-4844-bf0e-2a4fe6732f58",
+      "run_id": "1cbef261-40ae-461f-beea-8fff3519ad65",
+      "check_name": "user_id_null_rate",
+      "entity": "events_standardized",
+      "check_date": "2015-05-03",
+      "expected_value": 0.0,
+      "actual_value": 0.0,
+      "threshold": 0.001,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "rule": "user_id null rate must be <= 0.1%"
+      }
+    },
+    {
       "id": "bb0920c5-33c7-4d62-bf17-45ef460ef458",
       "run_id": "98130f01-ec22-42e8-9488-d7ead4fc4041",
+      "check_name": "user_id_null_rate",
+      "entity": "user_id_null_spike",
+      "check_date": "2015-05-03",
+      "expected_value": 0.0,
+      "actual_value": 0.009999996371685943,
+      "threshold": 0.001,
+      "passed": false,
+      "severity": "blocking",
+      "check_details": {
+        "rule": "user_id null rate must be <= 0.1%"
+      }
+    },
+    {
+      "id": "ca2a6c33-67d5-42e4-abe1-d64dc97b2cfc",
+      "run_id": "2aba1e38-e02d-4229-ad84-b1e3b7dab646",
       "check_name": "user_id_null_rate",
       "entity": "user_id_null_spike",
       "check_date": "2015-05-03",
@@ -3225,23 +3497,8 @@
       }
     },
     {
-      "id": "1605f0c8-f103-4b3b-b703-bb7f311a0322",
-      "run_id": "62c577d9-6b08-469c-b995-2cdcac30e890",
-      "check_name": "user_id_null_rate",
-      "entity": "user_id_null_spike",
-      "check_date": "2015-05-03",
-      "expected_value": 0.0,
-      "actual_value": 0.009999996371685943,
-      "threshold": 0.001,
-      "passed": false,
-      "severity": "blocking",
-      "check_details": {
-        "rule": "user_id null rate must be <= 0.1%"
-      }
-    },
-    {
-      "id": "499fd0b1-66d3-4193-a79e-f9e1405dd51c",
-      "run_id": "666a2707-6407-4659-8f45-f9a5b228c599",
+      "id": "dfb9f694-47ec-4127-ae0e-146ddc7a0157",
+      "run_id": "f7f6a4fe-f600-49a6-a8a9-361de52175cb",
       "check_name": "user_id_null_rate",
       "entity": "invalid_event_type_injection",
       "check_date": "2015-05-03",
@@ -3255,10 +3512,25 @@
       }
     },
     {
-      "id": "ec54b1d3-7a7d-4b31-8481-97e955a15c83",
-      "run_id": "4077b0f8-6767-4c7e-ba6e-685db283878c",
+      "id": "4ef0aced-9fc4-4651-82c6-be505b21cd86",
+      "run_id": "79f42e05-9089-4c8e-9dc4-6ce9495e2e74",
       "check_name": "user_id_null_rate",
-      "entity": "events_standardized",
+      "entity": "schema_drift_missing_transaction_id",
+      "check_date": "2015-05-03",
+      "expected_value": 0.0,
+      "actual_value": 0.0,
+      "threshold": 0.001,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "rule": "user_id null rate must be <= 0.1%"
+      }
+    },
+    {
+      "id": "388f5d0d-48d2-441a-8b15-daf9a7f7bf13",
+      "run_id": "879771d7-b256-433f-9430-6e68a226bb78",
+      "check_name": "user_id_null_rate",
+      "entity": "invalid_event_type_injection",
       "check_date": "2015-05-03",
       "expected_value": 0.0,
       "actual_value": 0.0,
@@ -3285,23 +3557,8 @@
       }
     },
     {
-      "id": "1bc00e8b-e7e5-42d5-9aad-51fb84092d08",
-      "run_id": "ce68bd18-598a-425d-bbd9-833f98cffb9d",
-      "check_name": "user_id_null_rate",
-      "entity": "schema_drift_missing_transaction_id",
-      "check_date": "2015-05-03",
-      "expected_value": 0.0,
-      "actual_value": 0.0,
-      "threshold": 0.001,
-      "passed": true,
-      "severity": "blocking",
-      "check_details": {
-        "rule": "user_id null rate must be <= 0.1%"
-      }
-    },
-    {
-      "id": "8bfa0a9b-a6c6-4d00-931b-f9865acb173d",
-      "run_id": "6cc3ca82-8796-482c-9794-eafdddb81211",
+      "id": "758ad125-8462-4824-bf5c-d97158af4e36",
+      "run_id": "606865fa-f2bd-4358-b6cd-cdfdbac0be02",
       "check_name": "user_id_null_rate",
       "entity": "events_standardized",
       "check_date": "2015-05-03",
@@ -3330,10 +3587,10 @@
       }
     },
     {
-      "id": "83d090d6-5adf-4930-8cc6-3c249955799c",
-      "run_id": "a2077647-f9f7-491d-aaed-135251503f5f",
+      "id": "d85df0da-6689-4112-b4f3-dc6d53baf2db",
+      "run_id": "6c3cf75a-1727-42ff-abaf-26cd0ca27b08",
       "check_name": "user_id_null_rate",
-      "entity": "events_standardized",
+      "entity": "invalid_event_type_injection",
       "check_date": "2015-05-03",
       "expected_value": 0.0,
       "actual_value": 0.0,
@@ -3360,8 +3617,23 @@
       }
     },
     {
-      "id": "68827207-a4c9-4705-ab78-161d646db2e1",
-      "run_id": "43e2e034-c00b-42e0-a8da-d9b7e77f332f",
+      "id": "1605f0c8-f103-4b3b-b703-bb7f311a0322",
+      "run_id": "62c577d9-6b08-469c-b995-2cdcac30e890",
+      "check_name": "user_id_null_rate",
+      "entity": "user_id_null_spike",
+      "check_date": "2015-05-03",
+      "expected_value": 0.0,
+      "actual_value": 0.009999996371685943,
+      "threshold": 0.001,
+      "passed": false,
+      "severity": "blocking",
+      "check_details": {
+        "rule": "user_id null rate must be <= 0.1%"
+      }
+    },
+    {
+      "id": "70139918-ba0e-4889-9c95-6cc02334b36b",
+      "run_id": "ae3a58f2-aa99-42d7-a0e4-31bd9ade1319",
       "check_name": "user_id_null_rate",
       "entity": "user_id_null_spike",
       "check_date": "2015-05-03",
@@ -3390,23 +3662,8 @@
       }
     },
     {
-      "id": "8393616e-8aa9-4324-98d8-0a884baacc28",
-      "run_id": "e4f68ce3-c485-40a3-9bc6-048a2eb43f70",
-      "check_name": "user_id_null_rate",
-      "entity": "user_id_null_spike",
-      "check_date": "2015-05-03",
-      "expected_value": 0.0,
-      "actual_value": 0.009999996371685943,
-      "threshold": 0.001,
-      "passed": false,
-      "severity": "blocking",
-      "check_details": {
-        "rule": "user_id null rate must be <= 0.1%"
-      }
-    },
-    {
-      "id": "42c99ae2-51fc-4f2c-b912-241020c189fc",
-      "run_id": "cfef009f-2ad3-4731-a8cb-c3731488bac4",
+      "id": "499fd0b1-66d3-4193-a79e-f9e1405dd51c",
+      "run_id": "666a2707-6407-4659-8f45-f9a5b228c599",
       "check_name": "user_id_null_rate",
       "entity": "invalid_event_type_injection",
       "check_date": "2015-05-03",
@@ -3420,10 +3677,10 @@
       }
     },
     {
-      "id": "77128731-0377-4e2e-9364-de824b8d98f6",
-      "run_id": "fdb06b4a-e435-481f-b750-186520042bb8",
+      "id": "1bc00e8b-e7e5-42d5-9aad-51fb84092d08",
+      "run_id": "ce68bd18-598a-425d-bbd9-833f98cffb9d",
       "check_name": "user_id_null_rate",
-      "entity": "invalid_event_type_injection",
+      "entity": "schema_drift_missing_transaction_id",
       "check_date": "2015-05-03",
       "expected_value": 0.0,
       "actual_value": 0.0,
@@ -3439,6 +3696,126 @@
       "run_id": "84ea3ba1-6829-4148-bee9-7f5f8fea3796",
       "check_name": "user_id_null_rate",
       "entity": "schema_drift_missing_transaction_id",
+      "check_date": "2015-05-03",
+      "expected_value": 0.0,
+      "actual_value": 0.0,
+      "threshold": 0.001,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "rule": "user_id null rate must be <= 0.1%"
+      }
+    },
+    {
+      "id": "8bfa0a9b-a6c6-4d00-931b-f9865acb173d",
+      "run_id": "6cc3ca82-8796-482c-9794-eafdddb81211",
+      "check_name": "user_id_null_rate",
+      "entity": "events_standardized",
+      "check_date": "2015-05-03",
+      "expected_value": 0.0,
+      "actual_value": 0.0,
+      "threshold": 0.001,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "rule": "user_id null rate must be <= 0.1%"
+      }
+    },
+    {
+      "id": "ec54b1d3-7a7d-4b31-8481-97e955a15c83",
+      "run_id": "4077b0f8-6767-4c7e-ba6e-685db283878c",
+      "check_name": "user_id_null_rate",
+      "entity": "events_standardized",
+      "check_date": "2015-05-03",
+      "expected_value": 0.0,
+      "actual_value": 0.0,
+      "threshold": 0.001,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "rule": "user_id null rate must be <= 0.1%"
+      }
+    },
+    {
+      "id": "6eed45f3-2e0e-4d80-b57c-fde76da0f8fe",
+      "run_id": "cb094136-a789-4aae-9067-ff40dbd13b3c",
+      "check_name": "user_id_null_rate",
+      "entity": "invalid_event_type_injection",
+      "check_date": "2015-05-03",
+      "expected_value": 0.0,
+      "actual_value": 0.0,
+      "threshold": 0.001,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "rule": "user_id null rate must be <= 0.1%"
+      }
+    },
+    {
+      "id": "c659a224-f776-401c-ba27-5636391ac3b6",
+      "run_id": "ab797c44-9634-4344-b393-c469786749a6",
+      "check_name": "user_id_null_rate",
+      "entity": "user_id_null_spike",
+      "check_date": "2015-05-03",
+      "expected_value": 0.0,
+      "actual_value": 0.009999996371685943,
+      "threshold": 0.001,
+      "passed": false,
+      "severity": "blocking",
+      "check_details": {
+        "rule": "user_id null rate must be <= 0.1%"
+      }
+    },
+    {
+      "id": "8393616e-8aa9-4324-98d8-0a884baacc28",
+      "run_id": "e4f68ce3-c485-40a3-9bc6-048a2eb43f70",
+      "check_name": "user_id_null_rate",
+      "entity": "user_id_null_spike",
+      "check_date": "2015-05-03",
+      "expected_value": 0.0,
+      "actual_value": 0.009999996371685943,
+      "threshold": 0.001,
+      "passed": false,
+      "severity": "blocking",
+      "check_details": {
+        "rule": "user_id null rate must be <= 0.1%"
+      }
+    },
+    {
+      "id": "b4c14b3e-e452-40df-8fb6-3d82eeefbf58",
+      "run_id": "d4c7152f-b8a9-4180-af61-5ea836092652",
+      "check_name": "user_id_null_rate",
+      "entity": "events_standardized",
+      "check_date": "2015-05-03",
+      "expected_value": 0.0,
+      "actual_value": 0.0,
+      "threshold": 0.001,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "rule": "user_id null rate must be <= 0.1%"
+      }
+    },
+    {
+      "id": "d5fe1bba-000e-4ec2-95e9-4469d5ad70f4",
+      "run_id": "e35ef2a0-4ba6-4001-99d1-2153185bb9a7",
+      "check_name": "user_id_null_rate",
+      "entity": "events_standardized",
+      "check_date": "2015-05-03",
+      "expected_value": 0.0,
+      "actual_value": 0.0,
+      "threshold": 0.001,
+      "passed": true,
+      "severity": "blocking",
+      "check_details": {
+        "rule": "user_id null rate must be <= 0.1%"
+      }
+    },
+    {
+      "id": "42c99ae2-51fc-4f2c-b912-241020c189fc",
+      "run_id": "cfef009f-2ad3-4731-a8cb-c3731488bac4",
+      "check_name": "user_id_null_rate",
+      "entity": "invalid_event_type_injection",
       "check_date": "2015-05-03",
       "expected_value": 0.0,
       "actual_value": 0.0,

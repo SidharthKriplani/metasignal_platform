@@ -1,14 +1,14 @@
 # MetaSignal
 
-Production-simulated experimentation and metrics intelligence platform.
+Production-simulated experimentation, metrics intelligence, and streaming observability platform.
 
-MetaSignal demonstrates experimentation systems thinking through metric governance, denominator conflict detection, data quality gates, deterministic assignment, SRM checks, CUPED readouts, CUPED A/A validation, guardrail-first decisioning, right-censoring, anomaly detection, golden scenario validation, API evidence retrieval, and interview-ready documentation.
+MetaSignal demonstrates experimentation systems thinking through metric governance, denominator conflict detection, data quality gates, deterministic assignment, SRM checks, CUPED readouts, CUPED A/A validation, guardrail-first decisioning, right-censoring, anomaly detection, golden scenario validation, FastAPI evidence retrieval, and a streaming early-warning extension.
 
 ## Run the full demo
 
 PYTHONPATH=. python3 scripts/run_full_demo_v0.py
 
-## What this proves
+## Core experimentation capabilities
 
 - Versioned metric registry with explicit denominator logic
 - Metric conflict detection
@@ -25,6 +25,18 @@ PYTHONPATH=. python3 scripts/run_full_demo_v0.py
 - FastAPI readout and evidence layer
 - Resume, architecture, demo, and interview-defense artifacts
 
+## Streaming extension capabilities
+
+- Provisional SRM early warning
+- Traffic allocation drift monitoring
+- Instrumentation gap detection
+- Consumer lag monitoring
+- Late-event detection
+- Duplicate detection
+- DLQ quarantine
+- Provisional anomaly alerts
+- Stream-batch reconciliation
+
 ## Claim boundary
 
-This is a solo-built, non-production, production-simulated project. It does not claim real production deployment or real company users.
+This is a solo-built, non-production, production-simulated project. It does not claim real production deployment or real company users. Streaming alerts are provisional investigation signals; batch remains authoritative.
