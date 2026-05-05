@@ -40,3 +40,13 @@ PYTHONPATH=. python3 scripts/run_full_demo_v0.py
 ## Claim boundary
 
 This is a solo-built, non-production, production-simulated project. It does not claim real production deployment or real company users. Streaming alerts are provisional investigation signals; batch remains authoritative.
+
+
+## PRD Completion Evidence
+
+MetaSignal now includes executable repo evidence for both the Core PRD and Streaming Extension PRD.
+
+Run the complete local validation bundle:
+
+```bash
+PYTHONPATH=. python3 scripts/run_metasignal_prd_complete_v1.py
