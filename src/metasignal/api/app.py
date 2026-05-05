@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from fastapi import FastAPI, HTTPException
+from fastapi import Body, FastAPI, HTTPException
 from sqlalchemy import select
 
 from src.metasignal.db.models import (
@@ -231,3 +231,35 @@ def get_validation_artifact(artifact_name: str) -> dict[str, Any]:
 @app.get("/resume-signal")
 def resume_signal() -> dict[str, Any]:
     return load_json(REPORTS_DIR / "metasignal_resume_signal_summary.json")
+
+
+
+@app.post("/decisions/validate-override")
+def validate_override_decision(payload: dict[str, Any] = Body(...)) -> dict[str, Any]:
+    system_recommendation = payload.get("system_recommendation")
+    human_decision = payload.get("human_decision")
+    override_reason = payload.get("override_reason")
+
+    override_decisions = {"override_ship", "override_hold"}
+
+    is_override = (
+        human_decision in override_decisions
+        or (
+            system_recommendation is not None
+            and human_decision is not None
+            and human_decision != system_recommendation
+        )
+    )
+
+    if is_override and not override_reason:
+        raise HTTPException(
+            status_code=422,
+            detail="override_reason is required when human_decision overrides system_recommendation",
+        )
+
+    return {
+        "status": "accepted",
+        "override_required": is_override,
+        "override_reason_present": bool(override_reason),
+    }
+

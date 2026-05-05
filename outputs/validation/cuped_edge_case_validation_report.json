@@ -1,0 +1,64 @@
+{
+  "artifact": "cuped_edge_case_validation_report",
+  "check_count": 5,
+  "passed_count": 5,
+  "status": "pass",
+  "checks": [
+    {
+      "case": "strong_covariate",
+      "passed": true,
+      "result": {
+        "cuped_applied": true,
+        "theta": 0.7633354083203682,
+        "variance_reduction_pct": 50.68921205639184,
+        "cuped_edge_case": null,
+        "cuped_fallback": null
+      }
+    },
+    {
+      "case": "weak_covariate",
+      "passed": true,
+      "result": {
+        "cuped_applied": false,
+        "theta": -0.0027680755896746212,
+        "variance_reduction_pct": 0.0,
+        "cuped_edge_case": "weak_covariate",
+        "cuped_fallback": "unadjusted"
+      }
+    },
+    {
+      "case": "missing_xpre",
+      "passed": true,
+      "result": {
+        "cuped_applied": false,
+        "theta": null,
+        "variance_reduction_pct": 0.0,
+        "cuped_edge_case": "missing_xpre",
+        "cuped_fallback": "unadjusted"
+      }
+    },
+    {
+      "case": "no_variance_xpre",
+      "passed": true,
+      "result": {
+        "cuped_applied": false,
+        "theta": 0.0,
+        "variance_reduction_pct": 0.0,
+        "cuped_edge_case": "no_variance_xpre",
+        "cuped_fallback": "unadjusted"
+      }
+    },
+    {
+      "case": "imbalanced_arms",
+      "passed": true,
+      "result": {
+        "cuped_applied": true,
+        "theta": 0.7079525657492931,
+        "variance_reduction_pct": 44.868124163509535,
+        "cuped_edge_case": "imbalanced_arms",
+        "cuped_fallback": null
+      }
+    }
+  ],
+  "evidence_statement": "CUPED edge cases are implemented and validated: strong covariate, weak covariate fallback, missing X_pre fallback, zero-variance fallback, and imbalanced-arm flagging."
+}

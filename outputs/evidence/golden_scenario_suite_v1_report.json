@@ -1,0 +1,105 @@
+{
+  "artifact": "golden_scenario_suite_v1_report",
+  "scenario_count": 12,
+  "passed_count": 12,
+  "status": "pass",
+  "scenarios": [
+    {
+      "id": 1,
+      "name": "clean_ship",
+      "expected": "ship",
+      "actual": "ship",
+      "proves": "Happy-path experiment ships when primary is positive and guardrails are mature/clear.",
+      "passed": true
+    },
+    {
+      "id": 2,
+      "name": "primary_lift_guardrail_breach",
+      "expected": "investigate",
+      "actual": "investigate",
+      "proves": "Guardrail gates fire before primary metric decision.",
+      "passed": true
+    },
+    {
+      "id": 3,
+      "name": "not_significant_hold",
+      "expected": "hold",
+      "actual": "hold",
+      "proves": "Non-significant primary lift does not ship.",
+      "passed": true
+    },
+    {
+      "id": 4,
+      "name": "aa_false_positive_control",
+      "expected": "pass",
+      "actual": "pass",
+      "proves": "A/A false-positive control is validated by the CUPED A/A report.",
+      "passed": true
+    },
+    {
+      "id": 5,
+      "name": "cuped_strong_covariate",
+      "expected": "cuped_applied",
+      "actual": "cuped_applied",
+      "proves": "CUPED applies when covariate is strong.",
+      "passed": true
+    },
+    {
+      "id": 6,
+      "name": "cuped_weak_covariate",
+      "expected": "unadjusted",
+      "actual": "unadjusted",
+      "proves": "Weak covariate falls back to unadjusted.",
+      "passed": true
+    },
+    {
+      "id": 7,
+      "name": "cuped_missing_xpre",
+      "expected": "unadjusted",
+      "actual": "unadjusted",
+      "proves": "Missing pre-period data is handled without dropping users silently.",
+      "passed": true
+    },
+    {
+      "id": 8,
+      "name": "delayed_guardrail_immature",
+      "expected": "wait_guardrail_maturity",
+      "actual": "wait_guardrail_maturity",
+      "proves": "Right-censoring prevents premature ship.",
+      "passed": true
+    },
+    {
+      "id": 9,
+      "name": "delayed_guardrail_breach_at_maturity",
+      "expected": "investigate",
+      "actual": "investigate",
+      "proves": "Matured delayed guardrail breach blocks shipment.",
+      "passed": true
+    },
+    {
+      "id": 10,
+      "name": "novelty_effect_flag",
+      "expected": "investigate",
+      "actual": "investigate",
+      "proves": "Novelty effect triggers investigation even with positive primary.",
+      "passed": true
+    },
+    {
+      "id": 11,
+      "name": "peeking_warning",
+      "expected": "investigate",
+      "actual": "investigate",
+      "proves": "Peeking instability triggers investigation.",
+      "passed": true
+    },
+    {
+      "id": 12,
+      "name": "human_override_enforcement",
+      "expected": "api_422_when_missing_reason",
+      "actual": "api_422_when_missing_reason",
+      "proves": "Override reason must be supplied when human decision overrides system recommendation.",
+      "passed": true
+    }
+  ],
+  "evidence_statement": "Golden scenario suite now covers 12 PRD scenarios including guardrails, CUPED edge cases, right-censoring, novelty, peeking, and override enforcement."
+}

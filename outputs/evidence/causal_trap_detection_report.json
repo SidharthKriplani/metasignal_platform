@@ -1,0 +1,44 @@
+{
+  "artifact": "causal_trap_detection_report",
+  "status": "pass",
+  "peeking": {
+    "peeking_warning": true,
+    "evaluation_history": [
+      {
+        "evaluation_day": 3,
+        "p_value": 0.048,
+        "significant": true
+      },
+      {
+        "evaluation_day": 7,
+        "p_value": 0.12,
+        "significant": false
+      },
+      {
+        "evaluation_day": 10,
+        "p_value": 0.034,
+        "significant": true
+      }
+    ],
+    "evidence": "Significance conclusion changed across interim reads."
+  },
+  "novelty": {
+    "novelty_flag": true,
+    "week_1_lift": 0.084,
+    "week_2_lift": 0.012,
+    "ratio": 7.0,
+    "evidence": "Week-1 lift is more than 2x week-2 lift."
+  },
+  "simpsons_paradox": {
+    "simpsons_flag": true,
+    "segment_lifts": {
+      "overall": 0.031,
+      "country=IN": -0.012,
+      "country=US": 0.044,
+      "platform=ios": -0.018,
+      "platform=web": 0.039
+    },
+    "evidence": "Overall lift is positive while important segments are negative."
+  },
+  "evidence_statement": "MetaSignal now produces explicit peeking, novelty, and Simpson-style segment reversal evidence."
+}

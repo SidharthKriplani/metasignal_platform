@@ -1,0 +1,17 @@
+{
+  "artifact": "override_reason_enforcement_report",
+  "status": "pass",
+  "checks": [
+    {
+      "check": "invalid_override_without_reason_returns_422",
+      "passed": true,
+      "status_code": 422
+    },
+    {
+      "check": "valid_override_with_reason_returns_200",
+      "passed": true,
+      "status_code": 200
+    }
+  ],
+  "evidence_statement": "MetaSignal API enforces override_reason when a human decision overrides the system recommendation."
+}

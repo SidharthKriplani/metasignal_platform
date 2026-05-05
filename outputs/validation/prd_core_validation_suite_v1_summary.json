@@ -1,0 +1,11 @@
+{
+  "artifact": "prd_core_validation_suite_v1_summary",
+  "status": "pass",
+  "reports": [
+    "outputs/validation/cuped_edge_case_validation_report.json",
+    "outputs/evidence/golden_scenario_suite_v1_report.json",
+    "outputs/evidence/causal_trap_detection_report.json",
+    "outputs/evidence/anomaly_backtest_report.json"
+  ],
+  "evidence_statement": "Core PRD validation suite v1 covers CUPED edge cases, 12 golden scenarios, peeking/novelty/Simpson traps, and synthetic anomaly backtesting."
+}

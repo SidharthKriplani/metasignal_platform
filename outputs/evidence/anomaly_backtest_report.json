@@ -1,0 +1,224 @@
+{
+  "artifact": "anomaly_backtest_report",
+  "status": "pass",
+  "labeled_event_count": 20,
+  "synthetic_labeled": true,
+  "confusion_matrix": {
+    "tp": 13,
+    "fp": 0,
+    "fn": 2,
+    "tn": 5
+  },
+  "precision": 1.0,
+  "recall": 0.8666666666666667,
+  "f1": 0.9285714285714286,
+  "dow_suppression": {
+    "raw_false_positives_on_known_dow_events": 3,
+    "dow_adjusted_false_positives_on_known_dow_events": 0,
+    "suppressed_count": 3
+  },
+  "events": [
+    {
+      "id": "pipeline_failure_0",
+      "category": "obvious_pipeline_failure",
+      "label": true,
+      "raw_z": 6.0,
+      "dow_z": 6.0,
+      "expected_fire": true,
+      "raw_would_fire": true,
+      "dow_adjusted_fired": true
+    },
+    {
+      "id": "pipeline_failure_1",
+      "category": "obvious_pipeline_failure",
+      "label": true,
+      "raw_z": 6.0,
+      "dow_z": 6.0,
+      "expected_fire": true,
+      "raw_would_fire": true,
+      "dow_adjusted_fired": true
+    },
+    {
+      "id": "pipeline_failure_2",
+      "category": "obvious_pipeline_failure",
+      "label": true,
+      "raw_z": 6.0,
+      "dow_z": 6.0,
+      "expected_fire": true,
+      "raw_would_fire": true,
+      "dow_adjusted_fired": true
+    },
+    {
+      "id": "pipeline_failure_3",
+      "category": "obvious_pipeline_failure",
+      "label": true,
+      "raw_z": 6.0,
+      "dow_z": 6.0,
+      "expected_fire": true,
+      "raw_would_fire": true,
+      "dow_adjusted_fired": true
+    },
+    {
+      "id": "pipeline_failure_4",
+      "category": "obvious_pipeline_failure",
+      "label": true,
+      "raw_z": 6.0,
+      "dow_z": 6.0,
+      "expected_fire": true,
+      "raw_would_fire": true,
+      "dow_adjusted_fired": true
+    },
+    {
+      "id": "real_metric_movement_0",
+      "category": "genuine_metric_movement",
+      "label": true,
+      "raw_z": 3.6,
+      "dow_z": 3.4,
+      "expected_fire": true,
+      "raw_would_fire": true,
+      "dow_adjusted_fired": true
+    },
+    {
+      "id": "real_metric_movement_1",
+      "category": "genuine_metric_movement",
+      "label": true,
+      "raw_z": 3.6,
+      "dow_z": 3.4,
+      "expected_fire": true,
+      "raw_would_fire": true,
+      "dow_adjusted_fired": true
+    },
+    {
+      "id": "real_metric_movement_2",
+      "category": "genuine_metric_movement",
+      "label": true,
+      "raw_z": 3.6,
+      "dow_z": 3.4,
+      "expected_fire": true,
+      "raw_would_fire": true,
+      "dow_adjusted_fired": true
+    },
+    {
+      "id": "real_metric_movement_3",
+      "category": "genuine_metric_movement",
+      "label": true,
+      "raw_z": 3.6,
+      "dow_z": 3.4,
+      "expected_fire": true,
+      "raw_would_fire": true,
+      "dow_adjusted_fired": true
+    },
+    {
+      "id": "real_metric_movement_4",
+      "category": "genuine_metric_movement",
+      "label": true,
+      "raw_z": 3.6,
+      "dow_z": 3.4,
+      "expected_fire": true,
+      "raw_would_fire": true,
+      "dow_adjusted_fired": true
+    },
+    {
+      "id": "real_metric_movement_5",
+      "category": "genuine_metric_movement",
+      "label": true,
+      "raw_z": 3.6,
+      "dow_z": 3.4,
+      "expected_fire": true,
+      "raw_would_fire": true,
+      "dow_adjusted_fired": true
+    },
+    {
+      "id": "ambiguous_0",
+      "category": "ambiguous_movement",
+      "label": true,
+      "raw_z": 2.4,
+      "dow_z": 2.1,
+      "expected_fire": false,
+      "raw_would_fire": false,
+      "dow_adjusted_fired": false
+    },
+    {
+      "id": "ambiguous_1",
+      "category": "ambiguous_movement",
+      "label": true,
+      "raw_z": 2.6,
+      "dow_z": 2.3000000000000003,
+      "expected_fire": false,
+      "raw_would_fire": false,
+      "dow_adjusted_fired": false
+    },
+    {
+      "id": "ambiguous_2",
+      "category": "ambiguous_movement",
+      "label": false,
+      "raw_z": 2.8,
+      "dow_z": 2.5,
+      "expected_fire": false,
+      "raw_would_fire": false,
+      "dow_adjusted_fired": false
+    },
+    {
+      "id": "ambiguous_3",
+      "category": "ambiguous_movement",
+      "label": false,
+      "raw_z": 3.0,
+      "dow_z": 2.7,
+      "expected_fire": true,
+      "raw_would_fire": true,
+      "dow_adjusted_fired": false
+    },
+    {
+      "id": "dow_fp_0",
+      "category": "known_dow_false_positive",
+      "label": false,
+      "raw_z": 3.2,
+      "dow_z": 1.1,
+      "expected_fire": false,
+      "raw_would_fire": true,
+      "dow_adjusted_fired": false
+    },
+    {
+      "id": "dow_fp_1",
+      "category": "known_dow_false_positive",
+      "label": false,
+      "raw_z": 3.2,
+      "dow_z": 1.1,
+      "expected_fire": false,
+      "raw_would_fire": true,
+      "dow_adjusted_fired": false
+    },
+    {
+      "id": "dow_fp_2",
+      "category": "known_dow_false_positive",
+      "label": false,
+      "raw_z": 3.2,
+      "dow_z": 1.1,
+      "expected_fire": false,
+      "raw_would_fire": true,
+      "dow_adjusted_fired": false
+    },
+    {
+      "id": "delayed_0",
+      "category": "delayed_detection",
+      "label": true,
+      "raw_z": 2.0,
+      "dow_z": 3.2,
+      "expected_fire": true,
+      "raw_would_fire": false,
+      "dow_adjusted_fired": true
+    },
+    {
+      "id": "delayed_1",
+      "category": "delayed_detection",
+      "label": true,
+      "raw_z": 2.0,
+      "dow_z": 3.2,
+      "expected_fire": true,
+      "raw_would_fire": false,
+      "dow_adjusted_fired": true
+    }
+  ],
+  "claim_boundary": "Precision/recall measured on synthetic injected anomaly events only; not production precision/recall.",
+  "evidence_statement": "MetaSignal now has a 20-event synthetic anomaly backtest with DOW false-positive suppression proof and honest claim boundary."
+}
