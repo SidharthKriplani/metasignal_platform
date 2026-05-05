@@ -1,0 +1,53 @@
+{
+  "artifact": "metasignal_streaming_extension_summary",
+  "positioning": "A provisional streaming early-warning layer on top of the batch-authoritative MetaSignal core.",
+  "hard_rule": "Streaming alerts may trigger investigation or pause-for-review, but never final experiment decisions.",
+  "capability_count": 9,
+  "capabilities": [
+    {
+      "capability": "SRM early warning",
+      "artifact": "outputs/streaming/srm_streaming_alerts.json",
+      "principle": "Detect split issues early, but batch confirms validity."
+    },
+    {
+      "capability": "Traffic allocation drift",
+      "artifact": "outputs/streaming/traffic_allocation_snapshots.json",
+      "principle": "Track rolling control/treatment allocation drift."
+    },
+    {
+      "capability": "Instrumentation gap detection",
+      "artifact": "outputs/streaming/instrumentation_alerts.json",
+      "principle": "Detect platform-specific event drops before daily batch readout."
+    },
+    {
+      "capability": "Consumer lag monitoring",
+      "artifact": "outputs/streaming/consumer_lag_report.json",
+      "principle": "Surface processing delay and prevent false realtime confidence."
+    },
+    {
+      "capability": "Late event handling",
+      "artifact": "outputs/streaming/late_event_report.json",
+      "principle": "Count late arrivals while preserving batch authority."
+    },
+    {
+      "capability": "Duplicate detection",
+      "artifact": "outputs/streaming/duplicate_event_report.json",
+      "principle": "Detect duplicate event IDs before provisional metric use."
+    },
+    {
+      "capability": "DLQ quarantine",
+      "artifact": "outputs/streaming/dlq_events.json",
+      "principle": "Quarantine malformed events instead of silently including them."
+    },
+    {
+      "capability": "Provisional anomaly detection",
+      "artifact": "outputs/streaming/provisional_anomaly_alerts.json",
+      "principle": "Realtime anomaly alerts trigger investigation only."
+    },
+    {
+      "capability": "Stream-batch reconciliation",
+      "artifact": "outputs/streaming/stream_batch_reconciliation_report.json",
+      "principle": "Streaming gives speed, batch gives authority, reconciliation gives trust."
+    }
+  ]
+}
