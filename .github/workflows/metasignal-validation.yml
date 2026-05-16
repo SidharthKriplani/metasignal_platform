@@ -22,7 +22,11 @@ jobs:
       - name: Install lightweight dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install numpy fastapi httpx pandas pyarrow sqlalchemy pg8000
+          pip install numpy fastapi httpx pandas pyarrow sqlalchemy pg8000 pytest
+
+      - name: Run unit tests (pure math)
+        run: |
+          PYTHONPATH=. pytest tests/test_core_math.py -v
 
       - name: Validate core statistical suite
         run: |

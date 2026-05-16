@@ -1,0 +1,176 @@
+experiment_id,experiment_name,team,check_name,status,finding
+EXP-1000,checkout_cta_color_v2,Growth,srm_check,PASS,SRM p=0.071351; split 10849/10585
+EXP-1000,checkout_cta_color_v2,Growth,pre_period_balance,PASS,Max SMD across covariates
+EXP-1000,checkout_cta_color_v2,Growth,primary_metric_significance,PASS,p=0.0019; lift=17.64%
+EXP-1000,checkout_cta_color_v2,Growth,continuous_metric_significance,PASS,Welch t-test on revenue_per_session
+EXP-1000,checkout_cta_color_v2,Growth,peeking_risk,PASS,duration_ratio=1.0; interim_looks=0
+EXP-1000,checkout_cta_color_v2,Growth,practical_significance,PASS,observed_lift=17.64%; threshold=1.0%
+EXP-1000,checkout_cta_color_v2,Growth,guardrail_movement,PASS,Guardrail delta vs tolerance band
+EXP-1001,homepage_hero_personalisation,Payments,srm_check,PASS,SRM p=0.000327; split 37608/36629
+EXP-1001,homepage_hero_personalisation,Payments,pre_period_balance,PASS,Max SMD across covariates
+EXP-1001,homepage_hero_personalisation,Payments,primary_metric_significance,PASS,p=0.0; lift=30.42%
+EXP-1001,homepage_hero_personalisation,Payments,continuous_metric_significance,PASS,Welch t-test on revenue_per_session
+EXP-1001,homepage_hero_personalisation,Payments,peeking_risk,FAIL,duration_ratio=0.429; interim_looks=7
+EXP-1001,homepage_hero_personalisation,Payments,practical_significance,PASS,observed_lift=30.42%; threshold=1.0%
+EXP-1001,homepage_hero_personalisation,Payments,guardrail_movement,PASS,Guardrail delta vs tolerance band
+EXP-1002,email_digest_frequency_test,Onboarding,srm_check,PASS,SRM p=0.092647; split 14606/14320
+EXP-1002,email_digest_frequency_test,Onboarding,pre_period_balance,PASS,Max SMD across covariates
+EXP-1002,email_digest_frequency_test,Onboarding,primary_metric_significance,PASS,p=0.0015; lift=18.5%
+EXP-1002,email_digest_frequency_test,Onboarding,continuous_metric_significance,PASS,Welch t-test on revenue_per_session
+EXP-1002,email_digest_frequency_test,Onboarding,peeking_risk,PASS,duration_ratio=1.0; interim_looks=1
+EXP-1002,email_digest_frequency_test,Onboarding,practical_significance,PASS,observed_lift=18.5%; threshold=1.0%
+EXP-1002,email_digest_frequency_test,Onboarding,guardrail_movement,PASS,Guardrail delta vs tolerance band
+EXP-1003,payment_page_trust_badges,Retention,srm_check,PASS,SRM p=0.189286; split 27680/27372
+EXP-1003,payment_page_trust_badges,Retention,pre_period_balance,WARN,Max SMD across covariates
+EXP-1003,payment_page_trust_badges,Retention,primary_metric_significance,PASS,p=0.0; lift=127.63%
+EXP-1003,payment_page_trust_badges,Retention,continuous_metric_significance,PASS,Welch t-test on revenue_per_session
+EXP-1003,payment_page_trust_badges,Retention,peeking_risk,PASS,duration_ratio=1.143; interim_looks=2
+EXP-1003,payment_page_trust_badges,Retention,practical_significance,PASS,observed_lift=127.63%; threshold=1.0%
+EXP-1003,payment_page_trust_badges,Retention,guardrail_movement,PASS,Guardrail delta vs tolerance band
+EXP-1004,onboarding_step_reduction,Search,srm_check,FAIL,SRM p=0.0; split 25692/29708
+EXP-1004,onboarding_step_reduction,Search,pre_period_balance,WARN,Unreliable — SRM detected
+EXP-1004,onboarding_step_reduction,Search,primary_metric_significance,WARN,Unreliable — SRM detected
+EXP-1004,onboarding_step_reduction,Search,continuous_metric_significance,WARN,Unreliable — SRM detected
+EXP-1004,onboarding_step_reduction,Search,peeking_risk,PASS,duration_ratio=0.857; interim_looks=0
+EXP-1004,onboarding_step_reduction,Search,practical_significance,WARN,Unreliable — SRM detected
+EXP-1004,onboarding_step_reduction,Search,guardrail_movement,PASS,Guardrail delta vs tolerance band
+EXP-1005,search_ranking_recency_boost,Monetisation,srm_check,PASS,SRM p=1e-06; split 34341/33088
+EXP-1005,search_ranking_recency_boost,Monetisation,pre_period_balance,PASS,Max SMD across covariates
+EXP-1005,search_ranking_recency_boost,Monetisation,primary_metric_significance,PASS,p=0.0; lift=232.68%
+EXP-1005,search_ranking_recency_boost,Monetisation,continuous_metric_significance,PASS,Welch t-test on revenue_per_session
+EXP-1005,search_ranking_recency_boost,Monetisation,peeking_risk,PASS,duration_ratio=1.071; interim_looks=2
+EXP-1005,search_ranking_recency_boost,Monetisation,practical_significance,PASS,observed_lift=232.68%; threshold=1.0%
+EXP-1005,search_ranking_recency_boost,Monetisation,guardrail_movement,PASS,Guardrail delta vs tolerance band
+EXP-1006,retention_winback_offer_amount,Growth,srm_check,PASS,SRM p=0.036181; split 8817/8541
+EXP-1006,retention_winback_offer_amount,Growth,pre_period_balance,PASS,Max SMD across covariates
+EXP-1006,retention_winback_offer_amount,Growth,primary_metric_significance,WARN,p=0.195; lift=12.79%
+EXP-1006,retention_winback_offer_amount,Growth,continuous_metric_significance,PASS,Welch t-test on revenue_per_session
+EXP-1006,retention_winback_offer_amount,Growth,peeking_risk,PASS,duration_ratio=1.071; interim_looks=1
+EXP-1006,retention_winback_offer_amount,Growth,practical_significance,PASS,observed_lift=12.79%; threshold=1.0%
+EXP-1006,retention_winback_offer_amount,Growth,guardrail_movement,PASS,Guardrail delta vs tolerance band
+EXP-1007,premium_upsell_modal_timing,Payments,srm_check,PASS,SRM p=0.555477; split 7629/7702
+EXP-1007,premium_upsell_modal_timing,Payments,pre_period_balance,PASS,Max SMD across covariates
+EXP-1007,premium_upsell_modal_timing,Payments,primary_metric_significance,PASS,p=0.0; lift=190.58%
+EXP-1007,premium_upsell_modal_timing,Payments,continuous_metric_significance,PASS,Welch t-test on revenue_per_session
+EXP-1007,premium_upsell_modal_timing,Payments,peeking_risk,PASS,duration_ratio=0.857; interim_looks=0
+EXP-1007,premium_upsell_modal_timing,Payments,practical_significance,PASS,observed_lift=190.58%; threshold=1.0%
+EXP-1007,premium_upsell_modal_timing,Payments,guardrail_movement,PASS,Guardrail delta vs tolerance band
+EXP-1008,referral_incentive_structure,Onboarding,srm_check,PASS,SRM p=0.013029; split 24347/24898
+EXP-1008,referral_incentive_structure,Onboarding,pre_period_balance,WARN,Max SMD across covariates
+EXP-1008,referral_incentive_structure,Onboarding,primary_metric_significance,PASS,p=0.0; lift=-52.21%
+EXP-1008,referral_incentive_structure,Onboarding,continuous_metric_significance,PASS,Welch t-test on revenue_per_session
+EXP-1008,referral_incentive_structure,Onboarding,peeking_risk,PASS,duration_ratio=0.9; interim_looks=1
+EXP-1008,referral_incentive_structure,Onboarding,practical_significance,PASS,observed_lift=-52.21%; threshold=1.0%
+EXP-1008,referral_incentive_structure,Onboarding,guardrail_movement,PASS,Guardrail delta vs tolerance band
+EXP-1009,cart_abandonment_nudge_delay,Retention,srm_check,PASS,SRM p=1.2e-05; split 32631/31524
+EXP-1009,cart_abandonment_nudge_delay,Retention,pre_period_balance,WARN,Max SMD across covariates
+EXP-1009,cart_abandonment_nudge_delay,Retention,primary_metric_significance,PASS,p=0.0; lift=16.83%
+EXP-1009,cart_abandonment_nudge_delay,Retention,continuous_metric_significance,PASS,Welch t-test on revenue_per_session
+EXP-1009,cart_abandonment_nudge_delay,Retention,peeking_risk,FAIL,duration_ratio=0.5; interim_looks=7
+EXP-1009,cart_abandonment_nudge_delay,Retention,practical_significance,PASS,observed_lift=16.83%; threshold=1.0%
+EXP-1009,cart_abandonment_nudge_delay,Retention,guardrail_movement,WARN,Guardrail delta vs tolerance band
+EXP-1010,notification_opt_in_prompt,Search,srm_check,PASS,SRM p=0.051704; split 11040/11331
+EXP-1010,notification_opt_in_prompt,Search,pre_period_balance,WARN,Max SMD across covariates
+EXP-1010,notification_opt_in_prompt,Search,primary_metric_significance,WARN,p=0.1347; lift=17.42%
+EXP-1010,notification_opt_in_prompt,Search,continuous_metric_significance,PASS,Welch t-test on revenue_per_session
+EXP-1010,notification_opt_in_prompt,Search,peeking_risk,WARN,duration_ratio=0.714; interim_looks=3
+EXP-1010,notification_opt_in_prompt,Search,practical_significance,PASS,observed_lift=17.42%; threshold=1.0%
+EXP-1010,notification_opt_in_prompt,Search,guardrail_movement,PASS,Guardrail delta vs tolerance band
+EXP-1011,feed_algorithm_diversity_weight,Monetisation,srm_check,PASS,SRM p=0.105081; split 4831/4673
+EXP-1011,feed_algorithm_diversity_weight,Monetisation,pre_period_balance,PASS,Max SMD across covariates
+EXP-1011,feed_algorithm_diversity_weight,Monetisation,primary_metric_significance,PASS,p=0.0002; lift=45.91%
+EXP-1011,feed_algorithm_diversity_weight,Monetisation,continuous_metric_significance,PASS,Welch t-test on revenue_per_session
+EXP-1011,feed_algorithm_diversity_weight,Monetisation,peeking_risk,PASS,duration_ratio=0.81; interim_looks=1
+EXP-1011,feed_algorithm_diversity_weight,Monetisation,practical_significance,PASS,observed_lift=45.91%; threshold=1.0%
+EXP-1011,feed_algorithm_diversity_weight,Monetisation,guardrail_movement,PASS,Guardrail delta vs tolerance band
+EXP-1012,pricing_page_layout_b,Growth,srm_check,PASS,SRM p=0.036752; split 14542/14188
+EXP-1012,pricing_page_layout_b,Growth,pre_period_balance,WARN,Max SMD across covariates
+EXP-1012,pricing_page_layout_b,Growth,primary_metric_significance,PASS,p=0.0; lift=21.4%
+EXP-1012,pricing_page_layout_b,Growth,continuous_metric_significance,PASS,Welch t-test on revenue_per_session
+EXP-1012,pricing_page_layout_b,Growth,peeking_risk,PASS,duration_ratio=0.929; interim_looks=2
+EXP-1012,pricing_page_layout_b,Growth,practical_significance,PASS,observed_lift=21.4%; threshold=1.0%
+EXP-1012,pricing_page_layout_b,Growth,guardrail_movement,PASS,Guardrail delta vs tolerance band
+EXP-1013,signup_form_field_reduction,Payments,srm_check,PASS,SRM p=0.000236; split 37772/36768
+EXP-1013,signup_form_field_reduction,Payments,pre_period_balance,PASS,Max SMD across covariates
+EXP-1013,signup_form_field_reduction,Payments,primary_metric_significance,WARN,p=0.3179; lift=-4.14%
+EXP-1013,signup_form_field_reduction,Payments,continuous_metric_significance,PASS,Welch t-test on revenue_per_session
+EXP-1013,signup_form_field_reduction,Payments,peeking_risk,PASS,duration_ratio=1.0; interim_looks=2
+EXP-1013,signup_form_field_reduction,Payments,practical_significance,PASS,observed_lift=-4.14%; threshold=1.0%
+EXP-1013,signup_form_field_reduction,Payments,guardrail_movement,PASS,Guardrail delta vs tolerance band
+EXP-1014,loyalty_points_display,Onboarding,srm_check,PASS,SRM p=0.585953; split 11290/11372
+EXP-1014,loyalty_points_display,Onboarding,pre_period_balance,PASS,Max SMD across covariates
+EXP-1014,loyalty_points_display,Onboarding,primary_metric_significance,WARN,p=0.5028; lift=3.06%
+EXP-1014,loyalty_points_display,Onboarding,continuous_metric_significance,PASS,Welch t-test on revenue_per_session
+EXP-1014,loyalty_points_display,Onboarding,peeking_risk,PASS,duration_ratio=1.036; interim_looks=0
+EXP-1014,loyalty_points_display,Onboarding,practical_significance,PASS,observed_lift=3.06%; threshold=1.0%
+EXP-1014,loyalty_points_display,Onboarding,guardrail_movement,PASS,Guardrail delta vs tolerance band
+EXP-1015,support_chat_proactive_trigger,Retention,srm_check,PASS,SRM p=0.000188; split 38390/39432
+EXP-1015,support_chat_proactive_trigger,Retention,pre_period_balance,PASS,Max SMD across covariates
+EXP-1015,support_chat_proactive_trigger,Retention,primary_metric_significance,PASS,p=0.0108; lift=-8.18%
+EXP-1015,support_chat_proactive_trigger,Retention,continuous_metric_significance,PASS,Welch t-test on revenue_per_session
+EXP-1015,support_chat_proactive_trigger,Retention,peeking_risk,FAIL,duration_ratio=0.536; interim_looks=5
+EXP-1015,support_chat_proactive_trigger,Retention,practical_significance,PASS,observed_lift=-8.18%; threshold=1.0%
+EXP-1015,support_chat_proactive_trigger,Retention,guardrail_movement,PASS,Guardrail delta vs tolerance band
+EXP-1016,product_image_carousel_count,Search,srm_check,PASS,SRM p=0.0; split 40103/38583
+EXP-1016,product_image_carousel_count,Search,pre_period_balance,PASS,Max SMD across covariates
+EXP-1016,product_image_carousel_count,Search,primary_metric_significance,PASS,p=0.013; lift=8.53%
+EXP-1016,product_image_carousel_count,Search,continuous_metric_significance,PASS,Welch t-test on revenue_per_session
+EXP-1016,product_image_carousel_count,Search,peeking_risk,PASS,duration_ratio=1.0; interim_looks=2
+EXP-1016,product_image_carousel_count,Search,practical_significance,PASS,observed_lift=8.53%; threshold=1.0%
+EXP-1016,product_image_carousel_count,Search,guardrail_movement,PASS,Guardrail delta vs tolerance band
+EXP-1017,coupon_visibility_placement,Monetisation,srm_check,FAIL,SRM p=0.000525; split 8418/7974
+EXP-1017,coupon_visibility_placement,Monetisation,pre_period_balance,WARN,Unreliable — SRM detected
+EXP-1017,coupon_visibility_placement,Monetisation,primary_metric_significance,WARN,Unreliable — SRM detected
+EXP-1017,coupon_visibility_placement,Monetisation,continuous_metric_significance,WARN,Unreliable — SRM detected
+EXP-1017,coupon_visibility_placement,Monetisation,peeking_risk,PASS,duration_ratio=0.929; interim_looks=0
+EXP-1017,coupon_visibility_placement,Monetisation,practical_significance,WARN,Unreliable — SRM detected
+EXP-1017,coupon_visibility_placement,Monetisation,guardrail_movement,PASS,Guardrail delta vs tolerance band
+EXP-1018,social_proof_review_count,Growth,srm_check,PASS,SRM p=0.07351; split 6157/5960
+EXP-1018,social_proof_review_count,Growth,pre_period_balance,PASS,Max SMD across covariates
+EXP-1018,social_proof_review_count,Growth,primary_metric_significance,WARN,p=0.3847; lift=7.13%
+EXP-1018,social_proof_review_count,Growth,continuous_metric_significance,PASS,Welch t-test on revenue_per_session
+EXP-1018,social_proof_review_count,Growth,peeking_risk,PASS,duration_ratio=1.0; interim_looks=1
+EXP-1018,social_proof_review_count,Growth,practical_significance,PASS,observed_lift=7.13%; threshold=1.0%
+EXP-1018,social_proof_review_count,Growth,guardrail_movement,PASS,Guardrail delta vs tolerance band
+EXP-1019,dashboard_default_view,Payments,srm_check,PASS,SRM p=0.125703; split 34774/35179
+EXP-1019,dashboard_default_view,Payments,pre_period_balance,PASS,Max SMD across covariates
+EXP-1019,dashboard_default_view,Payments,primary_metric_significance,PASS,p=0.0015; lift=-9.71%
+EXP-1019,dashboard_default_view,Payments,continuous_metric_significance,PASS,Welch t-test on revenue_per_session
+EXP-1019,dashboard_default_view,Payments,peeking_risk,PASS,duration_ratio=1.0; interim_looks=0
+EXP-1019,dashboard_default_view,Payments,practical_significance,PASS,observed_lift=-9.71%; threshold=1.0%
+EXP-1019,dashboard_default_view,Payments,guardrail_movement,PASS,Guardrail delta vs tolerance band
+EXP-1020,cancellation_flow_pause_offer,Onboarding,srm_check,PASS,SRM p=0.014063; split 10272/10627
+EXP-1020,cancellation_flow_pause_offer,Onboarding,pre_period_balance,PASS,Max SMD across covariates
+EXP-1020,cancellation_flow_pause_offer,Onboarding,primary_metric_significance,WARN,p=0.2939; lift=7.37%
+EXP-1020,cancellation_flow_pause_offer,Onboarding,continuous_metric_significance,PASS,Welch t-test on revenue_per_session
+EXP-1020,cancellation_flow_pause_offer,Onboarding,peeking_risk,PASS,duration_ratio=1.0; interim_looks=0
+EXP-1020,cancellation_flow_pause_offer,Onboarding,practical_significance,PASS,observed_lift=7.37%; threshold=1.0%
+EXP-1020,cancellation_flow_pause_offer,Onboarding,guardrail_movement,PASS,Guardrail delta vs tolerance band
+EXP-1021,mobile_nav_bottom_bar_v3,Retention,srm_check,PASS,SRM p=0.041049; split 31391/31905
+EXP-1021,mobile_nav_bottom_bar_v3,Retention,pre_period_balance,WARN,Max SMD across covariates
+EXP-1021,mobile_nav_bottom_bar_v3,Retention,primary_metric_significance,PASS,p=0.0; lift=-19.92%
+EXP-1021,mobile_nav_bottom_bar_v3,Retention,continuous_metric_significance,PASS,Welch t-test on revenue_per_session
+EXP-1021,mobile_nav_bottom_bar_v3,Retention,peeking_risk,PASS,duration_ratio=1.1; interim_looks=1
+EXP-1021,mobile_nav_bottom_bar_v3,Retention,practical_significance,PASS,observed_lift=-19.92%; threshold=1.0%
+EXP-1021,mobile_nav_bottom_bar_v3,Retention,guardrail_movement,PASS,Guardrail delta vs tolerance band
+EXP-1022,ai_recommendations_blend_ratio,Search,srm_check,PASS,SRM p=0.026527; split 19272/19710
+EXP-1022,ai_recommendations_blend_ratio,Search,pre_period_balance,WARN,Max SMD across covariates
+EXP-1022,ai_recommendations_blend_ratio,Search,primary_metric_significance,WARN,p=0.1792; lift=20.19%
+EXP-1022,ai_recommendations_blend_ratio,Search,continuous_metric_significance,PASS,Welch t-test on revenue_per_session
+EXP-1022,ai_recommendations_blend_ratio,Search,peeking_risk,PASS,duration_ratio=1.0; interim_looks=0
+EXP-1022,ai_recommendations_blend_ratio,Search,practical_significance,PASS,observed_lift=20.19%; threshold=1.0%
+EXP-1022,ai_recommendations_blend_ratio,Search,guardrail_movement,WARN,Guardrail delta vs tolerance band
+EXP-1023,invoice_summary_format,Monetisation,srm_check,PASS,SRM p=0.000287; split 21755/21005
+EXP-1023,invoice_summary_format,Monetisation,pre_period_balance,PASS,Max SMD across covariates
+EXP-1023,invoice_summary_format,Monetisation,primary_metric_significance,PASS,p=0.0; lift=26.67%
+EXP-1023,invoice_summary_format,Monetisation,continuous_metric_significance,PASS,Welch t-test on revenue_per_session
+EXP-1023,invoice_summary_format,Monetisation,peeking_risk,PASS,duration_ratio=1.0; interim_looks=2
+EXP-1023,invoice_summary_format,Monetisation,practical_significance,PASS,observed_lift=26.67%; threshold=1.0%
+EXP-1023,invoice_summary_format,Monetisation,guardrail_movement,PASS,Guardrail delta vs tolerance band
+EXP-1024,free_trial_duration_14d,Growth,srm_check,PASS,SRM p=0.025804; split 7972/7693
+EXP-1024,free_trial_duration_14d,Growth,pre_period_balance,PASS,Max SMD across covariates
+EXP-1024,free_trial_duration_14d,Growth,primary_metric_significance,PASS,p=0.0; lift=36.85%
+EXP-1024,free_trial_duration_14d,Growth,continuous_metric_significance,PASS,Welch t-test on revenue_per_session
+EXP-1024,free_trial_duration_14d,Growth,peeking_risk,PASS,duration_ratio=1.036; interim_looks=0
+EXP-1024,free_trial_duration_14d,Growth,practical_significance,PASS,observed_lift=36.85%; threshold=1.0%
+EXP-1024,free_trial_duration_14d,Growth,guardrail_movement,PASS,Guardrail delta vs tolerance band
