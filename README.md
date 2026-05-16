@@ -166,15 +166,27 @@ tests/                   test scaffolding
 
 ---
 
+## Interview Defense
+
+Full design rationale, architecture decisions, and expected interview questions with answers:
+
+**[docs/defense/MetaSignal_Interview_Defense.pdf](docs/defense/MetaSignal_Interview_Defense.pdf)**
+
+Covers: CUPED covariate selection rationale, guardrail-first blocking logic, A/A calibration methodology, right-censored guardrail handling, SRM detection, streaming provisional signal design, and production failure modes.
+
+---
+
 ## Part of Applied LLM Systems Portfolio
 
-MetaSignal is the experiment intelligence platform in a portfolio of production-simulated ML systems:
+This project is part of a portfolio targeting Applied LLM Systems Engineer roles.
 
-- **[LendFlow](https://github.com/SidharthKriplani/lendflow)** — LangGraph-based loan underwriting agent with RAG policy retrieval and audit trail
-- **[AgentReliabilityLab](https://github.com/SidharthKriplani/agentreliabilitylab)** — LLM agent failure taxonomy, retry logic, and structured observability
-- **[NexusSupply](https://github.com/SidharthKriplani/nexussupply)** — Supplier risk intelligence with FinBERT, ESG scoring, and graph-based concentration risk
-
-MetaSignal's CUPED and guardrail-first framework validate the A/B simulation results from PulseRank — confirming whether observed NDCG improvements are statistically significant before any algorithm change ships.
+- [**NexusSupply**](https://github.com/SidharthKriplani/nexussupply) — Supplier Risk Intelligence Platform (LangGraph + FinBERT + XGBoost + Instructor + NetworkX)
+- [**LendFlow**](https://github.com/SidharthKriplani/lendflow) — AI-powered loan underwriting pipeline (LangGraph + RAG + FOIR rules engine)
+- [**AgentReliabilityLab**](https://github.com/SidharthKriplani/agentreliabilitylab) — Cyber threat triage agent (LangGraph + hybrid RAG + HITL + RAGAS eval)
+- [**RiskFrame Platform**](https://github.com/SidharthKriplani/riskframe_platform) — ML model lifecycle (XGBoost + LightGBM champion/challenger, Optuna HPO, drift monitoring)
+- [**DevPulse Platform**](https://github.com/SidharthKriplani/devpulse_platform) — Version-safe RAG migration intelligence (LLM-Last principle, conflict detection)
+- [**PulseRank Platform**](https://github.com/SidharthKriplani/pulserank_platform) — Marketplace ranking with IPS debiasing (position bias correction, delayed attribution)
+- [**MetaSignal Platform**](https://github.com/SidharthKriplani/metasignal_platform) — Experimentation intelligence (CUPED + guardrail-first + A/A calibration)
 
 ---
 

@@ -1,115 +1,126 @@
-<svg viewBox="0 0 980 440" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, sans-serif">
+<svg viewBox="0 0 1100 580" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, sans-serif">
   <defs>
-    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bgr" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#0f172a"/>
       <stop offset="100%" style="stop-color:#1e293b"/>
     </linearGradient>
-    <filter id="shadow2">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.4"/>
+    <filter id="sh">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.5"/>
     </filter>
   </defs>
 
   <!-- Background -->
-  <rect width="980" height="440" fill="url(#bg2)"/>
+  <rect width="1100" height="580" fill="url(#bgr)"/>
 
-  <!-- Top banner -->
-  <rect x="0" y="0" width="980" height="72" fill="#1e293b"/>
-  <line x1="0" y1="72" x2="980" y2="72" stroke="#334155" stroke-width="1.5"/>
+  <!-- ══════════ HEADER BAR ══════════ -->
+  <rect x="0" y="0" width="1100" height="80" fill="#14532d"/>
+  <line x1="0" y1="80" x2="1100" y2="80" stroke="#166534" stroke-width="1.5"/>
 
-  <!-- LAUNCH badge -->
-  <rect x="22" y="14" width="90" height="44" rx="8" fill="#14532d"/>
-  <rect x="22" y="14" width="90" height="44" rx="8" fill="none" stroke="#4ade80" stroke-width="1.5"/>
-  <text x="67" y="32" text-anchor="middle" fill="#86efac" font-size="9" font-weight="600" letter-spacing="1">RECOMMENDATION</text>
-  <text x="67" y="52" text-anchor="middle" fill="#4ade80" font-size="18" font-weight="800">LAUNCH</text>
+  <!-- LAUNCH badge (left) -->
+  <rect x="20" y="12" width="130" height="56" rx="10" fill="#052e16" stroke="#4ade80" stroke-width="2"/>
+  <text x="85" y="33" text-anchor="middle" fill="#86efac" font-size="8.5" font-weight="700" letter-spacing="2">RECOMMENDATION</text>
+  <text x="85" y="57" text-anchor="middle" fill="#4ade80" font-size="26" font-weight="900">LAUNCH</text>
 
-  <!-- Experiment title -->
-  <text x="140" y="30" fill="#f1f5f9" font-size="14" font-weight="700">Experiment: Homepage Feed Ranking v2</text>
-  <text x="140" y="52" fill="#94a3b8" font-size="11">14-day run · 48,320 users · Guardrail-first decision framework · MetaSignal Platform</text>
+  <!-- Center title -->
+  <text x="580" y="30" text-anchor="middle" fill="#ffffff" font-size="20" font-weight="700">Experiment: Homepage Feed Ranking v2</text>
+  <text x="580" y="54" text-anchor="middle" fill="#bbf7d0" font-size="11">14-day run · 48,320 users · Guardrail-first decision framework · MetaSignal Platform</text>
 
-  <!-- Status pill -->
-  <rect x="810" y="18" width="150" height="34" rx="8" fill="#14532d"/>
-  <text x="885" y="32" text-anchor="middle" fill="#4ade80" font-size="9" font-weight="600">ALL GUARDRAILS PASS</text>
-  <text x="885" y="46" text-anchor="middle" fill="#86efac" font-size="8">12/12 golden scenarios</text>
+  <!-- Right badge -->
+  <rect x="920" y="14" width="162" height="52" rx="10" fill="#052e16" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="1001" y="34" text-anchor="middle" fill="#4ade80" font-size="9.5" font-weight="700">ALL GUARDRAILS PASS</text>
+  <text x="1001" y="54" text-anchor="middle" fill="#86efac" font-size="9">12/12 golden scenarios</text>
 
-  <!-- METRIC CARDS ROW -->
+  <!-- ══════════ METRIC CARDS ══════════ -->
 
-  <!-- Card 1: SRM -->
-  <rect x="22" y="90" width="215" height="185" rx="12" fill="#1e293b" filter="url(#shadow2)"/>
-  <rect x="22" y="90" width="215" height="5" rx="2" fill="#065f46"/>
-  <text x="129" y="118" text-anchor="middle" fill="#6ee7b7" font-size="9" font-weight="600" letter-spacing="1">SAMPLE RATIO MISMATCH</text>
-  <text x="129" y="138" text-anchor="middle" fill="#f1f5f9" font-size="13" font-weight="700">SRM Check</text>
+  <!-- CARD 1: SRM CHECK (dark teal) -->
+  <rect x="20" y="100" width="248" height="210" rx="12" fill="#0d3d3d" stroke="#0f766e" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="144" y="126" text-anchor="middle" fill="#5eead4" font-size="8.5" font-weight="700" letter-spacing="2">SAMPLE RATIO MISMATCH</text>
+  <text x="144" y="148" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="700">SRM Check</text>
   <!-- PASS badge -->
-  <rect x="79" y="148" width="100" height="30" rx="8" fill="#14532d"/>
-  <text x="129" y="168" text-anchor="middle" fill="#4ade80" font-size="16" font-weight="800">PASS</text>
-  <line x1="42" y1="193" x2="217" y2="193" stroke="#334155" stroke-width="1"/>
-  <text x="129" y="213" text-anchor="middle" fill="#94a3b8" font-size="10">chi-squared test p-value</text>
-  <text x="129" y="231" text-anchor="middle" fill="#4ade80" font-size="22" font-weight="700">p = 0.71</text>
-  <text x="129" y="252" text-anchor="middle" fill="#94a3b8" font-size="9">No traffic imbalance detected</text>
-  <text x="129" y="268" text-anchor="middle" fill="#94a3b8" font-size="9">Assignment: deterministic SHA-256</text>
+  <rect x="84" y="157" width="120" height="34" rx="8" fill="#14532d" stroke="#4ade80" stroke-width="1.5"/>
+  <text x="144" y="179" text-anchor="middle" fill="#4ade80" font-size="20" font-weight="900">PASS</text>
+  <line x1="40" y1="200" x2="248" y2="200" stroke="#0f766e" stroke-width="1"/>
+  <text x="144" y="220" text-anchor="middle" fill="#99f6e4" font-size="9.5">chi-squared test p-value</text>
+  <text x="144" y="248" text-anchor="middle" fill="#60a5fa" font-size="34" font-weight="800">p = 0.71</text>
+  <text x="144" y="272" text-anchor="middle" fill="#94a3b8" font-size="9.5">No traffic imbalance detected</text>
+  <text x="144" y="290" text-anchor="middle" fill="#94a3b8" font-size="9.5">Assignment: deterministic SHA-256</text>
 
-  <!-- Card 2: CUPED -->
-  <rect x="252" y="90" width="215" height="185" rx="12" fill="#1e293b" filter="url(#shadow2)"/>
-  <rect x="252" y="90" width="215" height="5" rx="2" fill="#1d4ed8"/>
-  <text x="359" y="118" text-anchor="middle" fill="#93c5fd" font-size="9" font-weight="600" letter-spacing="1">CUPED EVALUATION</text>
-  <text x="359" y="138" text-anchor="middle" fill="#f1f5f9" font-size="13" font-weight="700">Variance Reduction</text>
-  <!-- Key stats -->
-  <text x="299" y="162" text-anchor="middle" fill="#94a3b8" font-size="9">Variance</text>
-  <text x="299" y="180" text-anchor="middle" fill="#4ade80" font-size="20" font-weight="700">-23%</text>
-  <text x="415" y="162" text-anchor="middle" fill="#94a3b8" font-size="9">Lift</text>
-  <text x="415" y="180" text-anchor="middle" fill="#60a5fa" font-size="20" font-weight="700">+2.4%</text>
-  <line x1="272" y1="193" x2="447" y2="193" stroke="#334155" stroke-width="1"/>
-  <text x="359" y="212" text-anchor="middle" fill="#94a3b8" font-size="10">Pre-experiment covariate used</text>
-  <text x="359" y="229" text-anchor="middle" fill="#94a3b8" font-size="10">Variance reduction narrows CI</text>
-  <text x="359" y="246" text-anchor="middle" fill="#93c5fd" font-size="10" font-weight="600">Effect statistically significant</text>
-  <rect x="282" y="255" width="154" height="16" rx="4" fill="#1e3a8a"/>
-  <text x="359" y="267" text-anchor="middle" fill="#bfdbfe" font-size="9" font-weight="600">A/A validated · 1,000 runs · FPR=5.5%</text>
+  <!-- CARD 2: CUPED EVALUATION (dark blue) -->
+  <rect x="284" y="100" width="248" height="210" rx="12" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="408" y="126" text-anchor="middle" fill="#93c5fd" font-size="8.5" font-weight="700" letter-spacing="2">CUPED EVALUATION</text>
+  <text x="408" y="148" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="700">Variance Reduction</text>
+  <line x1="304" y1="158" x2="512" y2="158" stroke="#1d4ed8" stroke-width="1"/>
+  <!-- Two stat columns -->
+  <text x="350" y="178" text-anchor="middle" fill="#94a3b8" font-size="9">Variance</text>
+  <text x="350" y="208" text-anchor="middle" fill="#4ade80" font-size="34" font-weight="800">-23%</text>
+  <text x="466" y="178" text-anchor="middle" fill="#94a3b8" font-size="9">Lift</text>
+  <text x="466" y="208" text-anchor="middle" fill="#38bdf8" font-size="34" font-weight="800">+2.4%</text>
+  <line x1="304" y1="220" x2="512" y2="220" stroke="#1d4ed8" stroke-width="1"/>
+  <text x="408" y="238" text-anchor="middle" fill="#bfdbfe" font-size="9.5">Pre-experiment covariate used</text>
+  <text x="408" y="254" text-anchor="middle" fill="#bfdbfe" font-size="9.5">Variance reduction narrows CI</text>
+  <text x="408" y="270" text-anchor="middle" fill="#93c5fd" font-size="9.5" font-weight="600">Effect statistically significant</text>
+  <rect x="308" y="280" width="200" height="20" rx="5" fill="#1e40af"/>
+  <text x="408" y="294" text-anchor="middle" fill="#bfdbfe" font-size="8.5" font-weight="600">A/A validated · 1,000 runs · FPR=5.5%</text>
 
-  <!-- Card 3: A/A Baseline -->
-  <rect x="482" y="90" width="215" height="185" rx="12" fill="#1e293b" filter="url(#shadow2)"/>
-  <rect x="482" y="90" width="215" height="5" rx="2" fill="#4c1d95"/>
-  <text x="589" y="118" text-anchor="middle" fill="#c4b5fd" font-size="9" font-weight="600" letter-spacing="1">A/A CALIBRATION</text>
-  <text x="589" y="138" text-anchor="middle" fill="#f1f5f9" font-size="13" font-weight="700">A/A Baseline Check</text>
-  <!-- FPR display -->
-  <text x="589" y="163" text-anchor="middle" fill="#94a3b8" font-size="9">False Positive Rate (1,000 runs)</text>
-  <text x="589" y="188" text-anchor="middle" fill="#a78bfa" font-size="32" font-weight="800">4.8%</text>
-  <line x1="502" y1="198" x2="677" y2="198" stroke="#334155" stroke-width="1"/>
-  <text x="589" y="218" text-anchor="middle" fill="#94a3b8" font-size="10">Within acceptable range (≤ 5%)</text>
-  <text x="589" y="234" text-anchor="middle" fill="#94a3b8" font-size="10">Test infrastructure calibrated</text>
-  <rect x="519" y="248" width="140" height="20" rx="5" fill="#2e1065"/>
-  <text x="589" y="262" text-anchor="middle" fill="#ddd6fe" font-size="9" font-weight="600">Peeking risk: CONTROLLED</text>
+  <!-- CARD 3: A/A CALIBRATION (dark purple) -->
+  <rect x="548" y="100" width="248" height="210" rx="12" fill="#2d1b69" stroke="#7c3aed" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="672" y="126" text-anchor="middle" fill="#c4b5fd" font-size="8.5" font-weight="700" letter-spacing="2">A/A CALIBRATION</text>
+  <text x="672" y="148" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="700">A/A Baseline Check</text>
+  <line x1="568" y1="158" x2="776" y2="158" stroke="#4c1d95" stroke-width="1"/>
+  <text x="672" y="178" text-anchor="middle" fill="#ddd6fe" font-size="9.5">False Positive Rate (1,000 runs)</text>
+  <text x="672" y="220" text-anchor="middle" fill="#a78bfa" font-size="44" font-weight="900">4.8%</text>
+  <line x1="568" y1="234" x2="776" y2="234" stroke="#4c1d95" stroke-width="1"/>
+  <text x="672" y="254" text-anchor="middle" fill="#ddd6fe" font-size="9.5">Within acceptable range (≤ 5%)</text>
+  <text x="672" y="270" text-anchor="middle" fill="#ddd6fe" font-size="9.5">Test infrastructure calibrated</text>
+  <!-- Peeking risk pill -->
+  <rect x="572" y="280" width="200" height="22" rx="8" fill="#4c1d95" stroke="#7c3aed" stroke-width="1"/>
+  <text x="672" y="295" text-anchor="middle" fill="#e9d5ff" font-size="9" font-weight="700">Peeking risk: CONTROLLED</text>
 
-  <!-- Card 4: Guardrails -->
-  <rect x="712" y="90" width="246" height="185" rx="12" fill="#1e293b" filter="url(#shadow2)"/>
-  <rect x="712" y="90" width="246" height="5" rx="2" fill="#991b1b"/>
-  <text x="835" y="118" text-anchor="middle" fill="#fca5a5" font-size="9" font-weight="600" letter-spacing="1">GUARDRAIL-FIRST CHECK</text>
-  <text x="835" y="138" text-anchor="middle" fill="#f1f5f9" font-size="13" font-weight="700">Guardrail Status</text>
-  <!-- Guardrail items -->
-  <text x="732" y="162" fill="#4ade80" font-size="11" font-weight="700">PASS</text>
-  <text x="780" y="162" fill="#d1d5db" font-size="10">Latency p99</text>
-  <text x="732" y="180" fill="#4ade80" font-size="11" font-weight="700">PASS</text>
-  <text x="780" y="180" fill="#d1d5db" font-size="10">Error rate guardrail</text>
-  <text x="732" y="198" fill="#4ade80" font-size="11" font-weight="700">PASS</text>
-  <text x="780" y="198" fill="#d1d5db" font-size="10">Revenue per user</text>
-  <text x="732" y="216" fill="#4ade80" font-size="11" font-weight="700">PASS</text>
-  <text x="780" y="216" fill="#d1d5db" font-size="10">Right-censored metrics</text>
-  <line x1="732" y1="228" x2="938" y2="228" stroke="#334155" stroke-width="1"/>
-  <text x="835" y="248" text-anchor="middle" fill="#94a3b8" font-size="9">Guardrail-first: ship blocked if any fail</text>
-  <rect x="752" y="256" width="166" height="16" rx="4" fill="#7f1d1d"/>
-  <text x="835" y="268" text-anchor="middle" fill="#fca5a5" font-size="9" font-weight="600">All 4 guardrails: PASS → SHIP</text>
+  <!-- CARD 4: GUARDRAIL-FIRST CHECK (dark red) -->
+  <rect x="812" y="100" width="268" height="210" rx="12" fill="#450a0a" stroke="#ef4444" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="946" y="126" text-anchor="middle" fill="#fca5a5" font-size="8.5" font-weight="700" letter-spacing="2">GUARDRAIL-FIRST CHECK</text>
+  <text x="946" y="148" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="700">Guardrail Status</text>
+  <line x1="832" y1="158" x2="1060" y2="158" stroke="#7f1d1d" stroke-width="1"/>
+  <!-- Guardrail rows -->
+  <rect x="836" y="168" width="42" height="18" rx="4" fill="#14532d"/>
+  <text x="857" y="181" text-anchor="middle" fill="#4ade80" font-size="9" font-weight="700">PASS</text>
+  <text x="890" y="181" fill="#e2e8f0" font-size="10">Latency p99</text>
 
-  <!-- Decision Rationale panel -->
-  <rect x="22" y="295" width="936" height="75" rx="12" fill="#1e293b" filter="url(#shadow2)"/>
-  <rect x="22" y="295" width="6" height="75" rx="3" fill="#4ade80"/>
+  <rect x="836" y="192" width="42" height="18" rx="4" fill="#14532d"/>
+  <text x="857" y="205" text-anchor="middle" fill="#4ade80" font-size="9" font-weight="700">PASS</text>
+  <text x="890" y="205" fill="#e2e8f0" font-size="10">Error rate guardrail</text>
 
-  <text x="48" y="318" fill="#86efac" font-size="11" font-weight="700">Decision rationale:</text>
-  <text x="190" y="318" fill="#e2e8f0" font-size="11">Statistically significant lift, no guardrail regressions, SRM clean.</text>
-  <text x="48" y="338" fill="#e2e8f0" font-size="11">CUPED variance reduction (-23%) narrows the confidence interval, confirming the +2.4% effect is real and not noise. A/A calibration (FPR=4.8%) confirms the test</text>
-  <text x="48" y="355" fill="#e2e8f0" font-size="11">infrastructure is not inflating false positives. All guardrails pass — guardrail-first gate cleared. Right-censored guardrail metrics marked immature, not failed.</text>
-  <text x="48" y="373" fill="#6ee7b7" font-size="10" font-weight="600">Recommendation: LAUNCH · Monitor DOW-adjusted anomaly detection for 7 days post-launch · Decision logged in guardrail_decision_report.json</text>
+  <rect x="836" y="216" width="42" height="18" rx="4" fill="#14532d"/>
+  <text x="857" y="229" text-anchor="middle" fill="#4ade80" font-size="9" font-weight="700">PASS</text>
+  <text x="890" y="229" fill="#e2e8f0" font-size="10">Revenue per user</text>
 
-  <!-- Footer -->
-  <rect x="0" y="394" width="980" height="46" fill="#0f172a"/>
-  <line x1="0" y1="394" x2="980" y2="394" stroke="#1e293b" stroke-width="1"/>
-  <text x="490" y="414" text-anchor="middle" fill="#475569" font-size="9">METASIGNAL PLATFORM · Production-simulated experimentation intelligence · CUPED + SRM + A/A + Guardrail-first decisioning</text>
-  <text x="490" y="432" text-anchor="middle" fill="#334155" font-size="8">github.com/SidharthKriplani/metasignal_platform</text>
+  <rect x="836" y="240" width="42" height="18" rx="4" fill="#14532d"/>
+  <text x="857" y="253" text-anchor="middle" fill="#4ade80" font-size="9" font-weight="700">PASS</text>
+  <text x="890" y="253" fill="#e2e8f0" font-size="10">Right-censored metrics</text>
+
+  <line x1="832" y1="266" x2="1060" y2="266" stroke="#7f1d1d" stroke-width="1"/>
+  <text x="946" y="282" text-anchor="middle" fill="#fca5a5" font-size="9">guardrail-first: ship blocked if any fail</text>
+  <!-- Final badge -->
+  <rect x="862" y="290" width="168" height="18" rx="5" fill="#7f1d1d" stroke="#ef4444" stroke-width="1"/>
+  <text x="946" y="303" text-anchor="middle" fill="#fca5a5" font-size="9" font-weight="700">All 4 guardrails: PASS → SHIP</text>
+
+  <!-- ══════════ DECISION RATIONALE ══════════ -->
+  <rect x="20" y="330" width="1060" height="120" rx="12" fill="#0f1f0f" stroke="#22c55e" stroke-width="1" filter="url(#sh)"/>
+  <rect x="20" y="330" width="8" height="120" rx="4" fill="#22c55e"/>
+
+  <text x="46" y="356" fill="#86efac" font-size="11.5" font-weight="700">Decision rationale:</text>
+  <text x="220" y="356" fill="#e2e8f0" font-size="11">Statistically significant lift, no guardrail regressions, SRM clean.</text>
+
+  <text x="46" y="376" fill="#e2e8f0" font-size="10.5">CUPED variance reduction (-23%) narrows the confidence interval, confirming the +2.4% effect is real and not noise. A/A calibration (FPR=4.8%)</text>
+  <text x="46" y="394" fill="#e2e8f0" font-size="10.5">confirms test infrastructure is not inflating false positives. All guardrails pass — guardrail-first gate cleared. Right-censored guardrail metrics</text>
+  <text x="46" y="412" fill="#e2e8f0" font-size="10.5">marked immature, not failed. DOW-adjusted anomaly detection backtest verified. 12/12 golden scenarios pass under all decision rules.</text>
+
+  <text x="46" y="436" fill="#4ade80" font-size="10" font-weight="600">Recommendation: LAUNCH · Monitor DOW-adjusted anomaly detection for 7 days post-launch · Decision logged in guardrail_decision_report.json</text>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <rect x="0" y="468" width="1100" height="1" fill="#1e293b"/>
+  <rect x="0" y="469" width="1100" height="111" fill="#0a0f1e"/>
+  <text x="550" y="502" text-anchor="middle" fill="#334155" font-size="10" font-weight="600" letter-spacing="1">METASIGNAL PLATFORM</text>
+  <text x="550" y="522" text-anchor="middle" fill="#334155" font-size="9">Production-simulated experimentation intelligence · CUPED + SRM + A/A + Guardrail-first decisioning</text>
+  <text x="550" y="540" text-anchor="middle" fill="#1e293b" font-size="8">github.com/SidharthKriplani/metasignal_platform</text>
 </svg>
