@@ -1,0 +1,176 @@
+<svg viewBox="0 0 1100 420" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1100" height="420" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="550" y="30" text-anchor="middle" fill="#f1f5f9" font-size="15" font-weight="700" letter-spacing="1">METASIGNAL PLATFORM — EXPERIMENT INTELLIGENCE PIPELINE</text>
+
+  <!-- Node 1: Synthetic Data (slate) -->
+  <rect x="14" y="55" width="148" height="85" rx="12" fill="#334155" filter="url(#shadow)"/>
+  <text x="88" y="76" text-anchor="middle" fill="#94a3b8" font-size="9" font-weight="600" letter-spacing="1">DATA INPUT</text>
+  <text x="88" y="94" text-anchor="middle" fill="#f1f5f9" font-size="11" font-weight="700">Synthetic Experiment</text>
+  <text x="88" y="109" text-anchor="middle" fill="#cbd5e1" font-size="9">Deterministic assignment</text>
+  <text x="88" y="123" text-anchor="middle" fill="#cbd5e1" font-size="9">Seed-controlled · 20,000</text>
+  <text x="88" y="137" text-anchor="middle" fill="#94a3b8" font-size="9">experiment assignments</text>
+
+  <!-- Arrow: Data → Metric Registry -->
+  <line x1="162" y1="97" x2="192" y2="97" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Node 2: Metric Registry (green) -->
+  <rect x="192" y="55" width="155" height="85" rx="12" fill="#065f46" filter="url(#shadow)"/>
+  <text x="269" y="76" text-anchor="middle" fill="#6ee7b7" font-size="9" font-weight="600" letter-spacing="1">METRIC REGISTRY</text>
+  <text x="269" y="94" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="700">Versioned Metric Defs</text>
+  <text x="269" y="109" text-anchor="middle" fill="#d1fae5" font-size="9">Explicit denominator logic</text>
+  <text x="269" y="123" text-anchor="middle" fill="#d1fae5" font-size="9">Conflict detection</text>
+  <text x="269" y="137" text-anchor="middle" fill="#a7f3d0" font-size="9">Config-hashed · 3 core metrics</text>
+
+  <!-- Arrow: Metric Registry → Quality Gates -->
+  <line x1="347" y1="97" x2="377" y2="97" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Node 3: Quality Gates (amber) -->
+  <rect x="377" y="55" width="148" height="85" rx="12" fill="#78350f" filter="url(#shadow)"/>
+  <rect x="377" y="55" width="148" height="85" rx="12" fill="none" stroke="#fbbf24" stroke-width="1"/>
+  <text x="451" y="76" text-anchor="middle" fill="#fcd34d" font-size="9" font-weight="600" letter-spacing="1">QUALITY GATES</text>
+  <text x="451" y="94" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="700">Data Quality Gates</text>
+  <text x="451" y="109" text-anchor="middle" fill="#fde68a" font-size="9">Failure injection</text>
+  <text x="451" y="123" text-anchor="middle" fill="#fde68a" font-size="9">Blocked pipeline evidence</text>
+  <text x="451" y="137" text-anchor="middle" fill="#fcd34d" font-size="9">13 failure scenarios</text>
+
+  <!-- Arrow: Quality Gates → Experiment Engine -->
+  <line x1="525" y1="97" x2="555" y2="97" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- EXPERIMENT ENGINE — enlarged blue centerpiece -->
+  <rect x="555" y="30" width="290" height="190" rx="12" fill="#1d4ed8" filter="url(#shadow)"/>
+  <rect x="555" y="30" width="290" height="190" rx="12" fill="none" stroke="#60a5fa" stroke-width="2"/>
+  <text x="700" y="52" text-anchor="middle" fill="#bfdbfe" font-size="9" font-weight="600" letter-spacing="1">EXPERIMENT ENGINE — CORE</text>
+  <text x="700" y="70" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="700">5-Check Validation Suite</text>
+
+  <!-- 5 check sub-boxes inside -->
+  <!-- SRM -->
+  <rect x="568" y="78" width="124" height="36" rx="7" fill="#1e3a8a"/>
+  <text x="630" y="93" text-anchor="middle" fill="#93c5fd" font-size="9" font-weight="700">SRM Validation</text>
+  <text x="630" y="107" text-anchor="middle" fill="#bfdbfe" font-size="8">chi-squared · p=0.1837</text>
+
+  <!-- CUPED -->
+  <rect x="702" y="78" width="130" height="36" rx="7" fill="#1e3a8a"/>
+  <text x="767" y="93" text-anchor="middle" fill="#93c5fd" font-size="9" font-weight="700">CUPED Evaluation</text>
+  <text x="767" y="107" text-anchor="middle" fill="#bfdbfe" font-size="8">Variance reduction · covariate adj.</text>
+
+  <!-- A/A Validation -->
+  <rect x="568" y="122" width="124" height="36" rx="7" fill="#1e3a8a"/>
+  <text x="630" y="137" text-anchor="middle" fill="#93c5fd" font-size="9" font-weight="700">A/A Validation</text>
+  <text x="630" y="151" text-anchor="middle" fill="#bfdbfe" font-size="8">1,000 synthetic runs · FPR=5.5%</text>
+
+  <!-- Right-Censoring -->
+  <rect x="702" y="122" width="130" height="36" rx="7" fill="#1e3a8a"/>
+  <text x="767" y="137" text-anchor="middle" fill="#93c5fd" font-size="9" font-weight="700">Right-Censoring</text>
+  <text x="767" y="151" text-anchor="middle" fill="#bfdbfe" font-size="8">Delayed guardrail handling</text>
+
+  <!-- DOW Anomaly -->
+  <rect x="634" y="166" width="132" height="36" rx="7" fill="#1e3a8a"/>
+  <text x="700" y="181" text-anchor="middle" fill="#93c5fd" font-size="9" font-weight="700">DOW Anomaly Detection</text>
+  <text x="700" y="195" text-anchor="middle" fill="#bfdbfe" font-size="8">Day-of-week adjusted · backtest</text>
+
+  <!-- Arrow: Engine → Decisioning -->
+  <line x1="845" y1="125" x2="878" y2="125" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Node 5: Decisioning (red) -->
+  <rect x="878" y="55" width="208" height="140" rx="12" fill="#991b1b" filter="url(#shadow)"/>
+  <rect x="878" y="55" width="208" height="140" rx="12" fill="none" stroke="#f87171" stroke-width="1.5"/>
+  <text x="982" y="76" text-anchor="middle" fill="#fca5a5" font-size="9" font-weight="600" letter-spacing="1">GUARDRAIL-FIRST DECISIONING</text>
+  <text x="982" y="94" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="700">Decision Gate</text>
+  <!-- Decision flow inside -->
+  <rect x="892" y="100" width="180" height="26" rx="6" fill="#7f1d1d"/>
+  <text x="982" y="117" text-anchor="middle" fill="#fde68a" font-size="10" font-weight="700">Guardrail check FIRST</text>
+  <text x="982" y="143" text-anchor="middle" fill="#fecaca" font-size="9">Primary metric positive?</text>
+  <text x="982" y="157" text-anchor="middle" fill="#fecaca" font-size="9">Guardrail violation blocks SHIP</text>
+  <text x="982" y="172" text-anchor="middle" fill="#fecaca" font-size="9">Human override requires justification</text>
+  <text x="982" y="186" text-anchor="middle" fill="#fca5a5" font-size="9">12/12 golden scenarios pass</text>
+
+  <!-- Streaming branch (from data, goes below) -->
+  <line x1="88" y1="140" x2="88" y2="205" stroke="#475569" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#arrow)"/>
+
+  <!-- Node 6: Streaming (violet) -->
+  <rect x="14" y="205" width="300" height="110" rx="12" fill="#4c1d95" filter="url(#shadow)"/>
+  <text x="164" y="226" text-anchor="middle" fill="#c4b5fd" font-size="9" font-weight="600" letter-spacing="1">STREAMING EARLY WARNING</text>
+  <text x="164" y="244" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="700">Streaming Extension Layer</text>
+  <!-- Mini checks -->
+  <text x="30" y="265" fill="#ddd6fe" font-size="9">• Provisional SRM early warning</text>
+  <text x="30" y="281" fill="#ddd6fe" font-size="9">• Consumer lag monitoring</text>
+  <text x="30" y="297" fill="#ddd6fe" font-size="9">• Duplicate + late-event detection</text>
+  <text x="164" y="265" fill="#ddd6fe" font-size="9">• DLQ quarantine</text>
+  <text x="164" y="281" fill="#ddd6fe" font-size="9">• Stream-batch reconciliation</text>
+  <text x="164" y="297" fill="#ddd6fe" font-size="9">• 43/43 checks pass</text>
+
+  <!-- Streaming → Artifacts arrow -->
+  <line x1="314" y1="260" x2="355" y2="260" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Node 7: Artifacts / API (gray) -->
+  <rect x="355" y="205" width="490" height="110" rx="12" fill="#374151" filter="url(#shadow)"/>
+  <text x="600" y="226" text-anchor="middle" fill="#9ca3af" font-size="9" font-weight="600" letter-spacing="1">EVIDENCE + API LAYER</text>
+  <text x="600" y="244" text-anchor="middle" fill="#f9fafb" font-size="11" font-weight="700">Versioned JSON Artifacts + FastAPI Evidence Layer</text>
+  <!-- Artifact sub-items -->
+  <text x="375" y="264" fill="#d1d5db" font-size="9">• CUPED readout JSON</text>
+  <text x="375" y="280" fill="#d1d5db" font-size="9">• A/A validation report (1,000 runs)</text>
+  <text x="375" y="296" fill="#d1d5db" font-size="9">• SRM check report</text>
+  <text x="530" y="264" fill="#d1d5db" font-size="9">• Guardrail decision report</text>
+  <text x="530" y="280" fill="#d1d5db" font-size="9">• Golden scenario suite (12/12)</text>
+  <text x="530" y="296" fill="#d1d5db" font-size="9">• Streaming validation (43/43)</text>
+  <text x="680" y="264" fill="#d1d5db" font-size="9">FastAPI endpoints:</text>
+  <text x="680" y="280" fill="#6b7280" font-size="9">/readout /guardrails</text>
+  <text x="680" y="296" fill="#6b7280" font-size="9">/scenarios /artifacts</text>
+
+  <!-- Decisioning → Artifacts arrow -->
+  <line x1="982" y1="195" x2="982" y2="240" stroke="#475569" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <line x1="982" y1="240" x2="845" y2="255" stroke="#475569" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Bottom info bar -->
+  <rect x="0" y="335" width="1100" height="60" fill="#0f172a"/>
+  <line x1="0" y1="335" x2="1100" y2="335" stroke="#1e293b" stroke-width="1.5"/>
+
+  <text x="75" y="357" text-anchor="middle" fill="#94a3b8" font-size="9" font-weight="600">A/A VALIDATION RUNS</text>
+  <text x="75" y="378" text-anchor="middle" fill="#60a5fa" font-size="18" font-weight="700">1,000</text>
+  <text x="75" y="392" text-anchor="middle" fill="#475569" font-size="8">FPR calibrated to 5.5%</text>
+
+  <line x1="175" y1="342" x2="175" y2="385" stroke="#334155" stroke-width="1"/>
+
+  <text x="270" y="357" text-anchor="middle" fill="#94a3b8" font-size="9" font-weight="600">CUPED VARIANCE REDUCTION</text>
+  <text x="270" y="378" text-anchor="middle" fill="#4ade80" font-size="18" font-weight="700">26.5%</text>
+  <text x="270" y="392" text-anchor="middle" fill="#475569" font-size="8">synthetic experiment</text>
+
+  <line x1="375" y1="342" x2="375" y2="385" stroke="#334155" stroke-width="1"/>
+
+  <text x="475" y="357" text-anchor="middle" fill="#94a3b8" font-size="9" font-weight="600">RIGHT-CENSORED GUARDRAILS</text>
+  <text x="475" y="378" text-anchor="middle" fill="#e2e8f0" font-size="14" font-weight="700">Immature → Final</text>
+  <text x="475" y="392" text-anchor="middle" fill="#475569" font-size="8">delayed metrics handled correctly</text>
+
+  <line x1="580" y1="342" x2="580" y2="385" stroke="#334155" stroke-width="1"/>
+
+  <text x="670" y="357" text-anchor="middle" fill="#94a3b8" font-size="9" font-weight="600">DOW ANOMALY DETECTION</text>
+  <text x="670" y="378" text-anchor="middle" fill="#e2e8f0" font-size="14" font-weight="700">Adjusted</text>
+  <text x="670" y="392" text-anchor="middle" fill="#475569" font-size="8">synthetic backtest evidence</text>
+
+  <line x1="770" y1="342" x2="770" y2="385" stroke="#334155" stroke-width="1"/>
+
+  <text x="875" y="357" text-anchor="middle" fill="#94a3b8" font-size="9" font-weight="600">GUARDRAIL-FIRST DECISIONING</text>
+  <text x="875" y="378" text-anchor="middle" fill="#f87171" font-size="14" font-weight="700">Guardrail blocks SHIP</text>
+  <text x="875" y="392" text-anchor="middle" fill="#475569" font-size="8">12 golden scenarios · all pass</text>
+
+  <line x1="980" y1="342" x2="980" y2="385" stroke="#334155" stroke-width="1"/>
+
+  <text x="1042" y="360" text-anchor="middle" fill="#475569" font-size="8">github.com/SidharthKriplani/</text>
+  <text x="1042" y="374" text-anchor="middle" fill="#475569" font-size="8">metasignal_platform</text>
+</svg>
