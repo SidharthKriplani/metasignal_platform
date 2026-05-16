@@ -138,7 +138,7 @@ The streaming extension provides provisional signals before the batch experiment
 
 ---
 
-## Run the Full Demo
+## Quick Start
 
 ```bash
 PYTHONPATH=. python3 scripts/run_full_demo_v0.py
@@ -170,7 +170,7 @@ tests/                   test scaffolding
 
 Full design rationale, architecture decisions, and expected interview questions with answers:
 
-**[docs/defense/MetaSignal_Interview_Defense.pdf](docs/defense/MetaSignal_Interview_Defense.pdf)**
+**[docs/prd/MetaSignal_Defense_Master_Pack_v2_COMPLETE.pdf](docs/prd/MetaSignal_Defense_Master_Pack_v2_COMPLETE.pdf)**
 
 Covers: CUPED covariate selection rationale, guardrail-first blocking logic, A/A calibration methodology, right-censored guardrail handling, SRM detection, streaming provisional signal design, and production failure modes.
 
